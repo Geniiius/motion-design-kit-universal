@@ -1,0 +1,8 @@
+{
+  "name": "demo-hollywood",
+  "intent": "create",
+  "style": "hollywood-realistic",
+  "brief": "Présentation cinématographique de services avec éclairage dramatique",
+  "format": "16:9",
+  "assets": []
+}

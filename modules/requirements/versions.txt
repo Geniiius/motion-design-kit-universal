@@ -1,0 +1,54 @@
+absl-py==2.5.1
+anyio==4.16.0 ; sys_platform != 'emscripten'
+attrs==26.1.0
+av==18.1.0
+certifi==2026.10.23
+cffi==2.1.1
+click==8.5.0
+cloudpickle==3.1.2
+colorama==0.4.6 ; sys_platform == 'win32'
+contourpy==1.4.0
+ctranslate2==4.8.5
+cycler==0.12.1
+dlinfo==2.0.0
+espeakng-loader==0.2.4
+faster-whisper==1.2.1
+filelock==4.2.7
+flatbuffers==25.12.19
+fonttools==4.68.0
+fsspec==2026.9.0
+h11==0.16.0 ; sys_platform != 'emscripten'
+hf-xet==1.8.0 ; platform_machine == 'AMD64' or platform_machine == 'ARM64' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'
+httpcore2==2.16.0 ; sys_platform != 'emscripten'
+httpx2==2.16.0
+httpx2-jsfetch==1.0 ; sys_platform == 'emscripten'
+huggingface-hub==2.4.0
+idna==3.20
+joblib==1.6.0
+kiwisolver==1.5.1
+kokoro-onnx==0.6.1
+llvmlite==0.50.0
+matplotlib==3.11.2
+mediapipe==1.2.0
+numba==0.68.1
+numpy==2.5.4
+onnxruntime==1.31.1
+opencv-contrib-python==5.0.0.93
+opencv-python==5.0.0.93
+packaging==26.3
+phonemizer==3.6.0
+pillow==13.0.0
+protobuf==7.36.2
+pycparser==3.12 ; implementation_name != 'PyPy'
+pyparsing==3.3.3
+python-dateutil==4.0.0
+pyyaml==6.0.3
+scipy==1.18.1
+sounddevice==0.5.6
+soundfile==0.14.0
+soxr==1.1.0
+tokenizers==0.23.3
+tqdm==4.70.1
+truststore==0.10.5 ; sys_platform != 'emscripten'
+typing-extensions==4.16.0
+tzdata==2026.6

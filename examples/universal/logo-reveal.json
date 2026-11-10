@@ -1,0 +1,14 @@
+{
+  "name": "demo-logo",
+  "brief": "Présentation de marque avec logo fourni",
+  "title": "Révélez votre marque",
+  "style": "logo-reveal",
+  "format": "16:9",
+  "duration": 5,
+  "assets": [
+    {
+      "path": "../medios/logo-demo.png",
+      "role": "logo"
+    }
+  ]
+}

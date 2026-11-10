@@ -1,0 +1,414 @@
+{
+ "duracion": 34.6,
+ "voz": "",
+ "words": [],
+ "serie": [
+  {
+   "x": 1959,
+   "y": 315.98
+  },
+  {
+   "x": 1960,
+   "y": 316.91
+  },
+  {
+   "x": 1961,
+   "y": 317.64
+  },
+  {
+   "x": 1962,
+   "y": 318.45
+  },
+  {
+   "x": 1963,
+   "y": 318.99
+  },
+  {
+   "x": 1964,
+   "y": 319.62
+  },
+  {
+   "x": 1965,
+   "y": 320.04
+  },
+  {
+   "x": 1966,
+   "y": 321.37
+  },
+  {
+   "x": 1967,
+   "y": 322.18
+  },
+  {
+   "x": 1968,
+   "y": 323.05
+  },
+  {
+   "x": 1969,
+   "y": 324.62
+  },
+  {
+   "x": 1970,
+   "y": 325.68
+  },
+  {
+   "x": 1971,
+   "y": 326.32
+  },
+  {
+   "x": 1972,
+   "y": 327.46
+  },
+  {
+   "x": 1973,
+   "y": 329.68
+  },
+  {
+   "x": 1974,
+   "y": 330.19
+  },
+  {
+   "x": 1975,
+   "y": 331.13
+  },
+  {
+   "x": 1976,
+   "y": 332.03
+  },
+  {
+   "x": 1977,
+   "y": 333.84
+  },
+  {
+   "x": 1978,
+   "y": 335.41
+  },
+  {
+   "x": 1979,
+   "y": 336.84
+  },
+  {
+   "x": 1980,
+   "y": 338.76
+  },
+  {
+   "x": 1981,
+   "y": 340.12
+  },
+  {
+   "x": 1982,
+   "y": 341.48
+  },
+  {
+   "x": 1983,
+   "y": 343.15
+  },
+  {
+   "x": 1984,
+   "y": 344.87
+  },
+  {
+   "x": 1985,
+   "y": 346.35
+  },
+  {
+   "x": 1986,
+   "y": 347.61
+  },
+  {
+   "x": 1987,
+   "y": 349.31
+  },
+  {
+   "x": 1988,
+   "y": 351.69
+  },
+  {
+   "x": 1989,
+   "y": 353.2
+  },
+  {
+   "x": 1990,
+   "y": 354.45
+  },
+  {
+   "x": 1991,
+   "y": 355.7
+  },
+  {
+   "x": 1992,
+   "y": 356.54
+  },
+  {
+   "x": 1993,
+   "y": 357.21
+  },
+  {
+   "x": 1994,
+   "y": 358.96
+  },
+  {
+   "x": 1995,
+   "y": 360.97
+  },
+  {
+   "x": 1996,
+   "y": 362.74
+  },
+  {
+   "x": 1997,
+   "y": 363.88
+  },
+  {
+   "x": 1998,
+   "y": 366.84
+  },
+  {
+   "x": 1999,
+   "y": 368.54
+  },
+  {
+   "x": 2000,
+   "y": 369.71
+  },
+  {
+   "x": 2001,
+   "y": 371.32
+  },
+  {
+   "x": 2002,
+   "y": 373.45
+  },
+  {
+   "x": 2003,
+   "y": 375.98
+  },
+  {
+   "x": 2004,
+   "y": 377.7
+  },
+  {
+   "x": 2005,
+   "y": 379.98
+  },
+  {
+   "x": 2006,
+   "y": 382.09
+  },
+  {
+   "x": 2007,
+   "y": 384.02
+  },
+  {
+   "x": 2008,
+   "y": 385.83
+  },
+  {
+   "x": 2009,
+   "y": 387.64
+  },
+  {
+   "x": 2010,
+   "y": 390.1
+  },
+  {
+   "x": 2011,
+   "y": 391.85
+  },
+  {
+   "x": 2012,
+   "y": 394.06
+  },
+  {
+   "x": 2013,
+   "y": 396.74
+  },
+  {
+   "x": 2014,
+   "y": 398.81
+  },
+  {
+   "x": 2015,
+   "y": 401.01
+  },
+  {
+   "x": 2016,
+   "y": 404.41
+  },
+  {
+   "x": 2017,
+   "y": 406.76
+  },
+  {
+   "x": 2018,
+   "y": 408.72
+  },
+  {
+   "x": 2019,
+   "y": 411.65
+  },
+  {
+   "x": 2020,
+   "y": 414.21
+  },
+  {
+   "x": 2021,
+   "y": 416.41
+  },
+  {
+   "x": 2022,
+   "y": 418.53
+  },
+  {
+   "x": 2023,
+   "y": 421.08
+  },
+  {
+   "x": 2024,
+   "y": 424.61
+  },
+  {
+   "x": 2025,
+   "y": 427.35
+  }
+ ],
+ "escenas": [
+  {
+   "tipo": "concepto",
+   "inicio": 0,
+   "fin": 2.6,
+   "rotulo": "NOAA · Mauna Loa, Hawaii",
+   "titulo": "Carbon dioxide in the air",
+   "definicion": "Annual mean, in parts per million (ppm) of dry air"
+  },
+  {
+   "tipo": "curva",
+   "inicio": 2.6,
+   "fin": 15.5,
+   "rotulo": "Annual mean at Mauna Loa",
+   "unidad": "ppm",
+   "inicioDibujo": 3.0,
+   "finDibujo": 13.2
+  },
+  {
+   "tipo": "comparacion",
+   "inicio": 15.5,
+   "fin": 21,
+   "rotulo": "Average rise per year",
+   "unidad": "ppm/yr",
+   "barras": [
+    {
+     "etiqueta": "1960s",
+     "valor": 0.86
+    },
+    {
+     "etiqueta": "1970s",
+     "valor": 1.22
+    },
+    {
+     "etiqueta": "1980s",
+     "valor": 1.64
+    },
+    {
+     "etiqueta": "1990s",
+     "valor": 1.53
+    },
+    {
+     "etiqueta": "2000s",
+     "valor": 1.91
+    },
+    {
+     "etiqueta": "2010s",
+     "valor": 2.4
+    }
+   ]
+  },
+  {
+   "tipo": "flujo",
+   "inicio": 21,
+   "fin": 26.2,
+   "rotulo": "How this film got its numbers",
+   "pasos": [
+    "NOAA file: one mean per year",
+    "Annual means by decade",
+    "Year-on-year rise"
+   ]
+  },
+  {
+   "tipo": "cronologia",
+   "inicio": 26.2,
+   "fin": 30.2,
+   "rotulo": "What the file itself notes",
+   "hitos": [
+    {
+     "fecha": "1958",
+     "texto": "Data from Scripps Institution (C. David Keeling)"
+    },
+    {
+     "fecha": "1974",
+     "texto": "NOAA series continues after April 1974"
+    },
+    {
+     "fecha": "2022-2023",
+     "texto": "Volcano: Mauna Loa suspended, Maunakea used until July 2023"
+    }
+   ]
+  },
+  {
+   "tipo": "fuente",
+   "inicio": 30.2,
+   "fin": 34.4,
+   "rotulo": "Source and limits",
+   "lineas": [
+    "NOAA Global Monitoring Laboratory, annual means",
+    "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv",
+    "Downloaded 2026-11-03. Uncertainty stated in the file: ±0.12 ppm per year",
+    "The last year may still be revised by NOAA. No forecast or cause is claimed here."
+   ]
+  }
+ ],
+ "_provenance": {
+  "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv",
+  "fetched": "2026-11-03",
+  "sha256": "bdd956e8d7e05ebc3c61ac1f8f8c8cea4a505df56724fba5200b4eb1e0089b2b",
+  "facts": {
+   "y0": 1959,
+   "v0": 315.98,
+   "y1": 2025,
+   "v1": 427.35,
+   "diff": 111.37,
+   "years": 66,
+   "d0": 1960,
+   "r0": 0.86,
+   "d1": 2010,
+   "r1": 2.4,
+   "unc": 0.12,
+   "rates": [
+    {
+     "decade": 1960,
+     "rate": 0.86
+    },
+    {
+     "decade": 1970,
+     "rate": 1.22
+    },
+    {
+     "decade": 1980,
+     "rate": 1.64
+    },
+    {
+     "decade": 1990,
+     "rate": 1.53
+    },
+    {
+     "decade": 2000,
+     "rate": 1.91
+    },
+    {
+     "decade": 2010,
+     "rate": 2.4
+    }
+   ]
+  }
+ }
+}

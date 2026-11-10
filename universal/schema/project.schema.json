@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Motion Design Kit Universal Studio project",
+  "type": "object",
+  "required": ["schema_version", "name", "request", "intent", "inputs", "style", "deliverables", "timeline", "characters", "scene_assets", "engines", "quality", "cost_ceiling", "approval_required", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "enum": ["1.0"] },
+    "name": { "type": "string", "pattern": "^[^/\\\\:*?\"<>|]+$" },
+    "request": {
+      "type": "object",
+      "required": ["brief", "language"],
+      "additionalProperties": false,
+      "properties": { "brief": { "type": "string" }, "language": { "type": "string", "enum": ["fr", "es", "en"] }, "direct": { "type": "boolean" } }
+    },
+    "intent": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "enum": ["CREATE_FROM_SCRATCH", "ANIMATE_LOGO", "ANIMATE_IMAGES", "EDIT_FOOTAGE", "RESTYLE_FOOTAGE", "HYBRID_COMPOSITE", "CHARACTER_ANIMATION", "DATA_EXPLAINER", "INTERACTIVE_PRESENTATION", "REVISE_EXISTING_PROJECT", "EXPORT_CONVERT"] }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "type", "role", "exists", "metadata", "rights", "provenance", "treatment", "warnings"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string" },
+          "type": { "type": "string", "enum": ["image", "video", "audio", "3d", "document", "data", "subtitles", "project", "url", "unknown"] },
+          "role": { "type": "string", "enum": ["source", "logo", "voice", "music", "cover", "character", "product"] },
+          "exists": { "type": "boolean" },
+          "metadata": { "type": "object" },
+          "rights": {
+            "type": "object",
+            "required": ["status"],
+            "properties": { "status": { "type": "string", "enum": ["unknown", "owned", "licensed", "cc0", "consent-given", "generated-locally"] }, "note": { "type": "string" } }
+          },
+          "provenance": { "type": "object" },
+          "treatment": { "type": "array", "items": { "type": "string" } },
+          "warnings": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "required": ["art_direction", "dimension", "realism_level", "references", "negative_constraints", "continuity"],
+      "additionalProperties": false,
+      "properties": {
+        "preset": { "type": ["string", "null"] },
+        "art_direction": { "type": "string" },
+        "dimension": { "type": "string", "enum": ["2d", "2.5d", "3d", "live-action", "hybrid"] },
+        "realism_level": { "type": "string", "enum": ["schematic", "stylized", "semi-realistic", "realistic", "photoreal"] },
+        "narrative": { "type": "string" },
+        "references": { "type": "array" },
+        "negative_constraints": { "type": "array" },
+        "continuity": { "type": "object" },
+        "film_style": { "type": ["string", "null"] }
+      }
+    },
+    "deliverables": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["kind", "language", "adapter"],
+        "properties": {
+          "kind": { "type": "string", "enum": ["video", "video-alpha", "gif", "image", "html", "project"] },
+          "language": { "type": "string" },
+          "interactive": { "type": "boolean" },
+          "adapter": { "type": "object", "required": ["engine"] }
+        }
+      }
+    },
+    "timeline": { "type": "object", "required": ["fps"], "properties": { "fps": { "type": "number", "minimum": 1 }, "scenes": { "type": "array" }, "edl": { "type": "array" }, "audio": { "type": "object" } } },
+    "characters": { "type": "array" },
+    "scene_assets": { "type": "array" },
+    "engines": { "type": "array", "items": { "type": "object", "required": ["id", "why"] } },
+    "missing": { "type": "array" },
+    "questions": { "type": "array" },
+    "notes": { "type": "array" },
+    "quality": { "type": "object", "properties": { "profile": { "type": "string", "enum": ["draft", "review", "final", "4k"] }, "exceptions": { "type": "array" } } },
+    "cost_ceiling": { "type": "object", "required": ["amount"], "properties": { "amount": { "type": "number", "minimum": 0 }, "currency": { "type": "string" } } },
+    "approval_required": { "type": "array", "items": { "type": "object", "required": ["what", "why"] } },
+    "status": { "type": "string", "enum": ["planned", "blocked", "rendering", "delivered", "unchanged", "failed"] },
+    "understanding": { "type": "object" },
+    "props": { "type": "object" },
+    "results": { "type": "array" }
+  }
+}

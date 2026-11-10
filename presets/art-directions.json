@@ -1,0 +1,222 @@
+{
+ "version": 1,
+ "directions": [
+  {
+   "id": "cinematic-hollywood",
+   "nom": "Cinéma hollywoodien",
+   "description": "Se traduit en critères de fabrication, sans copier d'éléments protégés.",
+   "dimension": "3d",
+   "realisme": "realistic",
+   "moteurs": [
+    "remotion-3d",
+    "ffmpeg-edit"
+   ],
+   "criteres": {
+    "cadrage": "plans larges, moyens, serrés, focale cohérente",
+    "lumiere": "motivée, contre-jour, contraste",
+    "camera": "dolly, arc, grue, jamais figée sans raison",
+    "etalonnage": "contraste, teintes chaudes et froides",
+    "son": "design sonore, à fournir ou à générer avec accord",
+    "montage": "coupes justifiées"
+   },
+   "atteignable_en_local": "Scène 3D PBR, bandes 2,39:1, étalonnage",
+   "limites": "Pas de qualité blockbuster automatique, pas d'acteurs réalistes",
+   "demonstrateur": "cinema"
+  },
+  {
+   "id": "stylized-3d",
+   "nom": "3D stylisée",
+   "description": "Objets et caméra en volume, matières lisibles.",
+   "dimension": "3d",
+   "realisme": "stylized",
+   "moteurs": [
+    "remotion-3d"
+   ],
+   "criteres": {
+    "cadrage": "sujet unique",
+    "lumiere": "environnement + une clé",
+    "camera": "plans variés",
+    "etalonnage": "léger",
+    "son": "voix ou musique",
+    "montage": "sur la première syllabe de l'idée"
+   },
+   "atteignable_en_local": "Personnages et objets procéduraux, GLB licenciés",
+   "limites": "Pas de génération 3D depuis un texte",
+   "demonstrateur": "personnage"
+  },
+  {
+   "id": "cartoon-caricature",
+   "nom": "Cartoon et caricature",
+   "description": "Formes expressives. La caricature d'une personne réelle exige son consentement.",
+   "dimension": "2d",
+   "realisme": "stylized",
+   "moteurs": [
+    "remotion-2d",
+    "remotion-3d"
+   ],
+   "criteres": {
+    "cadrage": "expressif",
+    "lumiere": "simple",
+    "camera": "dynamique",
+    "etalonnage": "saturé",
+    "son": "bruitages",
+    "montage": "comique, gags"
+   },
+   "atteignable_en_local": "Personnage original, aperçu par filtres d'une vidéo",
+   "limites": "Vrai restylage de rushes : fournisseur externe et accord",
+   "demonstrateur": "personnage"
+  },
+  {
+   "id": "photorealistic-commercial",
+   "nom": "Publicité photoréaliste",
+   "description": "Rendu de produit réaliste.",
+   "dimension": "3d",
+   "realisme": "photoreal",
+   "moteurs": [
+    "blender"
+   ],
+   "criteres": {
+    "cadrage": "packshot",
+    "lumiere": "studio",
+    "camera": "lente",
+    "etalonnage": "fidèle à la marque",
+    "son": "sobre",
+    "montage": "lent"
+   },
+   "atteignable_en_local": "Non atteint : look PBR stylisé en repli",
+   "limites": "Exige Blender et un modèle soigné, ou un fournisseur",
+   "demonstrateur": "cinema"
+  },
+  {
+   "id": "hybrid-live-action-cgi",
+   "nom": "Hybride rushes + CGI",
+   "description": "Vidéo filmée et éléments calculés.",
+   "dimension": "hybrid",
+   "realisme": "semi-realistic",
+   "moteurs": [
+    "remotion-3d",
+    "ffmpeg-edit"
+   ],
+   "criteres": {
+    "cadrage": "celui du rush",
+    "lumiere": "accordée au rush",
+    "camera": "suit le rush",
+    "etalonnage": "unifié",
+    "son": "du rush + mix",
+    "montage": "continuité"
+   },
+   "atteignable_en_local": "Personnage composé sur un rush",
+   "limites": "Pas de suivi de caméra ni d'ombres automatiques sur la scène réelle",
+   "demonstrateur": "hybride"
+  },
+  {
+   "id": "educational-3d",
+   "nom": "3D pédagogique",
+   "description": "Le volume sert à comprendre.",
+   "dimension": "3d",
+   "realisme": "schematic",
+   "moteurs": [
+    "remotion-3d",
+    "remotion-2d"
+   ],
+   "criteres": {
+    "cadrage": "un sujet à la fois",
+    "lumiere": "neutre",
+    "camera": "lente",
+    "etalonnage": "neutre",
+    "son": "voix posée",
+    "montage": "par étape"
+   },
+   "atteignable_en_local": "Scènes procédurales et étiquettes",
+   "limites": "Une anatomie exacte exige un modèle vérifié",
+   "demonstrateur": "personnage"
+  },
+  {
+   "id": "cinematic-logo-reveal",
+   "nom": "Logo reveal cinématographique",
+   "description": "Logo exact, révélé par la lumière.",
+   "dimension": "2d",
+   "realisme": "stylized",
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "criteres": {
+    "cadrage": "centré",
+    "lumiere": "rayons",
+    "camera": "poussée",
+    "etalonnage": "selon la marque",
+    "son": "impact mesuré",
+    "montage": "un geste"
+   },
+   "atteignable_en_local": "Logo-* avec un PNG ou SVG fourni",
+   "limites": "Le logo n'est jamais redessiné sans accord",
+   "demonstrateur": "routage/logo"
+  },
+  {
+   "id": "animated-photo",
+   "nom": "Photo vivante",
+   "description": "Mouvement sans changer le contenu.",
+   "dimension": "2.5d",
+   "realisme": "realistic",
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "criteres": {
+    "cadrage": "celui de la photo",
+    "lumiere": "celle de la photo",
+    "camera": "glissement lent",
+    "etalonnage": "léger",
+    "son": "ambiance",
+    "montage": "fondus courts"
+   },
+   "atteignable_en_local": "Encadrement vivant, parallaxe si plans séparés",
+   "limites": "Une photo plate n'a pas d'information 3D",
+   "demonstrateur": "routage/photos"
+  },
+  {
+   "id": "documentary-premium",
+   "nom": "Documentaire premium",
+   "description": "Sobre, sourcé, sans rythme imposé.",
+   "dimension": "live-action",
+   "realisme": "realistic",
+   "moteurs": [
+    "ffmpeg-edit",
+    "remotion-2d"
+   ],
+   "criteres": {
+    "cadrage": "sujet",
+    "lumiere": "naturelle",
+    "camera": "posée",
+    "etalonnage": "doux",
+    "son": "ambiance et voix",
+    "montage": "lent, respecte les phrases"
+   },
+   "atteignable_en_local": "Montage et graphiques sourcés",
+   "limites": "Une séquence lente ou sans CTA est correcte si déclarée",
+   "demonstrateur": "montage"
+  },
+  {
+   "id": "immersive-5d-inspired",
+   "nom": "Inspiration « 5D »",
+   "description": "5D n'est pas un format vidéo. Le besoin se traduit en forme réelle à choisir.",
+   "dimension": "2.5d",
+   "realisme": "stylized",
+   "moteurs": [
+    "remotion-2d",
+    "remotion-3d",
+    "html-deck"
+   ],
+   "criteres": {
+    "cadrage": "profondeur",
+    "lumiere": "volumes",
+    "camera": "traversante",
+    "etalonnage": "selon l'ambiance",
+    "son": "spatial si possible",
+    "montage": "continu"
+   },
+   "atteignable_en_local": "Parallaxe 2.5D, scène 3D, HTML interactif",
+   "limites": "Stéréo, VR et effets physiques exigent matériel et pipeline dédiés",
+   "demonstrateur": "routage/5d"
+  }
+ ]
+}

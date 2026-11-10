@@ -1,0 +1,8 @@
+{
+  "name": "demo-mascot",
+  "intent": "character3d",
+  "style": "3d-character-presenter",
+  "duration": 5,
+  "format": "16:9",
+  "assets": []
+}

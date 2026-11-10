@@ -1,0 +1,41 @@
+{
+  "name": "motion-design-kit-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plantilla Remotion multiformato (Reel, Promo, Cuadrado, Story) del Motion Design Kit",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "compositions": "remotion compositions",
+    "render": "remotion render",
+    "render:all": "powershell -ExecutionPolicy Bypass -File scripts/render-all.ps1",
+    "capture": "node scripts/capture/capture-site.mjs",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/space-grotesk": "5.3.0",
+    "@react-three/fiber": "9.3.0",
+    "@remotion/cli": "4.0.540",
+    "@remotion/fonts": "4.0.540",
+    "@remotion/google-fonts": "4.0.540",
+    "@remotion/lottie": "4.0.540",
+    "@remotion/three": "4.0.540",
+    "@remotion/transitions": "4.0.540",
+    "@remotion/zod-types": "4.0.540",
+    "@types/three": "0.180.0",
+    "gsap": "3.15.0",
+    "lottie-web": "5.13.0",
+    "motion": "14.3.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.540",
+    "three": "0.180.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "playwright": "1.64.1",
+    "typescript": "5.8.3"
+  }
+}

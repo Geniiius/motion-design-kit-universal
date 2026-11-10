@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "name": "modele-glb",
+  "request": {
+    "brief": "Personnage importé en GLB, sans bouche animable",
+    "language": "fr"
+  },
+  "intent": [
+    "CHARACTER_ANIMATION"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\examples\\modelos\\RobotExpressive\\RobotExpressive.glb",
+      "type": "3d",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "readable": true,
+        "meshes": 14,
+        "skins": 2,
+        "rigged": true,
+        "animations": [
+          "Dance",
+          "Death",
+          "Idle",
+          "Jump",
+          "No",
+          "Punch",
+          "Running",
+          "Sitting",
+          "Standing",
+          "ThumbsUp",
+          "Walking",
+          "WalkJump",
+          "Wave",
+          "Yes"
+        ],
+        "morph_targets": [
+          "Angry",
+          "Sad",
+          "Surprised"
+        ],
+        "visemes": false,
+        "vrm": false,
+        "generator": "FBX2glTF"
+      },
+      "rights": {
+        "status": "cc0",
+        "note": "Tomás Laulhé (Quaternius), modifications Don McCurdy, CC0 1.0, via three.js r180"
+      },
+      "provenance": {
+        "source": "three.js r180",
+        "sha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+        "bytes": 463988
+      },
+      "treatment": [
+        "vérifier licence",
+        "importer",
+        "animer"
+      ],
+      "warnings": [
+        "Pas de formes de bouche : synchronisation labiale impossible, repli sur la tête et le corps."
+      ]
+    }
+  ],
+  "style": {
+    "preset": null,
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "à définir",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {}
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Personaje-GLB-Landscape"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-3d",
+      "why": "Vrais objets et caméra en volume, personnage et gestes pilotés par image.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

@@ -1,0 +1,39 @@
+{
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "declared": [],
+  "aesthetic": [],
+  "checks": {
+    "video_present": true,
+    "duration_positive": true,
+    "even_dimensions": true,
+    "h264_video": true,
+    "yuv420p": true
+  },
+  "duration": 9.6,
+  "width": 960,
+  "height": 540,
+  "fps": 30.0,
+  "video_codec": "h264",
+  "pix_fmt": "yuv420p",
+  "audio_codec": "aac",
+  "audio": {
+    "lufs": -14.3,
+    "lra": 1.8,
+    "true_peak": -1.5,
+    "silence_start_s": 0.0,
+    "silence_end_s": 0.0,
+    "last_150ms_db": null
+  },
+  "cuts": [
+    4.0
+  ],
+  "moving_ratio": 0.74,
+  "styleframes": [],
+  "proofs": {
+    "contact_sheet": "<kit>\\out\\demos\\montage\\preuves\\planche.jpg",
+    "safe_area": "<kit>\\out\\demos\\montage\\preuves\\zones-sures.jpg"
+  },
+  "note": "Le QC technique ne remplace pas un visionnage humain des plans et une écoute audio."
+}

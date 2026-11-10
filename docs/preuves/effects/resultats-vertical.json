@@ -1,0 +1,17 @@
+{
+ "effets": 51,
+ "images": 51,
+ "pass": true,
+ "tracking": {
+  "frames": 933,
+  "faces": 0,
+  "silhouettes": 0
+ },
+ "versions": [
+  "mediapipe 1.2.0",
+  "numpy 2.5.4",
+  "opencv-python 5.0.0.93",
+  "pillow 13.0.0"
+ ],
+ "limite": "Clip sans personne : le suivi du visage et le passage derrière la tête ne sont pas prouvés ici."
+}

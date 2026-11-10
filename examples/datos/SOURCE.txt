@@ -1,0 +1,5 @@
+co2_annmean_mlo.csv
+NOAA Global Monitoring Laboratory, annual mean CO2 at Mauna Loa, Hawaii.
+https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv
+Downloaded 2026-11-03. File created by NOAA on 2026-10-09 (see its header, kept unchanged).
+Freely available; NOAA asks for credit in publications. Unit: ppm of dry air. Stated uncertainty: see column "unc".

@@ -1,0 +1,80 @@
+[
+ {
+  "test": "TypeScript du modèle Remotion",
+  "status": "PASS",
+  "detail": "21 s ",
+  "proof": null
+ },
+ {
+  "test": "Compositions listées",
+  "status": "PASS",
+  "detail": "37 compositions",
+  "proof": null
+ },
+ {
+  "test": "Versions Remotion cohérentes",
+  "status": "PASS",
+  "detail": "All packages have the correct version.",
+  "proof": null
+ },
+ {
+  "test": "npm audit (production)",
+  "status": "PASS",
+  "detail": "{'info': 0, 'low': 0, 'moderate': 0, 'high': 0, 'critical': 0, 'total': 0}",
+  "proof": null
+ },
+ {
+  "test": "Modèle 2D existant : Promo-Landscape",
+  "status": "PASS",
+  "detail": "12 s",
+  "proof": "docs\\preuves\\regression\\Promo-Landscape.png"
+ },
+ {
+  "test": "Modèle 2D existant : Kinetic-Reel",
+  "status": "PASS",
+  "detail": "13 s",
+  "proof": "docs\\preuves\\regression\\Kinetic-Reel.png"
+ },
+ {
+  "test": "Modèle 2D existant : Showcase-Landscape",
+  "status": "PASS",
+  "detail": "13 s",
+  "proof": "docs\\preuves\\regression\\Showcase-Landscape.png"
+ },
+ {
+  "test": "Vidéo 2D existante rendue : Logo-Square",
+  "status": "PASS",
+  "detail": "17 s, yuv420p, QC OK",
+  "proof": null
+ },
+ {
+  "test": "Repli CPU pour la 3D (swangle)",
+  "status": "PASS",
+  "detail": "15 s",
+  "proof": "docs\\preuves\\regression\\cpu-swangle.png"
+ },
+ {
+  "test": "Prompt Motion : rendu",
+  "status": "PASS",
+  "detail": "6 s",
+  "proof": null
+ },
+ {
+  "test": "HyperFrames 0.8.164 : check du starter",
+  "status": "PASS",
+  "detail": "28 s, sortie 0",
+  "proof": null
+ },
+ {
+  "test": "HyperFrames : bloc du registre fixé (data-chart)",
+  "status": "PASS",
+  "detail": "5 s, compositions/data-chart.html créé",
+  "proof": null
+ },
+ {
+  "test": "HyperFrames : rendu du starter",
+  "status": "PASS",
+  "detail": "45 s, MP4 créé",
+  "proof": null
+ }
+]

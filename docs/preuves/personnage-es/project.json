@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "name": "personnage-es",
+  "request": {
+    "brief": "Personnage 3D stylisé qui parle et gesticule",
+    "language": "fr"
+  },
+  "intent": [
+    "CHARACTER_ANIMATION"
+  ],
+  "inputs": [],
+  "style": {
+    "preset": "stylized-3d",
+    "dimension": "3d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "stylized-3d",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {}
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Personaje-Nodo-Landscape"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [
+    {
+      "id": "nodo",
+      "ficha": "template/src/universal/personajes/nodo.json",
+      "licence": "créé par code pour ce kit"
+    }
+  ],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-3d",
+      "why": "Vrais objets et caméra en volume, personnage et gestes pilotés par image.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [
+    {
+      "what": "Voix ElevenLabs payante",
+      "why": "207 caractères, accordé pour cette démo"
+    }
+  ],
+  "status": "planned",
+  "props": {
+    "composition": "Personaje-Nodo-Landscape",
+    "voice": {
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "culture": "es",
+      "timing": "real",
+      "duration": 14.443,
+      "language_match": true,
+      "engine": "elevenlabs",
+      "visemes_source": "letters"
+    },
+    "visemes": 174,
+    "words": 35
+  }
+}

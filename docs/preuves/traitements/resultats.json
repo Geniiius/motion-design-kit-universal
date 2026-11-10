@@ -1,0 +1,139 @@
+{
+ "source": "17.8 s, 1920x1080",
+ "voix": true,
+ "cas": [
+  {
+   "cas": "logo",
+   "demande": "Ajoute mon logo à cette vidéo",
+   "attendu": "17.8 s, entière, avec le logo",
+   "obtenu": "t-logo.mp4 17.8 s 640x360 ; médias entiers, dans l'ordre",
+   "statut": "PASS",
+   "notes": [],
+   "secondes": 5.8
+  },
+  {
+   "cas": "silences",
+   "demande": "Enlève les silences de ma vidéo",
+   "attendu": "plus courte, la durée annoncée tenue",
+   "obtenu": "t-silences.mp4 10.3 s 640x360",
+   "statut": "PASS",
+   "notes": [
+    "Silences : 4 coupes, 7.5 s retirées sur 17.8 s."
+   ],
+   "secondes": 7.1
+  },
+  {
+   "cas": "vertical",
+   "demande": "Mets ma vidéo au format TikTok",
+   "attendu": "360x640, entière ; sans visage, image gardée sur fond flou",
+   "obtenu": "t-vertical.mp4 17.8 s 360x640",
+   "statut": "PASS",
+   "notes": [
+    "Recadrage : aucun visage suivi de façon fiable, l'image entière est gardée sur un fond flou."
+   ],
+   "secondes": 10.1
+  },
+  {
+   "cas": "vertical, centre",
+   "demande": "Mets ma vidéo au format TikTok (coupe au centre choisie)",
+   "attendu": "360x640",
+   "obtenu": "t-vertical.mp4 17.8 s 360x640",
+   "statut": "PASS",
+   "notes": [
+    "Recadrage : coupe au centre."
+   ],
+   "secondes": 7.4
+  },
+  {
+   "cas": "rien à changer",
+   "demande": "Enlève les silences de ma vidéo (vidéo sans silence)",
+   "attendu": "« unchanged », aucun fichier écrit",
+   "obtenu": "unchanged, 0 fichier",
+   "statut": "PASS",
+   "notes": [
+    "Silences : aucun silence notable trouvé, la vidéo reste telle quelle."
+   ],
+   "secondes": 0.6
+  },
+  {
+   "cas": "demande floue",
+   "demande": "Ça fait pas assez pro, améliore",
+   "attendu": "refus : rien n'est livré au hasard",
+   "obtenu": "refusée",
+   "statut": "PASS",
+   "notes": [],
+   "secondes": null
+  },
+  {
+   "cas": "sous-titres",
+   "demande": "Ajoute des sous-titres à ma vidéo",
+   "attendu": "arrêt pour relecture, puis incrustés",
+   "obtenu": "t-sous-titres.mp4 17.8 s 640x360 ; deux arrêts avant ; transcrit : Bonjour et bienvenue dans cette vidéo. | Aujourd'hui, je vous montre | comment préparer un bon café. | Merci d'avoir regardé et à bientôt.",
+   "statut": "PASS",
+   "notes": [
+    "Sous-titres : fr, incrustés dans l'image."
+   ],
+   "secondes": 9.4
+  },
+  {
+   "cas": "traductions",
+   "demande": "Sous-titre ma vidéo en anglais et en espagnol",
+   "attendu": "arrêt tant que les traductions manquent, puis une vidéo par langue",
+   "obtenu": "t-traduction-en.mp4, t-traduction-es.mp4 ; traduction écrite par le script",
+   "statut": "PASS",
+   "notes": [
+    "Sous-titres : en, es, incrustés dans l'image."
+   ],
+   "secondes": 19.0
+  },
+  {
+   "cas": "extraits",
+   "demande": "Fais 3 extraits courts de cette vidéo pour Instagram",
+   "attendu": "arrêt pour le choix, puis 3 fichiers verticaux",
+   "obtenu": "t-extraits-1.mp4 3.8 s 360x640 ; t-extraits-2.mp4 3.3 s 360x640 ; t-extraits-3.mp4 3.4 s 360x640",
+   "statut": "PASS",
+   "notes": [
+    "Extraits : 3 coupés sur des fins de mots.",
+    "Recadrage : aucun visage suivi de façon fiable, l'image entière est gardée sur un fond flou."
+   ],
+   "secondes": 17.4
+  },
+  {
+   "cas": "chapitres",
+   "demande": "Écris les chapitres de cette vidéo pour YouTube",
+   "attendu": "arrêt pour la lecture, puis un texte, aucune vidéo réencodée",
+   "obtenu": "t-chapitres.chapitres.txt ; 0 vidéo",
+   "statut": "PASS",
+   "notes": [
+    "Chapitres : 3 écrits dans t-chapitres.chapitres.txt, à coller dans la description de la vidéo."
+   ],
+   "secondes": 0.3
+  },
+  {
+   "cas": "chaîne complète",
+   "demande": "Enlève les silences, ajoute des sous-titres et mets-la en vertical pour TikTok",
+   "attendu": "trois traitements, un seul fichier vertical, plus court",
+   "obtenu": "t-tout.mp4 10.3 s 360x640",
+   "statut": "PASS",
+   "notes": [
+    "Silences : 4 coupes, 7.5 s retirées sur 17.8 s.",
+    "Recadrage : aucun visage suivi de façon fiable, l'image entière est gardée sur un fond flou.",
+    "Sous-titres : 1 passage(s) se lisent vite parce que la personne parle vite. Condenser le texte de t-tout.fr.srt si la lecture gêne.",
+    "Sous-titres : fr, incrustés dans l'image."
+   ],
+   "secondes": 11.7
+  },
+  {
+   "cas": "vidéo de 20 minutes",
+   "demande": "Enlève les silences de ma vidéo (343 silences)",
+   "attendu": "livrée, image et son de même durée",
+   "obtenu": "t-longue.mp4 596.8 s 320x180 ; écart image-son 0.085 s",
+   "statut": "PASS",
+   "notes": [
+    "Silences : 343 coupes, 603.3 s retirées sur 1200.0 s."
+   ],
+   "secondes": 275.0
+  }
+ ],
+ "limite": "Les chiffres mesurent des durées, des formes et des nombres de fichiers. Le texte des sous-titres, le choix des extraits et des chapitres sont joués par ce script à la place de Claude. Le recadrage qui suit un visage n'est pas essayé ici : la vidéo d'essai ne montre personne."
+}

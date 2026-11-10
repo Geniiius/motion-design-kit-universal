@@ -1,0 +1,15 @@
+{
+  "name": "lemo-opuscar-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Rendering engine of the Lemo-Opuscar film styles, with exact versions.",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright-core": "1.64.1",
+    "three": "0.170.0"
+  }
+}

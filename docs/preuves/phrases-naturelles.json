@@ -1,0 +1,916 @@
+{
+ "reglage": {
+  "phrases": 36,
+  "justes": 36,
+  "fausses_sans_le_dire": 0,
+  "detail": [
+   {
+    "phrase": "Je veux un truc qui claque pour mes réseaux",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Fais-moi une petite pub pour ma boulangerie",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Il me faut quelque chose pour présenter ma boîte à des clients",
+    "attendu": null,
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "J'ai besoin d'une vidéo pour Instagram sur mes nouveaux produits",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Quelque chose de joli pour annoncer mon mariage",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Explique aux gens comment marche mon appli",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Mes ventes ont doublé, je veux le montrer de façon sympa",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Mets ça en valeur",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Donne vie à cette image",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Rends mon logo vivant",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Enlève les blancs et les silences de ma vidéo",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Raccourcis cette vidéo à 30 secondes",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Mets ma vidéo au format TikTok",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Ajoute des sous-titres",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Écris un mot géant derrière moi quand je parle",
+    "attendu": "video-effects",
+    "obtenu": [
+     "video-effects"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Fais apparaître mes chiffres autour de moi",
+    "attendu": "video-effects",
+    "obtenu": [
+     "video-effects"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Rends ma vidéo plus dynamique, un peu comme les gros créateurs",
+    "attendu": null,
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Je veux que ça ressemble à une vieille gravure",
+    "attendu": "film-style",
+    "obtenu": [
+     "film-style"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Un petit film comme une peinture pour raconter mon village",
+    "attendu": "film-style",
+    "obtenu": [
+     "film-style"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Un dessin animé à l'ancienne sur mon café",
+    "attendu": "film-style",
+    "obtenu": [
+     "film-style"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Comme un vieux jeu vidéo",
+    "attendu": "film-style",
+    "obtenu": [
+     "film-style"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Un petit bonhomme qui présente mon service",
+    "attendu": "remotion-3d",
+    "obtenu": [
+     "remotion-3d",
+     "remotion-2d"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Quelqu'un qui parle à l'écran pour expliquer, mais pas moi",
+    "attendu": "remotion-3d",
+    "obtenu": [
+     "remotion-3d",
+     "remotion-2d"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Une page où mes clients peuvent cliquer pour voir mes offres",
+    "attendu": "html-deck",
+    "obtenu": [
+     "html-deck"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Montre ce fichier sous forme de graphique animé",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Fais que mon produit tourne en 3D",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Quiero algo chulo para mis redes",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Una cosita para anunciar la apertura de mi tienda",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Que parezca una pintura antigua",
+    "attendu": "film-style",
+    "obtenu": [
+     "film-style"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Escribe una palabra enorme detrás de mí mientras hablo",
+    "attendu": "video-effects",
+    "obtenu": [
+     "video-effects"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Quítale los silencios a mi vídeo",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Un muñequito que explique mi servicio",
+    "attendu": "remotion-3d",
+    "obtenu": [
+     "remotion-3d",
+     "remotion-2d"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Something eye-catching for my socials",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Make it look like an old painting",
+    "attendu": "film-style",
+    "obtenu": [
+     "film-style"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Put big text behind me while I talk",
+    "attendu": "video-effects",
+    "obtenu": [
+     "video-effects"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Cut the boring parts out of my video",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   }
+  ]
+ },
+ "nouvelles": {
+  "phrases": 30,
+  "justes": 22,
+  "fausses_sans_le_dire": 0,
+  "detail": [
+   {
+    "phrase": "Je tiens un salon de coiffure, il me faudrait de quoi attirer du monde",
+    "attendu": null,
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Pub pour mon entreprise de peinture en bâtiment",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Vidéo pour ma salle de jeux vidéo",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Je voudrais raconter l'histoire de ma grand-mère",
+    "attendu": null,
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Montre aux investisseurs que notre croissance est solide",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "J'aimerais un truc façon vieux film en noir et blanc muet",
+    "attendu": "film-style",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "Dans le style des estampes japonaises, mon voyage à Kyoto",
+    "attendu": "film-style",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "Un film tout en papier découpé pour Noël",
+    "attendu": "film-style",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "Peux-tu ajouter ma musique sur cette vidéo ?",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Enlève le début, il est trop long",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Je parle face caméra, je voudrais des trucs qui bougent autour de ma tête",
+    "attendu": "video-effects",
+    "obtenu": [
+     "video-effects"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Que mon prénom apparaisse derrière ma tête",
+    "attendu": "video-effects",
+    "obtenu": [
+     "video-effects"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Transforme cette vidéo en dessin animé",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Mets du mouvement sur ces photos de vacances",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Fais une intro avec mon logo",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Un robot sympa qui accueille les visiteurs de mon site",
+    "attendu": "remotion-3d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "Un mini site où on clique pour découvrir mes tarifs",
+    "attendu": "html-deck",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "Convertis ça en GIF",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Ça fait pas assez pro, améliore",
+    "attendu": null,
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Refais pareil que la dernière fois",
+    "attendu": null,
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Necesito algo para vender más en mi tienda",
+    "attendu": null,
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Un vídeo tipo película antigua sobre mi pueblo",
+    "attendu": "film-style",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "Haz que mi nombre salga detrás de mi cabeza",
+    "attendu": "video-effects",
+    "obtenu": [
+     "video-effects"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Corta las partes aburridas",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Pon mi logo a moverse",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Un personajito simpático que salude a mis clientes",
+    "attendu": "remotion-3d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "I need something to show my boss",
+    "attendu": null,
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Make my photos come alive",
+    "attendu": "remotion-2d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "A little animated guy who explains my product",
+    "attendu": "remotion-3d",
+    "obtenu": [
+     "remotion-2d"
+    ],
+    "source": "defaut",
+    "juste": false,
+    "avoue": true
+   },
+   {
+    "phrase": "Remove the silences",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   }
+  ]
+ },
+ "video": {
+  "phrases": 23,
+  "justes": 23,
+  "fausses_sans_le_dire": 0,
+  "detail": [
+   {
+    "phrase": "Mets des sous-titres sur ma vidéo",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Je veux que les gens puissent lire ce que je dis",
+    "attendu": null,
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Coupe les moments où je ne dis rien",
+    "attendu": null,
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Transforme mon podcast d'une heure en petits extraits pour TikTok",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Passe cette vidéo en vertical",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Découpe la vidéo en chapitres",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Traduis ma vidéo en anglais",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Ajoute mon logo en haut à droite",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "fichiers",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Rends le son plus fort",
+    "attendu": null,
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "defaut",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Sous-titres en espagnol et en allemand, s'il te plaît",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Ponle subtítulos a mi vídeo",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Quita las pausas largas",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Hazme clips cortos para Reels",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Pásalo a formato vertical",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Tradúcelo al inglés",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Divide el vídeo en capítulos",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Add captions to my video",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Make it vertical for TikTok",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Pull the best moments out of this interview",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Translate the subtitles into French",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Add chapters for YouTube",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Tighten it up, there's too much dead air",
+    "attendu": "video-workflow",
+    "obtenu": [
+     "video-workflow"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   },
+   {
+    "phrase": "Monte ces deux clips avec des sous-titres",
+    "attendu": "ffmpeg-edit",
+    "obtenu": [
+     "ffmpeg-edit"
+    ],
+    "source": "mots",
+    "juste": true,
+    "avoue": false
+   }
+  ]
+ }
+}

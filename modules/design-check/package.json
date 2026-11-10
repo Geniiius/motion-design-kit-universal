@@ -1,0 +1,10 @@
+{
+  "name": "kit-design-check",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Impeccable's design rules, exact version, for the delivered HTML pages. See UPSTREAM.md.",
+  "dependencies": {
+    "impeccable": "4.8.0"
+  }
+}

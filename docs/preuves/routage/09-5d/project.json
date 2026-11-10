@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "name": "09-5d",
+  "request": {
+    "brief": "Je veux une vidéo 5D de ma ville",
+    "language": "fr"
+  },
+  "intent": [
+    "CREATE_FROM_SCRATCH"
+  ],
+  "inputs": [],
+  "style": {
+    "preset": "immersive-5d-inspired",
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "immersive-5d-inspired",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Parallaxe-Landscape"
+      }
+    }
+  ],
+  "understanding": {
+    "source": "defaut",
+    "certain": false,
+    "consigne": "Rien dans la demande ne désigne un travail précis : ce choix est un défaut, et il ne sera pas exécuté tel quel. Comprends le besoin toi-même, puis relance avec --intent, --workflow, --style ou --effects, ou pose une question."
+  },
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-2d",
+      "why": "Motion graphics procédural local, sans média à générer.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [
+    {
+      "id": "forme-5d",
+      "text": "Pour le « 5D », quelle forme finale ?",
+      "options": [
+        "Vidéo parallaxe 2.5D + son (recommandé)",
+        "Vraie scène 3D",
+        "Expérience HTML interactive"
+      ],
+      "default": "Vidéo parallaxe 2.5D + son (recommandé)"
+    }
+  ],
+  "notes": [
+    "Rien dans la demande ne désigne un travail précis : ce choix est un défaut, et il ne sera pas exécuté tel quel. Comprends le besoin toi-même, puis relance avec --intent, --workflow, --style ou --effects, ou pose une question.",
+    "« 5D » n'est pas un format vidéo standard. Options réelles : parallaxe 2.5D, vraie scène 3D, expérience 3D interactive, 360/VR si le matériel suit."
+  ],
+  "quality": {
+    "profile": "draft",
+    "exceptions": [
+      {
+        "type": "no-audio",
+        "reason": "Démonstrateur image"
+      }
+    ]
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

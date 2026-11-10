@@ -1,0 +1,9 @@
+Assets détectés: clip-c.mp4 (video/source)
+Intention: RESTYLE_FOOTAGE
+Direction artistique: cartoon-caricature · 2d · stylized
+Pipeline: ffmpeg-edit
+Manque et repli: Service de restylage image/vidéo -> Aperçu par filtres FFmpeg : look posterisé, sans suivi d'identité.
+Livrable: video 16:9
+Coût: non estimé, sans tarif documenté
+À valider: Consentement des personnes filmées et droits sur la vidéo; Fournisseur externe et budget
+Tests: python -m universal.cli qc

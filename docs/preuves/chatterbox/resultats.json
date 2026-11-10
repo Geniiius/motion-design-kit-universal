@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-03",
+ "version": "chatterbox-tts 0.1.7, commit 5de7a54, Multilingual V3, modèle révision 5bb1f6e, processeur seul, voix intégrée",
+ "mesure": "Mots du texte écrit retrouvés, dans l'ordre, par la transcription locale. La transcription peut se tromper sur un accent : ce n'est pas une écoute.",
+ "mots_retrouves": [
+  {
+   "test": "Boulangerie, français",
+   "kokoro": "23/25",
+   "chatterbox": "19/25 phrase par phrase, 20/25 d'un coup, 17/25 sans accent (cfg_weight 0)"
+  },
+  {
+   "test": "Personnage, français",
+   "kokoro": "40/40",
+   "chatterbox": "36/40 phrase par phrase"
+  },
+  {
+   "test": "Boulangerie, espagnol",
+   "kokoro": "24/24",
+   "chatterbox": "24/24"
+  }
+ ],
+ "calcul": "De 9 à 15 fois la durée de l'audio",
+ "disque": "Environ 4,7 Go (environnement 1,7 Go, modèle 3 Go)",
+ "non_teste": "Voix française de référence, carte graphique, modèles dédiés à une langue."
+}

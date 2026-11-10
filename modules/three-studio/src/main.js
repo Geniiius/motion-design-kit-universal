@@ -1,0 +1,28 @@
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+const host=document.getElementById('scene');
+const scene=new THREE.Scene();scene.background=new THREE.Color('#10182c');
+const camera=new THREE.PerspectiveCamera(40,1,.1,100);camera.position.set(0,2.1,5.8);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(2,window.devicePixelRatio));
+renderer.shadowMap.enabled=true;host.appendChild(renderer.domElement);
+const resize=()=>{const w=host.clientWidth,h=Math.max(480,window.innerHeight-40);camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h)};
+window.addEventListener('resize',resize);resize();
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.target.set(0,1.4,0);
+scene.add(new THREE.HemisphereLight(0xc8dcff,0x182038,2));const key=new THREE.DirectionalLight(0xffffff,4);key.position.set(-3,5,4);scene.add(key);
+const floor=new THREE.Mesh(new THREE.CircleGeometry(4,64),new THREE.MeshStandardMaterial({color:0x26324c,roughness:1}));floor.rotation.x=-Math.PI/2;floor.position.y=.02;scene.add(floor);
+const rig=new THREE.Group();scene.add(rig);
+const purple=new THREE.MeshStandardMaterial({color:0x6752cd,metalness:.08,roughness:.43});
+const pink=new THREE.MeshStandardMaterial({color:0xbca7f1,metalness:.03,roughness:.47});
+const dark=new THREE.MeshStandardMaterial({color:0x0a0b11});
+function sphere(parent,x,y,z,sx,sy,sz,mat){const m=new THREE.Mesh(new THREE.SphereGeometry(1,32,20),mat);m.position.set(x,y,z);m.scale.set(sx,sy,sz);parent.add(m);return m;}
+sphere(rig,0,1.15,0,.66,.78,.38,purple);const head=sphere(rig,0,2.24,0,.81,.72,.7,pink);
+sphere(head,-.37,.29,-.84,.19,.17,.09,dark);sphere(head,.37,.29,-.84,.19,.17,.09,dark);
+const mouth=sphere(head,0,-.32,-.92,.22,.035,.04,dark);
+const left=sphere(rig,-.8,1.29,0,.24,.58,.27,pink);const right=sphere(rig,.8,1.29,0,.24,.58,.27,pink);
+sphere(rig,-.3,.3,0,.25,.18,.35,purple);sphere(rig,.3,.3,0,.25,.18,.35,purple);
+let greeting=false,spin=false,loaded=false;
+document.getElementById('wave').addEventListener('click',()=>{greeting=!greeting});
+document.getElementById('turn').addEventListener('click',()=>{spin=!spin});
+new GLTFLoader().load('/character.glb',gltf=>{rig.clear();rig.add(gltf.scene);loaded=true;},()=>{},()=>{ /* no GLB: use procedurally generated mascot */ });
+const clock=new THREE.Clock();function tick(){requestAnimationFrame(tick);const t=clock.getElapsedTime();if(!loaded){rig.position.y=.028*Math.sin(t*2);head.rotation.z=.05*Math.sin(t*1.3);right.rotation.z=greeting?Math.sin(t*4)*.5:.03;left.rotation.z=.02;mouth.scale.y=.035+.06*(Math.sin(t*10)>0?1:.2)}if(spin)rig.rotation.y+=.015;controls.update();renderer.render(scene,camera);}tick();

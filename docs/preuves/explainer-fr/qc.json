@@ -1,0 +1,44 @@
+{
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "declared": [
+    "Image figée 18.70-19.73 s : Lecture de graphiques : tenues voulues pour un film pédagogique calme.",
+    "Image figée 20.27-21.53 s : Lecture de graphiques : tenues voulues pour un film pédagogique calme.",
+    "Image figée 21.53-22.87 s : Lecture de graphiques : tenues voulues pour un film pédagogique calme.",
+    "Image figée 34.97-36.07 s : Lecture de graphiques : tenues voulues pour un film pédagogique calme."
+  ],
+  "aesthetic": [
+    "12 passage(s) de plus de 0.5 s presque immobiles : acceptable si le genre ou le storyboard le veut."
+  ],
+  "checks": {
+    "video_present": true,
+    "duration_positive": true,
+    "even_dimensions": true,
+    "h264_video": true,
+    "yuv420p": true
+  },
+  "duration": 36.4,
+  "width": 1440,
+  "height": 810,
+  "fps": 30.0,
+  "video_codec": "h264",
+  "pix_fmt": "yuv420p",
+  "audio_codec": "aac",
+  "audio": {
+    "lufs": -14.2,
+    "lra": 2.3,
+    "true_peak": -1.4,
+    "silence_start_s": 0.0,
+    "silence_end_s": 0.0,
+    "last_150ms_db": -91.0
+  },
+  "cuts": [],
+  "moving_ratio": 0.274,
+  "styleframes": [],
+  "proofs": {
+    "contact_sheet": "<kit>\\out\\demos\\explainer-fr\\preuves\\planche.jpg",
+    "safe_area": "<kit>\\out\\demos\\explainer-fr\\preuves\\zones-sures.jpg"
+  },
+  "note": "Le QC technique ne remplace pas un visionnage humain des plans et une écoute audio."
+}

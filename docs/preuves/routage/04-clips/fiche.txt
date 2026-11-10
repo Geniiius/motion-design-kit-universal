@@ -1,0 +1,9 @@
+Assets détectés: clip-a.mp4 (video/source), clip-b.mp4 (video/source), clip-c.mp4 (video/source)
+Intention: EDIT_FOOTAGE
+Direction artistique: à définir · 2d · stylized
+Pipeline: ffmpeg-edit
+Manque et repli: aucun
+Livrable: video 16:9
+Coût: 0, tout est local
+À valider: aucun
+Tests: python -m universal.cli qc

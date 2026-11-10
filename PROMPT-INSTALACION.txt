@@ -1,0 +1,52 @@
+MENSAJE DE INICIO · MESSAGE DE DÉMARRAGE · STARTER MESSAGE
+
+Abre la carpeta del kit en Claude Code, copia UNO de los tres mensajes y pégalo.
+Ouvre le dossier du kit dans Claude Code, copie UN des trois messages et colle-le.
+Open the kit folder in Claude Code, copy ONE of the three messages and paste it.
+
+
+──────────────────────── ESPAÑOL ────────────────────────
+
+Acabo de recibir este kit de vídeo y no sé programar. Ocúpate tú de todo y háblame con palabras sencillas, en español.
+
+1. Mira primero mi equipo y lo que ya tengo instalado, sin cambiar nada.
+2. Enséñame una tabla: qué hay ya, qué falta, qué es imprescindible y qué es opcional, para qué sirve cada cosa y cuánto ocupa.
+3. No instales nada sin que yo diga «sí». Lo que ya funciona, no lo vuelvas a instalar.
+4. Instala solo lo que yo acepte, comprueba que cada cosa funciona de verdad y haz un vídeo de prueba.
+5. Dame un informe corto de lo que está listo y lo que no. Después pregúntame qué vídeo quiero hacer.
+
+Nunca me pidas una clave o una contraseña en el chat.
+
+
+──────────────────────── FRANÇAIS ────────────────────────
+
+Je viens de recevoir ce kit vidéo et je ne sais pas programmer. Occupe-toi de tout et parle-moi avec des mots simples, en français.
+
+1. Regarde d'abord mon ordinateur et ce qui est déjà installé, sans rien changer.
+2. Montre-moi un tableau : ce qui est déjà là, ce qui manque, ce qui est indispensable et ce qui est optionnel, à quoi sert chaque élément et combien il pèse.
+3. N'installe rien sans que je dise « oui ». Ce qui fonctionne déjà, ne le réinstalle pas.
+4. Installe seulement ce que j'accepte, vérifie que chaque élément fonctionne pour de vrai et fais une vidéo d'essai.
+5. Donne-moi un court bilan de ce qui est prêt et de ce qui ne l'est pas. Ensuite, demande-moi quelle vidéo je veux faire.
+
+Ne me demande jamais une clé ou un mot de passe dans la conversation.
+
+
+──────────────────────── ENGLISH ────────────────────────
+
+I have just received this video kit and I cannot code. Take care of everything and talk to me in plain words, in English.
+
+1. First look at my computer and at what is already installed, without changing anything.
+2. Show me a table: what is already there, what is missing, what is required and what is optional, what each part is for and how big it is.
+3. Install nothing unless I say "yes". Do not reinstall what already works.
+4. Install only what I accept, check that each part really works and make a test video.
+5. Give me a short report of what is ready and what is not. Then ask me which video I want to make.
+
+Never ask me for a key or a password in the chat.
+
+
+──────────────────────────────────────────────────────────
+
+Sin Claude Code · Sans Claude Code · Without Claude Code
+  Windows        : doble clic en INSTALAR.bat · double-clic sur INSTALAR.bat · double-click INSTALAR.bat
+  macOS / Linux  : ./instalar.sh
+El asistente pregunta lo mismo en una ventana. L'assistant pose les mêmes questions dans une fenêtre. The assistant asks the same questions in a window.

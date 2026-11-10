@@ -1,0 +1,9 @@
+Assets détectés: co2_annmean_mlo.csv (data/source)
+Intention: DATA_EXPLAINER
+Direction artistique: à définir · 2d · stylized
+Pipeline: remotion-2d
+Manque et repli: aucun
+Livrable: video 16:9
+Coût: 0, tout est local
+À valider: aucun
+Tests: python -m universal.cli qc

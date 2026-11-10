@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0",
+  "name": "03-photos",
+  "request": {
+    "brief": "",
+    "language": "fr"
+  },
+  "intent": [
+    "ANIMATE_IMAGES"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\examples\\medios\\foto-1.jpg",
+      "type": "image",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "image2",
+        "duration_s": 0.04,
+        "width": 960,
+        "height": 540,
+        "rotation": 0,
+        "codec": "mjpeg",
+        "pix_fmt": "yuvj420p",
+        "alpha": false,
+        "color_space": "bt470bg",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "ad25446adee2b0e86ceb45769e88b16c03c26b5f69c3077324302f07de72f6a4",
+        "bytes": 15132
+      },
+      "treatment": [
+        "recadrer",
+        "séparer en plans si faisable",
+        "mettre en mouvement"
+      ],
+      "warnings": [
+        "Photo plate : pas d'information 3D réelle, la parallaxe est une simulation 2.5D."
+      ]
+    },
+    {
+      "path": "<kit>\\examples\\medios\\foto-2.jpg",
+      "type": "image",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "image2",
+        "duration_s": 0.04,
+        "width": 960,
+        "height": 540,
+        "rotation": 0,
+        "codec": "mjpeg",
+        "pix_fmt": "yuvj420p",
+        "alpha": false,
+        "color_space": "bt470bg",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "7176e2b9c6f5cedf9dd5e89da6d5c77a1a4f4ba9221ea1456f7149d8d05a6302",
+        "bytes": 13298
+      },
+      "treatment": [
+        "recadrer",
+        "séparer en plans si faisable",
+        "mettre en mouvement"
+      ],
+      "warnings": [
+        "Photo plate : pas d'information 3D réelle, la parallaxe est une simulation 2.5D."
+      ]
+    },
+    {
+      "path": "<kit>\\examples\\medios\\foto-3.jpg",
+      "type": "image",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "image2",
+        "duration_s": 0.04,
+        "width": 960,
+        "height": 540,
+        "rotation": 0,
+        "codec": "mjpeg",
+        "pix_fmt": "yuvj420p",
+        "alpha": false,
+        "color_space": "bt470bg",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "19ff5c580dc1b3994051d443f6207761cfa48624a441ebf0e5d5c122aa79a093",
+        "bytes": 14230
+      },
+      "treatment": [
+        "recadrer",
+        "séparer en plans si faisable",
+        "mettre en mouvement"
+      ],
+      "warnings": [
+        "Photo plate : pas d'information 3D réelle, la parallaxe est une simulation 2.5D."
+      ]
+    },
+    {
+      "path": "<kit>\\examples\\medios\\foto-4.jpg",
+      "type": "image",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "image2",
+        "duration_s": 0.04,
+        "width": 960,
+        "height": 540,
+        "rotation": 0,
+        "codec": "mjpeg",
+        "pix_fmt": "yuvj420p",
+        "alpha": false,
+        "color_space": "bt470bg",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "01cba320bc5c850a82be4df4aad8b5e27b21b4723c6b2947871f13ecf5e3122c",
+        "bytes": 14342
+      },
+      "treatment": [
+        "recadrer",
+        "séparer en plans si faisable",
+        "mettre en mouvement"
+      ],
+      "warnings": [
+        "Photo plate : pas d'information 3D réelle, la parallaxe est une simulation 2.5D."
+      ]
+    },
+    {
+      "path": "<kit>\\examples\\medios\\foto-5.jpg",
+      "type": "image",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "image2",
+        "duration_s": 0.04,
+        "width": 960,
+        "height": 540,
+        "rotation": 0,
+        "codec": "mjpeg",
+        "pix_fmt": "yuvj420p",
+        "alpha": false,
+        "color_space": "bt470bg",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "8b18c90501661dacf83e07e02b1c9e6c7591173a797b0c9eee5a15cda8266c93",
+        "bytes": 13480
+      },
+      "treatment": [
+        "recadrer",
+        "séparer en plans si faisable",
+        "mettre en mouvement"
+      ],
+      "warnings": [
+        "Photo plate : pas d'information 3D réelle, la parallaxe est une simulation 2.5D."
+      ]
+    }
+  ],
+  "style": {
+    "preset": null,
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "à définir",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Parallaxe-Landscape"
+      }
+    }
+  ],
+  "understanding": {
+    "source": "fichiers",
+    "certain": true
+  },
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-2d",
+      "why": "Photos mises en mouvement par plans (parallaxe 2.5D), piloté par image pour rester reproductible.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": [
+      {
+        "type": "no-audio",
+        "reason": "Démonstrateur image"
+      }
+    ]
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

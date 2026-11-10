@@ -1,0 +1,135 @@
+{
+    "unit":  "**PASS** : Ran 195 tests in 75.783s, via `python -m unittest discover -s tests -p \"test_*.py\"`.",
+    "install":  [
+                    {
+                        "test":  "ZIP créé par empaquetar.ps1",
+                        "status":  "PASS",
+                        "detail":  "14.9 Mo"
+                    },
+                    {
+                        "test":  "empaquetar refuse d\u0027écraser un ZIP sans -Sobrescribir",
+                        "status":  "PASS",
+                        "detail":  "refus constaté"
+                    },
+                    {
+                        "test":  "Pas de perfil, de projets, de node_modules, de .git, d\u0027état ni de journal",
+                        "status":  "PASS",
+                        "detail":  "799 entrées"
+                    },
+                    {
+                        "test":  "Aucune clé d\u0027API",
+                        "status":  "PASS",
+                        "detail":  "467 fichiers lus"
+                    },
+                    {
+                        "test":  "Aucun terme personnel",
+                        "status":  "PASS",
+                        "detail":  "liste fournie à l\u0027exécution"
+                    },
+                    {
+                        "test":  "Premier lancement reconnu : moteur de création proposé, pas installé",
+                        "status":  "PASS",
+                        "detail":  "phase first-launch, à accepter : engine-remotion"
+                    },
+                    {
+                        "test":  "Rien ne s\u0027installe sans accord nommé",
+                        "status":  "PASS",
+                        "detail":  "setup apply sans --approve est refusé"
+                    },
+                    {
+                        "test":  "instalar.ps1 sur le paquet extrait : trois éléments acceptés, installés, vérifiés",
+                        "status":  "PASS",
+                        "detail":  "109 s, code 0, 0 FAILED. "
+                    },
+                    {
+                        "test":  "Deux vidéos d\u0027essai faites pendant la vérification",
+                        "status":  "PASS",
+                        "detail":  "out\\essai-installation"
+                    },
+                    {
+                        "test":  "Après la vérification complète, le kit se dit prêt sans rien relancer",
+                        "status":  "PASS",
+                        "detail":  "phase ready, verdict READY"
+                    },
+                    {
+                        "test":  "Les options non acceptées restent proposées, pas installées",
+                        "status":  "PASS",
+                        "detail":  "sous-titres, voix et effets : sur demande"
+                    },
+                    {
+                        "test":  "Journal technique écrit, sans nom d\u0027utilisateur ni clé",
+                        "status":  "PASS",
+                        "detail":  "logs\\ : 2 fichier(s)"
+                    },
+                    {
+                        "test":  "Profil vierge créé à l\u0027installation",
+                        "status":  "PASS",
+                        "detail":  "perfil\\ ne contient que le modèle"
+                    },
+                    {
+                        "test":  "Skills globaux inchangés par l\u0027installation",
+                        "status":  "PASS",
+                        "detail":  "empreinte de ~/.claude/skills identique avant et après"
+                    },
+                    {
+                        "test":  "Montage depuis le paquet",
+                        "status":  "PASS",
+                        "detail":  "route + run + QC"
+                    },
+                    {
+                        "test":  "Personnage 3D depuis le paquet",
+                        "status":  "PASS",
+                        "detail":  "composition Personaje-Nodo"
+                    },
+                    {
+                        "test":  "Présentation interactive depuis le paquet",
+                        "status":  "PASS",
+                        "detail":  "13 interactions réelles"
+                    },
+                    {
+                        "test":  "Contrôle de design accepté, installé et lancé depuis le paquet",
+                        "status":  "PASS",
+                        "detail":  "empreinte vérifiée, 1 défaut(s) à juger"
+                    },
+                    {
+                        "test":  "Rien d\u0027Impeccable hors du kit",
+                        "status":  "PASS",
+                        "detail":  "aucun dossier créé chez l\u0027utilisateur"
+                    },
+                    {
+                        "test":  "Modules présents dans le paquet",
+                        "status":  "PASS",
+                        "detail":  "66 styles, 51 effets, sans modèle ni environnement"
+                    },
+                    {
+                        "test":  "Moteur des styles depuis le paquet",
+                        "status":  "PASS",
+                        "detail":  "npm ci puis une image du film Risograph"
+                    },
+                    {
+                        "test":  "Pas de téléchargement sans accord",
+                        "status":  "PASS",
+                        "detail":  "le modèle de voix demande --approve-download"
+                    },
+                    {
+                        "test":  "Tests unitaires depuis le paquet",
+                        "status":  "PASS",
+                        "detail":  "Ran 195 tests in 69.550s\r"
+                    },
+                    {
+                        "test":  "WSL Ubuntu, Python 3 : tests unitaires",
+                        "status":  "PASS",
+                        "detail":  "Ran 195 tests in 28.299s\r OK (skipped=28)\r"
+                    },
+                    {
+                        "test":  "WSL : montage et rendu",
+                        "status":  "NOT TESTED",
+                        "detail":  "FFmpeg absent de WSL : tests de rendu sautés, pipeline non exécuté sous Linux"
+                    },
+                    {
+                        "test":  "Compositions sans police ni média réseau (lecture du code)",
+                        "status":  "PASS",
+                        "detail":  "template\\src"
+                    }
+                ]
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "id": "agency-saas-launch",
+  "composition": "Promo-Landscape",
+  "status": "PASS",
+  "detail": "docs\\preuves\\presets\\agency-saas-launch.png"
+ },
+ {
+  "id": "premium-service-presentation",
+  "composition": "Promo-Square",
+  "status": "PASS",
+  "detail": "docs\\preuves\\presets\\premium-service-presentation.png"
+ },
+ {
+  "id": "scientific-explainer",
+  "composition": "Explainer-Landscape",
+  "status": "PASS",
+  "detail": "docs\\preuves\\presets\\scientific-explainer.png"
+ },
+ {
+  "id": "animated-infographic",
+  "composition": "Explainer-Reel",
+  "status": "PASS",
+  "detail": "docs\\preuves\\presets\\animated-infographic.png"
+ },
+ {
+  "id": "3d-character-presenter",
+  "composition": "Personaje-Nodo-Landscape",
+  "status": "PASS",
+  "detail": "docs\\preuves\\presets\\3d-character-presenter.png"
+ },
+ {
+  "id": "3d-product-showcase",
+  "composition": "Escena3D-Square",
+  "status": "PASS",
+  "detail": "docs\\preuves\\presets\\3d-product-showcase.png"
+ },
+ {
+  "id": "interactive-services-deck",
+  "composition": null,
+  "status": "PASS",
+  "detail": "Voir le cas 10-interactif"
+ },
+ {
+  "id": "cinematic-hybrid",
+  "composition": "Hibrido-Landscape",
+  "status": "PASS",
+  "detail": "docs\\preuves\\presets\\cinematic-hybrid.png"
+ }
+]

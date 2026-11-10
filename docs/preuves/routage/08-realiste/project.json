@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "name": "08-realiste",
+  "request": {
+    "brief": "Une scène réaliste cinématographique façon Hollywood",
+    "language": "fr"
+  },
+  "intent": [
+    "CREATE_FROM_SCRATCH"
+  ],
+  "inputs": [],
+  "style": {
+    "preset": "photorealistic-commercial",
+    "dimension": "2d",
+    "realism_level": "realistic",
+    "narrative": "unspecified",
+    "art_direction": "photorealistic-commercial",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Escena3D-Landscape"
+      }
+    }
+  ],
+  "understanding": {
+    "source": "defaut",
+    "certain": false,
+    "consigne": "Rien dans la demande ne désigne un travail précis : ce choix est un défaut, et il ne sera pas exécuté tel quel. Comprends le besoin toi-même, puis relance avec --intent, --workflow, --style ou --effects, ou pose une question."
+  },
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-3d",
+      "why": "Scène 3D procédurale locale.",
+      "available": true
+    }
+  ],
+  "missing": [
+    {
+      "need": "Modèles, matières et décors réalistes avec leurs droits : Blender est installé, mais il ne rend que ce qu'on lui fournit",
+      "fallback": "Scène 3D PBR éclairée en environnement : look cinématographique stylisé, pas photoréaliste.",
+      "blocking": false
+    }
+  ],
+  "questions": [],
+  "notes": [
+    "Rien dans la demande ne désigne un travail précis : ce choix est un défaut, et il ne sera pas exécuté tel quel. Comprends le besoin toi-même, puis relance avec --intent, --workflow, --style ou --effects, ou pose une question.",
+    "« Hollywood » se traduit ici en critères réalisables : cadrage, lumière motivée, caméra, étalonnage, son et montage. Ce n'est pas une promesse de qualité blockbuster."
+  ],
+  "quality": {
+    "profile": "draft",
+    "exceptions": [
+      {
+        "type": "black",
+        "from": 0,
+        "to": 1000000000.0,
+        "reason": "Scène sombre voulue"
+      },
+      {
+        "type": "no-audio",
+        "reason": "Démonstrateur image"
+      }
+    ]
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

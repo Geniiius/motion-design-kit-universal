@@ -1,0 +1,133 @@
+{
+ "version": 1,
+ "demonstrators": [
+  {
+   "id": "agency-saas-launch",
+   "nom": "Lancement SaaS d'agence",
+   "composition": "Promo-Landscape",
+   "moteur": "remotion-2d",
+   "props": {
+    "palette": "midnight",
+    "brand": "ACME",
+    "logo": "",
+    "hook": {
+     "title": "Vos équipes perdent des heures",
+     "highlight": "heures"
+    },
+    "scenes": [
+     {
+      "title": "Tout au même endroit",
+      "highlight": "même",
+      "subtitle": "Démo fictive",
+      "media": ""
+     },
+     {
+      "title": "Prêt en cinq minutes",
+      "highlight": "cinq",
+      "subtitle": "Démo fictive",
+      "media": ""
+     }
+    ],
+    "cta": {
+     "label": "Essayer",
+     "url": "acme.example"
+    },
+    "music": "",
+    "sceneSeconds": 2.5
+   },
+   "methode": "docs/STORYBOARD-AGENCY.md"
+  },
+  {
+   "id": "premium-service-presentation",
+   "nom": "Présentation premium de services",
+   "composition": "Promo-Square",
+   "moteur": "remotion-2d",
+   "props": {
+    "palette": "mono",
+    "brand": "ATELIER",
+    "logo": "",
+    "hook": {
+     "title": "Un service sur mesure",
+     "highlight": "mesure"
+    },
+    "scenes": [
+     {
+      "title": "Conseil",
+      "highlight": "Conseil",
+      "subtitle": "Démo fictive",
+      "media": ""
+     },
+     {
+      "title": "Réalisation",
+      "highlight": "Réalisation",
+      "subtitle": "Démo fictive",
+      "media": ""
+     }
+    ],
+    "cta": {
+     "label": "Nous écrire",
+     "url": "atelier.example"
+    },
+    "music": "",
+    "sceneSeconds": 2.5
+   },
+   "methode": "docs/STORYBOARD-AGENCY.md"
+  },
+  {
+   "id": "scientific-explainer",
+   "nom": "Explainer scientifique",
+   "composition": "Explainer-Landscape",
+   "moteur": "remotion-2d",
+   "props": null,
+   "methode": "données sourcées, universal/datos.py"
+  },
+  {
+   "id": "animated-infographic",
+   "nom": "Infographie animée verticale",
+   "composition": "Explainer-Reel",
+   "moteur": "remotion-2d",
+   "props": null,
+   "methode": "mêmes données, format 9:16"
+  },
+  {
+   "id": "3d-character-presenter",
+   "nom": "Présentateur 3D",
+   "composition": "Personaje-Nodo-Landscape",
+   "moteur": "remotion-3d",
+   "props": null,
+   "methode": "universal/demos.py:demo_personnage"
+  },
+  {
+   "id": "3d-product-showcase",
+   "nom": "Vitrine produit 3D",
+   "composition": "Escena3D-Square",
+   "moteur": "remotion-3d",
+   "props": {
+    "titulo": "Objet démo",
+    "subtitulo": "Modèle procédural",
+    "cinemascope": false
+   },
+   "methode": "remplacer le héros par un GLB licencié"
+  },
+  {
+   "id": "interactive-services-deck",
+   "nom": "Présentation interactive",
+   "composition": null,
+   "moteur": "html-deck",
+   "props": null,
+   "methode": "python -m universal.cli present -c examples/universal/services.json -o out/services.html"
+  },
+  {
+   "id": "cinematic-hybrid",
+   "nom": "Hybride cinématographique",
+   "composition": "Hibrido-Landscape",
+   "moteur": "remotion-3d",
+   "props": {
+    "clip": "universal/medios/clip-a.mp4",
+    "titulo": "Rushes et 3D",
+    "subtitulo": "Test local"
+   },
+   "methode": "universal/demos.py:demo_hybride"
+  }
+ ]
+}

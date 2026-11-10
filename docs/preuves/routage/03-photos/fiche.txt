@@ -1,0 +1,9 @@
+Assets détectés: foto-1.jpg (image/source), foto-2.jpg (image/source), foto-3.jpg (image/source), foto-4.jpg (image/source), foto-5.jpg (image/source)
+Intention: ANIMATE_IMAGES
+Direction artistique: à définir · 2d · stylized
+Pipeline: remotion-2d
+Manque et repli: aucun
+Livrable: video 16:9
+Coût: 0, tout est local
+À valider: aucun
+Tests: python -m universal.cli qc

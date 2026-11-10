@@ -1,0 +1,1 @@
+{ "test": "Aperçu 3D interactif optionnel (modules/three-studio)", "status": "PASS", "detail": "npm install, vite build, ouverture dans Chromium, boutons Saluer et Tourner cliqués, 0 erreur. Mascotte en formes simples : aperçu, pas un personnage fini. Commande : node tests/three_studio.mjs <copie> <image>" }

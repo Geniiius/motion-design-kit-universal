@@ -1,0 +1,6 @@
+RobotExpressive.glb
+Model by Tomás Laulhé (Quaternius), CC0 1.0.
+Modifications by Don McCurdy: three facial expression morph targets, converted with FBX2GLTF,
+duplicate materials removed, material metalness reduced.
+Source: https://github.com/mrdoob/three.js/tree/r180/examples/models/gltf/RobotExpressive
+sha256: 047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319

@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "name": "effets",
+  "request": {
+    "brief": "Ajoute un effet backdrop-word et un effet spotlight sur cette vidéo",
+    "language": "fr"
+  },
+  "intent": [
+    "EDIT_FOOTAGE"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\examples\\medios\\clip-a.mp4",
+      "type": "video",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "duration_s": 5.0,
+        "width": 1920,
+        "height": 1080,
+        "rotation": 0,
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "alpha": false,
+        "color_space": null,
+        "color_transfer": null,
+        "color_range": null,
+        "fps": 30.0,
+        "variable_frame_rate": false,
+        "audio": {
+          "codec": "aac",
+          "channels": 1,
+          "sample_rate": "44100",
+          "language": "und"
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "0b98c8e63c47a30e92f1187ee7246f6fd0e4818ae26a5f467977e37b3467ed48",
+        "bytes": 318562
+      },
+      "treatment": [
+        "repérer",
+        "sélectionner",
+        "monter",
+        "étalonner"
+      ],
+      "warnings": []
+    }
+  ],
+  "style": {
+    "preset": null,
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "à définir",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "video-effects"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "video-effects",
+      "why": "Effets posés autour de la personne, visage suivi et texte derrière la tête, en local.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [
+    "Effets : le texte et les chiffres affichés viennent du plan, aucun n'est inventé. Ceux qui imitent Instagram, iMessage ou iPhone demandent un accord."
+  ],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [
+    {
+      "what": "Consentement des personnes filmées",
+      "why": "Suivi et détourage du visage et du corps, en local."
+    }
+  ],
+  "status": "planned",
+  "props": {
+    "effects": [
+      {
+        "fx": "backdrop-word",
+        "start": 0.2,
+        "end": 2.2,
+        "text": "ÉTÉ"
+      },
+      {
+        "fx": "spotlight",
+        "start": 2.4,
+        "end": 4.6,
+        "text": "Niño"
+      }
+    ]
+  }
+}

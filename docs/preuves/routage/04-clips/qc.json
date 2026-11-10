@@ -1,0 +1,39 @@
+{
+ "pass": true,
+ "blocking": [],
+ "warnings": [
+  "Fin audio coupée sec (-28.2 dB sur les 150 dernières ms) : ajouter un fondu."
+ ],
+ "declared": [],
+ "aesthetic": [],
+ "checks": {
+  "video_present": true,
+  "duration_positive": true,
+  "even_dimensions": true,
+  "h264_video": true,
+  "yuv420p": true
+ },
+ "duration": 14.2,
+ "width": 640,
+ "height": 360,
+ "fps": 30.0,
+ "video_codec": "h264",
+ "pix_fmt": "yuv420p",
+ "audio_codec": "aac",
+ "audio": {
+  "lufs": -14.0,
+  "lra": 0.3,
+  "true_peak": -12.4,
+  "silence_start_s": 0.0,
+  "silence_end_s": 0.0,
+  "last_150ms_db": -28.2
+ },
+ "cuts": [],
+ "moving_ratio": 0.981,
+ "styleframes": [],
+ "proofs": {
+  "contact_sheet": "<kit>\\out\\routage\\04-clips\\04-clips-preuves\\planche.jpg",
+  "safe_area": "<kit>\\out\\routage\\04-clips\\04-clips-preuves\\zones-sures.jpg"
+ },
+ "note": "Le QC technique ne remplace pas un visionnage humain des plans et une écoute audio."
+}

@@ -1,0 +1,297 @@
+{
+ "date": "2026-11-10",
+ "machine": {
+  "systeme": "Windows 11 (10.0.22631), AMD64",
+  "processeur": "12th Gen Intel(R) Core(TM) i5-1240P (12 cœurs, 16 fils)",
+  "memoire": "39,7 Go",
+  "graphique": "Intel(R) Iris(R) Xe Graphics (2,0 Go) ; NVIDIA T550 Laptop GPU (4,0 Go)",
+  "disque": "71,1 Go libres sur 474,7"
+ },
+ "tests": [
+  {
+   "test": "Machine mesurée",
+   "status": "PASS",
+   "detail": "Windows 11 (10.0.22631), AMD64 · 12th Gen Intel(R) Core(TM) i5-1240P (12 cœurs, 16 fils) · 39,7 Go · Intel(R) Iris(R) Xe Graphics (2,0 Go) ; NVIDIA T550 Laptop GPU (4,0 Go) · 71,1 Go libres sur 474,7 · 16.3 s"
+  },
+  {
+   "test": "Logiciels et versions lus",
+   "status": "PASS",
+   "detail": "python 3.14.4, node 24.14.1, npm 11.11.0, ffmpeg 9.0.2, git 2.55.0, uv 0.12.10, blender 5.2.3 · gestionnaire : winget"
+  },
+  {
+   "test": "Conflits signalés",
+   "status": "PASS",
+   "detail": "aucun sur cette machine"
+  },
+  {
+   "test": "Encodeurs matériels essayés pour de vrai",
+   "status": "PASS",
+   "detail": "h264_nvenc : échoue, h264_qsv : fonctionne, h264_amf : échoue"
+  },
+  {
+   "test": "Premier lancement : ce qui est déjà installé est reconnu",
+   "status": "PASS",
+   "detail": "15 éléments déjà là sur 15, 0 à proposer, 0 à faire à la main"
+  },
+  {
+   "test": "Demander à installer ce qui est déjà là ne refait rien",
+   "status": "PASS",
+   "detail": "15 éléments, tous laissés tels quels"
+  },
+  {
+   "test": "Vérification complète",
+   "status": "PASS",
+   "detail": "READY en 104 s : 17 READY, 0 WARNING, 0 FAILED, 0 OPTIONAL"
+  },
+  {
+   "test": "Essai vidéo : montage",
+   "status": "PASS",
+   "detail": "vidéo de 3.0 s faite et contrôlée en 5 s · essai-montage.mp4 640x360"
+  },
+  {
+   "test": "Essai vidéo : création",
+   "status": "PASS",
+   "detail": "vidéo de 3.2 s faite et contrôlée en 48 s · essai-creation.mp4 540x960"
+  },
+  {
+   "test": "Kit déjà configuré : contrôle de santé sans rien relancer",
+   "status": "PASS",
+   "detail": "phase ready en 0.16 s, 12 usages prêts"
+  },
+  {
+   "test": "Diagnostic de réparation",
+   "status": "PASS",
+   "detail": "0 élément(s) à réparer ; rien n'est réparé sans accord"
+  },
+  {
+   "test": "Désinstallation : liste seule",
+   "status": "PASS",
+   "detail": "8 groupes, 2388 Mo ; jamais supprimés : perfil, out ; hors du kit : 3 élément(s) listés"
+  },
+  {
+   "test": "Comparaison des versions, sans rien mettre à jour",
+   "status": "PASS",
+   "detail": "12 versions fixées comparées le 2026-11-10 ; plus récentes : remotion 4.0.540 → 4.0.542 (corrective); three 0.180.0 → 0.187.0 (majeure); react 19.1.0 → 19.3.1 (mineure); playwright 1.64.1 → 1.65.0 (mineure); playwright-core 1.64.1 → 1.65.0 (mineure); impeccable 4.8.0 → 4.8.2 (corrective); hyperframes 0.8.164 → 0.9.30 (majeure); mediapipe 1.2.0 → 1.2.2 (corrective)"
+  },
+  {
+   "test": "Journal et état sans donnée sensible",
+   "status": "PASS",
+   "detail": "2 fichier(s) de journal lus : ni dossier personnel, ni nom d'utilisateur, ni clé"
+  },
+  {
+   "test": "Blender 5.2.3 trouvé hors du PATH, mascotte rendue",
+   "status": "PASS",
+   "detail": "2.0 s, 960x540, en 273 s"
+  }
+ ],
+ "bilan": [
+  {
+   "title": "Python",
+   "level": "required",
+   "status": "READY",
+   "version": "3.14.4",
+   "detail": "version suffisante"
+  },
+  {
+   "title": "FFmpeg",
+   "level": "required",
+   "status": "READY",
+   "version": "9.0.2",
+   "detail": "une vidéo d'essai encodée puis relue ; une vidéo d'essai rendue pour de vrai"
+  },
+  {
+   "title": "Node.js",
+   "level": "required",
+   "status": "READY",
+   "version": "24.14.1",
+   "detail": "exécute du code"
+  },
+  {
+   "title": "Moteur de création",
+   "level": "required",
+   "status": "READY",
+   "version": "4.0.540",
+   "detail": "fichiers présents à la version fixée ; une vidéo d'essai rendue pour de vrai"
+  },
+  {
+   "title": "Sous-titres automatiques",
+   "level": "recommended",
+   "status": "READY",
+   "version": null,
+   "detail": "le modèle se charge et transcrit hors ligne"
+  },
+  {
+   "title": "Voix off gratuite",
+   "level": "optional",
+   "status": "READY",
+   "version": null,
+   "detail": "une phrase d'essai prononcée hors ligne"
+  },
+  {
+   "title": "Effets autour d'une personne",
+   "level": "optional",
+   "status": "READY",
+   "version": null,
+   "detail": "détection chargée (OpenCV 5.0.0)"
+  },
+  {
+   "title": "Styles de films",
+   "level": "optional",
+   "status": "READY",
+   "version": "1.64.1",
+   "detail": "une image du film d'exemple rendue"
+  },
+  {
+   "title": "Interfaces animées",
+   "level": "optional",
+   "status": "READY",
+   "version": "1.64.1",
+   "detail": "le navigateur de rendu démarre"
+  },
+  {
+   "title": "HyperFrames",
+   "level": "optional",
+   "status": "READY",
+   "version": "0.8.164",
+   "detail": "version fixée déjà en cache"
+  },
+  {
+   "title": "Contrôle de design",
+   "level": "optional",
+   "status": "READY",
+   "version": null,
+   "detail": "empreinte du détecteur vérifiée"
+  },
+  {
+   "title": "Blender",
+   "level": "optional",
+   "status": "READY",
+   "version": "5.2.3",
+   "detail": "trouvé dans son dossier d'installation"
+  },
+  {
+   "title": "Git",
+   "level": "optional",
+   "status": "READY",
+   "version": "2.55.0",
+   "detail": "présent"
+  },
+  {
+   "title": "uv",
+   "level": "optional",
+   "status": "READY",
+   "version": "0.12.10",
+   "detail": "présent"
+  },
+  {
+   "title": "ElevenLabs (payant)",
+   "level": "optional",
+   "status": "READY",
+   "version": null,
+   "detail": "clé présente, valeur jamais lue. Service payant : chaque appel demande ton accord"
+  },
+  {
+   "title": "Essai vidéo : montage",
+   "level": "required",
+   "status": "READY",
+   "version": null,
+   "detail": "vidéo de 3.0 s faite et contrôlée en 5 s"
+  },
+  {
+   "title": "Essai vidéo : création",
+   "level": "required",
+   "status": "READY",
+   "version": null,
+   "detail": "vidéo de 3.2 s faite et contrôlée en 48 s"
+  }
+ ],
+ "conseils": [
+  "Export des longues vidéos accéléré par la carte graphique (h264_qsv), vérifié sur cette machine."
+ ],
+ "versions": [
+  {
+   "name": "remotion",
+   "where": "template",
+   "pinned": "4.0.540",
+   "latest": "4.0.542",
+   "change": "corrective"
+  },
+  {
+   "name": "three",
+   "where": "template",
+   "pinned": "0.180.0",
+   "latest": "0.187.0",
+   "change": "majeure"
+  },
+  {
+   "name": "react",
+   "where": "template",
+   "pinned": "19.1.0",
+   "latest": "19.3.1",
+   "change": "mineure"
+  },
+  {
+   "name": "playwright",
+   "where": "prompt-motion",
+   "pinned": "1.64.1",
+   "latest": "1.65.0",
+   "change": "mineure"
+  },
+  {
+   "name": "playwright-core",
+   "where": "modules/opuscar",
+   "pinned": "1.64.1",
+   "latest": "1.65.0",
+   "change": "mineure"
+  },
+  {
+   "name": "impeccable",
+   "where": "modules/design-check",
+   "pinned": "4.8.0",
+   "latest": "4.8.2",
+   "change": "corrective"
+  },
+  {
+   "name": "hyperframes",
+   "where": "cache de npm",
+   "pinned": "0.8.164",
+   "latest": "0.9.30",
+   "change": "majeure"
+  },
+  {
+   "name": "mediapipe",
+   "where": "option effects",
+   "pinned": "1.2.0",
+   "latest": "1.2.2",
+   "change": "corrective"
+  },
+  {
+   "name": "opencv-python",
+   "where": "option effects",
+   "pinned": "5.0.0.93",
+   "latest": "5.0.0.93",
+   "change": "à jour"
+  },
+  {
+   "name": "faster-whisper",
+   "where": "option transcribe",
+   "pinned": "1.2.1",
+   "latest": "1.2.1",
+   "change": "à jour"
+  },
+  {
+   "name": "onnxruntime",
+   "where": "option transcribe",
+   "pinned": "1.31.1",
+   "latest": "1.31.1",
+   "change": "à jour"
+  },
+  {
+   "name": "kokoro-onnx",
+   "where": "option voice",
+   "pinned": "0.6.1",
+   "latest": "0.6.1",
+   "change": "à jour"
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "name": "M3-projet",
+  "request": {
+    "brief": "",
+    "language": "fr"
+  },
+  "intent": [
+    "REVISE_EXISTING_PROJECT"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\prompt-motion",
+      "type": "project",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "engines": [
+          "node"
+        ],
+        "files": 8
+      },
+      "rights": {
+        "status": "unknown"
+      },
+      "provenance": {
+        "source": "user"
+      },
+      "treatment": [
+        "inspecter",
+        "modifier sur une copie"
+      ],
+      "warnings": []
+    }
+  ],
+  "style": {
+    "preset": null,
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "à définir",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "revision",
+        "note": "Inspecter le projet et modifier une copie : la demande dit quoi changer."
+      }
+    }
+  ],
+  "understanding": {
+    "source": "fichiers",
+    "certain": true
+  },
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [],
+  "missing": [],
+  "questions": [],
+  "notes": [
+    "Projet existant : lire d'abord son état et ses versions, travailler sur une copie, garder la version précédente."
+  ],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

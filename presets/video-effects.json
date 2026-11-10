@@ -1,0 +1,341 @@
+{
+ "provenance": "modules/video-effects, Vibha-Ramprakash/claude-video-effects au commit 93140a9, corrigé pour le kit",
+ "effects": [
+  {
+   "id": "noise",
+   "description": "reels pile up behind your head, one every quarter second",
+   "obligatoires": []
+  },
+  {
+   "id": "lineup",
+   "description": "numbered tiles fan out in an arc above your head",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "locked-on",
+   "description": "corner brackets snap onto your face and the camera follows you",
+   "obligatoires": []
+  },
+  {
+   "id": "orbit",
+   "description": "your reels circle your head: in front at the bottom, behind you at the top",
+   "obligatoires": []
+  },
+  {
+   "id": "lean-in",
+   "description": "a fast punch-in on one word",
+   "obligatoires": []
+  },
+  {
+   "id": "backdrop-word",
+   "description": "a giant word drops in behind you",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "spotlight",
+   "description": "kill the lights, keep you lit",
+   "obligatoires": []
+  },
+  {
+   "id": "the-bill",
+   "description": "prints every instruction like a ticket, into the wall above your head",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "moody",
+   "description": "a moody colour grade: darker, softer, teal shadows",
+   "obligatoires": []
+  },
+  {
+   "id": "swipe",
+   "description": "a before and after slider that sweeps across you",
+   "obligatoires": []
+  },
+  {
+   "id": "todo",
+   "description": "a checklist card beside your head that ticks off as you talk",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "tap",
+   "description": "a Follow button pops up and flips to Following",
+   "obligatoires": [],
+   "imite": "Instagram"
+  },
+  {
+   "id": "pause-point",
+   "description": "freeze the frame and point at something with a hand-drawn arrow",
+   "obligatoires": []
+  },
+  {
+   "id": "uninstall",
+   "description": "a glitchy uninstall bar that breaks the frame apart",
+   "obligatoires": []
+  },
+  {
+   "id": "reel-frame",
+   "description": "your video shrinks into an Instagram reel card",
+   "obligatoires": [],
+   "imite": "Instagram"
+  },
+  {
+   "id": "shortcut-rain",
+   "description": "keyboard keys rain down behind you",
+   "obligatoires": []
+  },
+  {
+   "id": "reject-stamp",
+   "description": "a big red stamp slams onto the screen",
+   "obligatoires": []
+  },
+  {
+   "id": "countdown-flip",
+   "description": "a 3, 2, 1 flip clock above your head",
+   "obligatoires": []
+  },
+  {
+   "id": "rabbit-hole",
+   "description": "the frame tunnels into itself, spinning",
+   "obligatoires": []
+  },
+  {
+   "id": "cover-star",
+   "description": "you become a magazine cover, with the title behind your head",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "scribble",
+   "description": "marker doodles draw themselves around you",
+   "obligatoires": []
+  },
+  {
+   "id": "red-collage",
+   "description": "black and white you, a giant red word behind, kinetic type stacked beside you",
+   "obligatoires": [
+    "lines",
+    "text"
+   ]
+  },
+  {
+   "id": "split-headline",
+   "description": "a clean headline card slides down and pushes you into the bottom of the frame",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "pastel-word",
+   "description": "a soft lavender backdrop, a giant word behind you and a profile card that gets followed",
+   "obligatoires": [
+    "text"
+   ],
+   "imite": "Instagram"
+  },
+  {
+   "id": "check-pills",
+   "description": "grid-paper room, your reels pinned behind you and blue pills that get clicked",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "headline-box",
+   "description": "a punch-in with a clean two-line headline, the second line in a white box",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "profile-wall",
+   "description": "your profile grid fills the wall behind you while a counter ticks up",
+   "obligatoires": [
+    "count",
+    "label"
+   ],
+   "imite": "Instagram"
+  },
+  {
+   "id": "tier-list",
+   "description": "a tier list drops in front of you and your item flies into S tier",
+   "obligatoires": [
+    "item",
+    "others",
+    "title"
+   ]
+  },
+  {
+   "id": "broll-split",
+   "description": "split screen: b-roll on top with a price-tag sticker, you on the bottom",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "phone-fan",
+   "description": "your reels fan out like a hand of phones in front of you, under a two-line headline",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "dot-reveal",
+   "description": "your shot builds itself out of glowing dots, then snaps into the full picture",
+   "obligatoires": []
+  },
+  {
+   "id": "headline-wall",
+   "description": "a wall of your own reel headlines piles up behind your head, then your total views pop in front",
+   "obligatoires": [
+    "label",
+    "text",
+    "total"
+   ]
+  },
+  {
+   "id": "checklist",
+   "description": "a task list builds under your chin: each step spins, then ticks green",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "glass-widgets",
+   "description": "frosted glass phone widgets and mini artifacts float around your head, and an optional pill",
+   "obligatoires": [
+    "bars",
+    "label",
+    "text",
+    "to"
+   ]
+  },
+  {
+   "id": "timeline",
+   "description": "a dark red cinematic grade with an editing timeline, a REC timecode and a glowing playhead",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "comment-box",
+   "description": "an Instagram comments sheet above your head types your word, posts it, gets a heart and your reply",
+   "obligatoires": [
+    "chip",
+    "reply",
+    "text"
+   ],
+   "imite": "Instagram"
+  },
+  {
+   "id": "liquid-glass-graph",
+   "description": "a liquid glass card floats under your chin while a graph climbs and the number counts up",
+   "obligatoires": [
+    "text",
+    "to"
+   ]
+  },
+  {
+   "id": "carousel-spin",
+   "description": "your reels spin around you in a 3D carousel, then slow to a stop",
+   "obligatoires": []
+  },
+  {
+   "id": "match-cut",
+   "description": "news pages cut on one word, locked in place behind your head",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "apple-toggles",
+   "description": "an iPhone settings card under your chin flips its switches on, one line at a time",
+   "obligatoires": [
+    "text"
+   ],
+   "imite": "iPhone"
+  },
+  {
+   "id": "led-sign",
+   "description": "the lights drop and a glowing LED sign types itself out behind you",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "slow-push",
+   "description": "a slow cinematic push-in from the wide shot to your face, the room melting out of focus",
+   "obligatoires": []
+  },
+  {
+   "id": "over-the-shoulder-zoom",
+   "description": "the camera pushes into one top corner, a liquid glass graph pops beside your head, then the other corner with a second graph",
+   "obligatoires": [
+    "text",
+    "to"
+   ]
+  },
+  {
+   "id": "messages",
+   "description": "iMessage notifications pop in one after another, creamy glass with a soft glow, stacking up above the bottom of the frame",
+   "obligatoires": [
+    "text"
+   ],
+   "imite": "iMessage"
+  },
+  {
+   "id": "place-in-grid",
+   "description": "you shrink into the centre tile of your 3x3 profile grid on frosted glass, then 8 of your reels pop in around you, one per frame, view counts on every tile",
+   "obligatoires": [
+    "views"
+   ],
+   "imite": "Instagram"
+  },
+  {
+   "id": "tape-label",
+   "description": "a strip of yellow tape with your line lands on your chest",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "select-resize",
+   "description": "a blue selection box grabs your number and a cursor drags it bigger",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "wave-trim",
+   "description": "the silent parts of your voice are trimmed away on screen until only your words are left",
+   "obligatoires": []
+  },
+  {
+   "id": "huge-strike",
+   "description": "one huge serif word fills the wall behind you, then a red line crosses it out",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "crayon-write",
+   "description": "a red crayon writes your word behind your head, then underlines it",
+   "obligatoires": [
+    "text"
+   ]
+  },
+  {
+   "id": "fan-build",
+   "description": "your reel covers deal into a fan behind your head, one card at a time",
+   "obligatoires": []
+  }
+ ]
+}

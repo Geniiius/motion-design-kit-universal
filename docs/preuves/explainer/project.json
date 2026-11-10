@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "name": "explainer",
+  "request": {
+    "brief": "Infographie scientifique à partir de données sourcées",
+    "language": "fr"
+  },
+  "intent": [
+    "DATA_EXPLAINER"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\examples\\datos\\co2_annmean_mlo.csv",
+      "type": "data",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "rows": 67,
+        "columns": [
+          "year",
+          "mean",
+          "unc"
+        ],
+        "comment_lines": 42
+      },
+      "rights": {
+        "status": "licensed",
+        "note": "NOAA GML, usage libre, citation demandée"
+      },
+      "provenance": {
+        "source": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv",
+        "sha256": "bdd956e8d7e05ebc3c61ac1f8f8c8cea4a505df56724fba5200b4eb1e0089b2b",
+        "bytes": 3134
+      },
+      "treatment": [
+        "vérifier unités et dates",
+        "citer la source"
+      ],
+      "warnings": []
+    }
+  ],
+  "style": {
+    "preset": null,
+    "dimension": "2d",
+    "realism_level": "schematic",
+    "narrative": "explainer",
+    "art_direction": "scientific-explainer",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {}
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Explainer-Landscape"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-2d",
+      "why": "Graphiques pilotés par les données et le temps.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": [
+      {
+        "type": "freeze",
+        "from": 0,
+        "to": 1000000000.0,
+        "reason": "Lecture de graphiques : tenues voulues pour un film pédagogique calme."
+      }
+    ]
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned",
+  "props": {
+    "provenance": {
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv",
+      "fetched": "2026-11-03",
+      "sha256": "bdd956e8d7e05ebc3c61ac1f8f8c8cea4a505df56724fba5200b4eb1e0089b2b",
+      "facts": {
+        "y0": 1959,
+        "v0": 315.98,
+        "y1": 2025,
+        "v1": 427.35,
+        "diff": 111.37,
+        "years": 66,
+        "d0": 1960,
+        "r0": 0.86,
+        "d1": 2010,
+        "r1": 2.4,
+        "unc": 0.12,
+        "rates": [
+          {
+            "decade": 1960,
+            "rate": 0.86
+          },
+          {
+            "decade": 1970,
+            "rate": 1.22
+          },
+          {
+            "decade": 1980,
+            "rate": 1.64
+          },
+          {
+            "decade": 1990,
+            "rate": 1.53
+          },
+          {
+            "decade": 2000,
+            "rate": 1.91
+          },
+          {
+            "decade": 2010,
+            "rate": 2.4
+          }
+        ]
+      }
+    }
+  }
+}

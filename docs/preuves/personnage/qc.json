@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "declared": [],
+  "aesthetic": [
+    "3 passage(s) de plus de 0.5 s presque immobiles : acceptable si le genre ou le storyboard le veut."
+  ],
+  "checks": {
+    "video_present": true,
+    "duration_positive": true,
+    "even_dimensions": true,
+    "h264_video": true,
+    "yuv420p": true
+  },
+  "duration": 17.9,
+  "width": 1440,
+  "height": 810,
+  "fps": 30.0,
+  "video_codec": "h264",
+  "pix_fmt": "yuv420p",
+  "audio_codec": "aac",
+  "audio": {
+    "lufs": -14.1,
+    "lra": 2.7,
+    "true_peak": -1.5,
+    "silence_start_s": 0.0,
+    "silence_end_s": 0.0,
+    "last_150ms_db": -91.0
+  },
+  "cuts": [
+    13.4
+  ],
+  "moving_ratio": 0.781,
+  "styleframes": [],
+  "proofs": {
+    "contact_sheet": "<kit>\\out\\demos\\personnage\\preuves\\planche.jpg",
+    "safe_area": "<kit>\\out\\demos\\personnage\\preuves\\zones-sures.jpg"
+  },
+  "note": "Le QC technique ne remplace pas un visionnage humain des plans et une écoute audio."
+}

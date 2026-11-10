@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Studio HUD — reel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;700;800;900&family=Geist+Mono:wght@400;500&display=block" rel="stylesheet" />
+<script src="../engine/core.js"></script>
+<style>
+  /* ===== Campos personalizables ===== */
+  :root {
+    --bg: #0A0A0A;
+    --ink: #F2F0EA;      /* blanco roto */
+    --accent: #FF4F1F;   /* rojo anaranjado, único color */
+    --dim: #5B5954;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--bg); }
+  body { font-family: "Geist", sans-serif; color: var(--ink); position: relative; }
+  .hud { position: absolute; font: 500 22px "Geist Mono", monospace; color: var(--dim); letter-spacing: .06em; text-transform: uppercase; }
+  .corner { position: absolute; width: 34px; height: 34px; border-color: var(--dim); border-style: solid; border-width: 0; }
+  #stage { position: absolute; inset: 0; }
+  .dot { position: absolute; left: 540px; top: 960px; width: 34px; height: 34px; margin: -17px; border-radius: 50%; background: var(--accent); }
+  .ray { position: absolute; left: 540px; top: 960px; width: 16px; margin-left: -8px; border-radius: 8px; background: var(--accent); transform-origin: 50% 0; }
+  #words { position: absolute; left: 0; right: 0; top: 960px; height: 0; }
+  .word { position: absolute; left: 0; right: 0; text-align: center; font-weight: 900; font-size: 196px; letter-spacing: -.06em; line-height: .8; white-space: nowrap; transform: translateY(-50%); }
+  .word span { display: inline-block; }
+  #stat { position: absolute; left: 0; right: 0; top: 960px; transform: translateY(-50%); text-align: center; }
+  #stat .n { font-weight: 800; font-size: 230px; letter-spacing: -.06em; line-height: 1; }
+  #stat .cap { font: 500 30px "Geist Mono", monospace; color: var(--dim); letter-spacing: .08em; text-transform: uppercase; margin-top: 18px; }
+  #ring { position: absolute; left: 540px; top: 960px; width: 760px; height: 760px; margin: -380px; }
+  #lock { position: absolute; left: 0; right: 0; top: 1240px; text-align: center; }
+  #lock .brand { font-weight: 800; font-size: 120px; letter-spacing: -.05em; }
+  #lock .tag { font: 500 30px "Geist Mono", monospace; color: var(--dim); letter-spacing: .08em; text-transform: uppercase; margin-top: 14px; }
+  #scan { position: absolute; left: 60px; right: 60px; height: 2px; background: var(--accent); }
+  #ticks { position: absolute; left: 60px; right: 60px; bottom: 120px; height: 18px; display: flex; justify-content: space-between; align-items: flex-end; }
+  #ticks i { width: 2px; background: var(--dim); }
+</style>
+</head>
+<body>
+  <!-- HUD fijo -->
+  <div class="corner" style="left:44px;top:44px;border-left-width:3px;border-top-width:3px"></div>
+  <div class="corner" style="right:44px;top:44px;border-right-width:3px;border-top-width:3px"></div>
+  <div class="corner" style="left:44px;bottom:44px;border-left-width:3px;border-bottom-width:3px"></div>
+  <div class="corner" style="right:44px;bottom:44px;border-right-width:3px;border-bottom-width:3px"></div>
+  <div class="hud" style="left:100px;top:52px">Motion Kit — Reel 02</div>
+  <div class="hud" id="tc" style="right:100px;top:52px">00:00:00</div>
+  <div class="hud" style="left:100px;bottom:52px">1080 × 1920 · 30 FPS</div>
+  <div class="hud" id="section" style="right:100px;bottom:52px">01 / Señal</div>
+  <div id="ticks"></div>
+  <div id="scan"></div>
+
+  <div id="stage">
+    <svg id="ring" viewBox="0 0 760 760">
+      <circle cx="380" cy="380" r="360" fill="none" stroke="#1E1E1C" stroke-width="10" />
+      <circle id="arc" cx="380" cy="380" r="360" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" pathLength="1" stroke-dasharray="1" transform="rotate(-90 380 380)" />
+    </svg>
+    <div id="rays"></div>
+    <div id="dots"></div>
+    <div id="words"></div>
+    <div id="stat"><div class="n" id="num">+0%</div><div class="cap">de engagement en 30 días</div></div>
+    <div id="lock"><div class="brand">NOVA<span style="color:var(--accent)">.</span></div><div class="tag">Motion sin límites</div></div>
+  </div>
+
+<script>
+const { track, prog, ease, spring, keyframes, lerp, css, $, timecode, beats } = PM;
+window.COMP = { width: 1080, height: 1920, fps: 30, duration: 10, bpm: 120 };
+const B = beats(COMP.bpm); // 1 tiempo = 0,5 s
+
+// ===== Campos personalizables =====
+const WORDS = [ // una palabra por tiempo; accent = palabra en color
+  { text: "IDEA", at: 3.0 },
+  { text: "FORMA", at: 3.5 },
+  { text: "RITMO", at: 4.0 },
+  { text: "IMPACTO", at: 4.5, accent: true },
+];
+const STAT = { value: 312, suffix: "%", at: 5.5 };
+const SECTIONS = [[0, "01 / Señal"], [2.9, "02 / Tipo"], [5.4, "03 / Datos"], [7.5, "04 / Marca"]];
+
+// ---- Construcción del DOM (una vez) ----
+const NDOTS = 4, NRAYS = 8;
+for (let i = 0; i < NDOTS; i++) $("#dots").insertAdjacentHTML("beforeend", '<div class="dot"></div>');
+for (let i = 0; i < NRAYS; i++) $("#rays").insertAdjacentHTML("beforeend", '<div class="ray"></div>');
+for (const w of WORDS) {
+  $("#words").insertAdjacentHTML("beforeend",
+    `<div class="word" style="color:${w.accent ? "var(--accent)" : "var(--ink)"}">${[...w.text].map((c) => `<span>${c}</span>`).join("")}</div>`);
+}
+for (let i = 0; i < 41; i++) $("#ticks").insertAdjacentHTML("beforeend", `<i style="height:${i % 5 ? 8 : 18}px"></i>`);
+const dots = [...document.querySelectorAll(".dot")];
+const rays = [...document.querySelectorAll(".ray")];
+const words = [...document.querySelectorAll(".word")];
+const ticks = [...document.querySelectorAll("#ticks i")];
+
+window.seek = (t) => {
+  const pulse = B.pulse(t, 6);
+
+  // ---- 1. Señal: un punto que respira al tempo, se divide en 4 y orbita ----
+  const split = spring(t - 1.0, "snappy") * (1 - prog(t, 2.6, 2.9));
+  const orbitR = 150 * split + 18 * pulse * split;
+  const dotsOn = (1 - prog(t, 2.75, 2.95)) + prog(t, 9.4, 9.7);   // vuelve al final -> bucle
+  dots.forEach((d, i) => {
+    const a = (i / NDOTS) * Math.PI * 2 + t * 2.2;
+    const s = (t < 1 || t > 9.3 ? 1 + 0.35 * pulse : 1) * (i === 0 || split > 0.02 ? 1 : 0);
+    css(d, {
+      transform: `translate(${Math.cos(a) * orbitR}px, ${Math.sin(a) * orbitR}px) scale(${s * spring(t + 0.4, "pop")})`,
+      opacity: Math.min(1, dotsOn),
+    });
+  });
+
+  // ---- Destello: 8 rayos que se dibujan y se recogen ----
+  rays.forEach((r, i) => {
+    const grow = spring(t - (2.5 + i * 0.025), "snappy") - spring(t - (3.0 + i * 0.02), "snappy");
+    const lockGrow = spring(t - (7.6 + i * 0.03), "snappy") * (1 - prog(t, 9.2, 9.5));
+    const len = Math.max(0, 300 * grow + 150 * lockGrow);
+    const off = 40 + 120 * grow + 30 * lockGrow;
+    const rot = (360 / NRAYS) * i + t * 12;
+    css(r, { height: `${len}px`, transform: `rotate(${rot}deg) translateY(${off}px)`, opacity: len > 8 ? 1 : 0 });
+  });
+
+  // ---- 2. Tipografía: una palabra gigante por tiempo, letras que suben en stagger ----
+  words.forEach((w, i) => {
+    const at = WORDS[i].at, end = WORDS[i + 1] ? WORDS[i + 1].at : 5.25;
+    const out = prog(t, end - 0.08, end + 0.04);
+    css(w, { opacity: t >= at - 0.02 && out < 1 ? 1 : 0, filter: `blur(${out * 10}px)` });
+    [...w.children].forEach((c, j) => {
+      const p = spring(t - (at + j * 0.022), "snappy");
+      css(c, { transform: `translateY(${(1 - p) * 140 - out * 120}%) scaleY(${0.6 + 0.4 * p})`, opacity: p });
+    });
+  });
+
+  // ---- 3. Datos: contador + anillo que se dibuja ----
+  const sIn = spring(t - STAT.at, "snappy") * (1 - prog(t, 7.35, 7.55));
+  $("#num").textContent = `+${Math.round(STAT.value * ease.outExpo(prog(t, STAT.at, STAT.at + 1.4)))}${STAT.suffix}`;
+  css("#stat", { opacity: sIn, transform: `translateY(-50%) scale(${0.85 + 0.15 * sIn})` });
+  css("#ring", { opacity: sIn, transform: `rotate(${t * 20}deg) scale(${0.9 + 0.1 * sIn})` });
+  $("#arc").setAttribute("stroke-dashoffset", 1 - 0.78 * ease.inOutQuint(prog(t, STAT.at + 0.1, STAT.at + 1.6)));
+
+  // ---- 4. Marca: destello + logo ----
+  const lk = spring(t - 7.8, "smooth") * (1 - prog(t, 9.25, 9.45));
+  css("#lock", { opacity: lk, transform: `translateY(${(1 - lk) * 60}px)` });
+
+  // ---- HUD vivo ----
+  const scanY = keyframes(t % 2.5, [[0, 160], [2.5, 1760]], ease.inOutCubic);
+  css("#scan", { top: `${scanY}px`, opacity: 0.18 });
+  const k = Math.floor((t / COMP.duration) * ticks.length);
+  ticks.forEach((tk, i) => { tk.style.background = i <= k ? "var(--accent)" : "var(--dim)"; });
+  $("#tc").textContent = timecode(t, COMP.fps);
+  $("#section").textContent = SECTIONS.filter(([a]) => t >= a).pop()[1];
+};
+</script>
+</body>
+</html>

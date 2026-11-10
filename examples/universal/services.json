@@ -1,0 +1,59 @@
+{
+  "name": "demo-services",
+  "intent": "interactive",
+  "style": "interactive-services-deck",
+  "language": "fr",
+  "brand": "Studio Démo (fictif)",
+  "title": "Cinq services à explorer",
+  "subtitle": "Entreprise fictive de démonstration. Ici, les boutons sont de vrais boutons : un MP4 ne peut pas en contenir.",
+  "accent": "#6f5cff",
+  "film_seconds_per_scene": 3.2,
+  "services": [
+    {
+      "title": "Motion design",
+      "summary": "Vidéos explicatives et lancements de produit.",
+      "description": "Du storyboard à l'export, avec une version pour chaque format.",
+      "benefits": ["Formats pour chaque réseau", "Identité de marque respectée", "Sources éditables"],
+      "before_after": { "before": "Une page de texte que personne ne lit", "after": "Le même message, compris en trente secondes" }
+    },
+    {
+      "title": "Montage de rushes",
+      "summary": "Vos vidéos existantes, coupées et mises au propre.",
+      "description": "Sélection, rythme, étalonnage et mixage, sans toucher aux originaux.",
+      "benefits": ["Originaux intacts", "Audio à niveau", "Sous-titres synchronisés"],
+      "steps": [
+        { "title": "Repérer", "text": "Planche de tous les rushes." },
+        { "title": "Couper", "text": "Plan de montage validé avec vous." },
+        { "title": "Livrer", "text": "Contrôle qualité, puis export." }
+      ]
+    },
+    {
+      "title": "Animation 3D",
+      "summary": "Personnages et produits en vrai volume.",
+      "description": "Import d'un modèle licencié ou création stylisée, caméra et lumière.",
+      "benefits": ["Personnages réutilisables", "Lumière réaliste sur les matières"],
+      "hotspots": [
+        { "x": 22, "y": 50, "label": "Modèle", "note": "Modèle : fichier GLB dont la licence est vérifiée." },
+        { "x": 50, "y": 34, "label": "Lumière", "note": "Lumière : un environnement qui crée de vrais reflets." },
+        { "x": 78, "y": 62, "label": "Caméra", "note": "Caméra : plusieurs valeurs de plan, un même personnage." }
+      ]
+    },
+    {
+      "title": "Infographies",
+      "summary": "Vos données rendues lisibles, sources comprises.",
+      "description": "Aucun chiffre inventé : la source, l'unité et la date restent visibles.",
+      "benefits": ["Sources citées", "Unités et limites affichées"],
+      "steps": [
+        { "title": "Vérifier", "text": "D'où vient chaque chiffre." },
+        { "title": "Montrer", "text": "Le bon graphique, une idée à la fois." }
+      ]
+    },
+    {
+      "title": "Présentations interactives",
+      "summary": "Un parcours que le visiteur choisit lui-même.",
+      "description": "Menus, chapitres et démos au clic, au clavier et au toucher.",
+      "benefits": ["Accessible au clavier", "Adapté au téléphone"],
+      "before_after": { "before": "Un diaporama qui défile", "after": "Un parcours choisi par le visiteur" }
+    }
+  ]
+}

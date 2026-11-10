@@ -1,0 +1,27 @@
+{
+  "name": "demo-infographic",
+  "intent": "infographic",
+  "style": "animated-infographic",
+  "title": "Comment fonctionne le RAG ?",
+  "brand": "Universal Studio",
+  "intro": "De la question à une réponse appuyée sur des documents.",
+  "source": "Démonstration conceptuelle sans statistiques externes",
+  "steps": [
+    {
+      "title": "Question",
+      "description": "Un utilisateur pose une question en langage naturel."
+    },
+    {
+      "title": "Indexation",
+      "description": "Les documents ont été découpés et transformés en représentations vectorielles."
+    },
+    {
+      "title": "Recherche",
+      "description": "Le moteur retrouve les passages pertinents."
+    },
+    {
+      "title": "Réponse",
+      "description": "Le modèle produit une réponse en utilisant les passages récupérés."
+    }
+  ]
+}

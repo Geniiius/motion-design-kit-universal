@@ -1,0 +1,52 @@
+Bundling code        [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m 6%
+Bundling code        [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 15%
+Bundling code        [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 40%
+Bundling code        [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 65%
+Bundling code        [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 71%
+Bundling code        [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 76%
+Bundling code        [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 81%
+Bundling code        [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 87%
+Bundling code        [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 92%
+Bundling code        [34m━━━━━━━━━━━━━━━━━╸[39m 98%
+Bundling code        [34m━━━━━━━━━━━━━━━━━━[39m 100%
+Bundled code         [34m━━━━━━━━━━━━━━━━━━[39m [90m3593ms[39m
+
+The following compositions are available:
+
+Promo-Reel                  30      1080x1920      390 (13.00 sec)
+Promo-Feed                  30      1080x1350      390 (13.00 sec)
+Promo-Square                30      1080x1080      390 (13.00 sec)
+Promo-Landscape             30      1920x1080      390 (13.00 sec)
+Kinetic-Reel                30      1080x1920      348 (11.60 sec)
+Kinetic-Feed                30      1080x1350      348 (11.60 sec)
+Kinetic-Square              30      1080x1080      348 (11.60 sec)
+Logo-Reel                   30      1080x1920      90 (3.00 sec)
+Logo-Feed                   30      1080x1350      90 (3.00 sec)
+Logo-Square                 30      1080x1080      90 (3.00 sec)
+Logo-Landscape              30      1920x1080      90 (3.00 sec)
+Showcase-Reel               30      1080x1920      270 (9.00 sec)
+Showcase-Landscape          30      1920x1080      270 (9.00 sec)
+Explainer-Landscape         30      1920x1080      1038 (34.60 sec)
+Personaje-Nodo-Landscape    30      1920x1080      180 (6.00 sec)
+Personaje-GLB-Landscape     30      1920x1080      180 (6.00 sec)
+Parallaxe-Landscape         30      1920x1080      240 (8.00 sec)
+Escena3D-Landscape          30      1920x1080      240 (8.00 sec)
+Hibrido-Landscape           30      1920x1080      180 (6.00 sec)
+Explainer-Reel              30      1080x1920      1038 (34.60 sec)
+Personaje-Nodo-Reel         30      1080x1920      180 (6.00 sec)
+Personaje-GLB-Reel          30      1080x1920      180 (6.00 sec)
+Parallaxe-Reel              30      1080x1920      240 (8.00 sec)
+Escena3D-Reel               30      1080x1920      240 (8.00 sec)
+Hibrido-Reel                30      1080x1920      180 (6.00 sec)
+Explainer-Square            30      1080x1080      1038 (34.60 sec)
+Personaje-Nodo-Square       30      1080x1080      180 (6.00 sec)
+Personaje-GLB-Square        30      1080x1080      180 (6.00 sec)
+Parallaxe-Square            30      1080x1080      240 (8.00 sec)
+Escena3D-Square             30      1080x1080      240 (8.00 sec)
+Hibrido-Square              30      1080x1080      180 (6.00 sec)
+Explainer-Feed              30      1080x1350      1038 (34.60 sec)
+Personaje-Nodo-Feed         30      1080x1350      180 (6.00 sec)
+Personaje-GLB-Feed          30      1080x1350      180 (6.00 sec)
+Parallaxe-Feed              30      1080x1350      240 (8.00 sec)
+Escena3D-Feed               30      1080x1350      240 (8.00 sec)
+Hibrido-Feed                30      1080x1350      180 (6.00 sec)

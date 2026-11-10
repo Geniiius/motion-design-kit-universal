@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "name": "riso",
+  "request": {
+    "brief": "Film promo de 14 secondes en risographie pour une boulangerie fictive",
+    "language": "fr"
+  },
+  "intent": [
+    "CREATE_FROM_SCRATCH"
+  ],
+  "inputs": [],
+  "style": {
+    "preset": null,
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "ad",
+    "art_direction": "Risograph Print",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": "risograph"
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": 14.0,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "film-style",
+        "style": "risograph"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "film-style",
+      "why": "Film écrit en code à partir de la recette du style risograph : modules/opuscar/styles/risograph/STYLE.md.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [
+    "Style écrit en code : 30 à 60 minutes et beaucoup de tokens pour un film complet, selon la source. Le premier passage se regarde sur des images fixes."
+  ],
+  "quality": {
+    "profile": "draft",
+    "exceptions": [
+      {
+        "type": "freeze",
+        "from": 11.5,
+        "to": 14,
+        "reason": "Titre tenu jusqu'à la coupe finale, seule la vapeur bouge."
+      }
+    ]
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

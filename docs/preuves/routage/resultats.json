@@ -1,0 +1,274 @@
+[
+ {
+  "id": "01-brief",
+  "cas": "Brief sans aucun média",
+  "intent": [
+   "CREATE_FROM_SCRATCH"
+  ],
+  "engines": [
+   "remotion-2d"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 34,
+  "output": "<kit>\\out\\routage\\01-brief\\01-brief.mp4",
+  "status": "PASS",
+  "detail": "960x540, 10.5 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "02-logo",
+  "cas": "Logo PNG seul",
+  "intent": [
+   "ANIMATE_LOGO"
+  ],
+  "engines": [
+   "remotion-2d"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 22,
+  "output": "<kit>\\out\\routage\\02-logo\\02-logo.mp4",
+  "status": "PASS",
+  "detail": "960x540, 3.0 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "03-photos",
+  "cas": "Lot de photos",
+  "intent": [
+   "ANIMATE_IMAGES"
+  ],
+  "engines": [
+   "remotion-2d"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 36,
+  "output": "<kit>\\out\\routage\\03-photos\\03-photos.mp4",
+  "status": "PASS",
+  "detail": "960x540, 15.0 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "04-clips",
+  "cas": "Trois clips à monter",
+  "intent": [
+   "EDIT_FOOTAGE"
+  ],
+  "engines": [
+   "ffmpeg-edit"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true,
+   "moteur_sobre": true
+  },
+  "seconds": 6,
+  "output": "<kit>\\out\\routage\\04-clips\\04-clips.mp4",
+  "status": "PASS",
+  "detail": "640x360, 14.2 s, bloquants: 0, alertes: 1"
+ },
+ {
+  "id": "05-hybride",
+  "cas": "Logo + photos + vidéos + voix",
+  "intent": [
+   "EDIT_FOOTAGE",
+   "HYBRID_COMPOSITE"
+  ],
+  "engines": [
+   "ffmpeg-edit"
+  ],
+  "questions": 0,
+  "approvals": 1,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 6,
+  "output": "<kit>\\out\\routage\\05-hybride\\05-hybride.mp4",
+  "status": "PASS",
+  "detail": "640x360, 13.8 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "06-restylage",
+  "cas": "Restylage caricatural",
+  "intent": [
+   "RESTYLE_FOOTAGE"
+  ],
+  "engines": [
+   "ffmpeg-edit"
+  ],
+  "questions": 0,
+  "approvals": 2,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 3,
+  "output": "<kit>\\out\\routage\\06-restylage\\06-restylage-apercu-filtres.mp4",
+  "status": "PARTIAL",
+  "detail": "Aperçu par filtres seulement. Le vrai restylage exige un fournisseur, un budget et le consentement : BLOCKED sans eux. 640x360, 4.0 s, bloquants: 0, alertes: 1"
+ },
+ {
+  "id": "07-3d-stylisee",
+  "cas": "Création 3D stylisée",
+  "intent": [
+   "CREATE_FROM_SCRATCH"
+  ],
+  "engines": [
+   "remotion-3d"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 36,
+  "output": "<kit>\\out\\routage\\07-3d-stylisee\\07-3d-stylisee.mp4",
+  "status": "PASS",
+  "detail": "960x540, 8.0 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "08-realiste",
+  "cas": "Scène réaliste cinématographique",
+  "intent": [
+   "CREATE_FROM_SCRATCH"
+  ],
+  "engines": [
+   "remotion-3d"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 35,
+  "output": "<kit>\\out\\routage\\08-realiste\\08-realiste.mp4",
+  "status": "PARTIAL",
+  "detail": "Look cinéma en 3D PBR. Le photoréalisme n'est pas atteint : il demande des modèles et des matières réalistes, que le kit ne fournit pas. 960x540, 8.0 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "09-5d",
+  "cas": "Demande ambiguë « 5D »",
+  "intent": [
+   "CREATE_FROM_SCRATCH"
+  ],
+  "engines": [
+   "remotion-2d"
+  ],
+  "questions": 1,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true,
+   "question_posee": true
+  },
+  "seconds": 28,
+  "output": "<kit>\\out\\routage\\09-5d\\09-5d.mp4",
+  "status": "PASS",
+  "detail": "960x540, 8.0 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "10-interactif",
+  "cas": "Présentation HTML interactive",
+  "intent": [
+   "INTERACTIVE_PRESENTATION"
+  ],
+  "engines": [
+   "html-deck"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 2,
+  "interactions": 13,
+  "output": "<kit>\\out\\routage\\10-interactif\\10-interactif.html",
+  "status": "PASS",
+  "detail": "13 interactions réelles réussies dans Chromium"
+ },
+ {
+  "id": "M1-donnees",
+  "cas": "Fichier de données",
+  "intent": [
+   "DATA_EXPLAINER"
+  ],
+  "engines": [
+   "remotion-2d"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 68,
+  "output": "<kit>\\out\\routage\\M1-donnees\\M1-donnees.mp4",
+  "status": "PASS",
+  "detail": "960x540, 34.6 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "M2-glb",
+  "cas": "Personnage fourni en GLB",
+  "intent": [
+   "CHARACTER_ANIMATION"
+  ],
+  "engines": [
+   "remotion-3d"
+  ],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true,
+   "moteur": true
+  },
+  "seconds": 52,
+  "output": "<kit>\\out\\routage\\M2-glb\\M2-glb.mp4",
+  "status": "PASS",
+  "detail": "960x540, 6.0 s, bloquants: 0, alertes: 0"
+ },
+ {
+  "id": "M3-projet",
+  "cas": "Projet déjà créé",
+  "intent": [
+   "REVISE_EXISTING_PROJECT"
+  ],
+  "engines": [],
+  "questions": 0,
+  "approvals": 0,
+  "checks": {
+   "manifeste_valide": true,
+   "intention": true
+  },
+  "status": "ROUTE OK, NOT TESTED",
+  "detail": "La modification dépend de la demande : route et inspection testées, pas de rendu."
+ }
+]

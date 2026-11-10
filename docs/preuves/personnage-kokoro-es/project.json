@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "name": "personnage-kokoro-es",
+  "request": {
+    "brief": "Personnage 3D stylisé qui parle et gesticule",
+    "language": "fr"
+  },
+  "intent": [
+    "CHARACTER_ANIMATION"
+  ],
+  "inputs": [],
+  "style": {
+    "preset": "stylized-3d",
+    "dimension": "3d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "stylized-3d",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Personaje-Nodo-Landscape"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [
+    {
+      "id": "nodo",
+      "ficha": "template/src/universal/personajes/nodo.json",
+      "licence": "créé par code pour ce kit"
+    }
+  ],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-3d",
+      "why": "Vrais objets et caméra en volume, personnage et gestes pilotés par image.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned",
+  "props": {
+    "composition": "Personaje-Nodo-Landscape",
+    "voice": {
+      "voice": "ef_dora",
+      "culture": "es",
+      "timing": "real",
+      "duration": 12.172,
+      "language_match": true,
+      "engine": "kokoro",
+      "visemes_source": "letters"
+    },
+    "visemes": 169,
+    "words": 35
+  }
+}

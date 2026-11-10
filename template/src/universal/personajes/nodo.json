@@ -1,0 +1,10 @@
+{
+  "id": "nodo",
+  "nombre": "Nodo",
+  "descripcion": "Mascota original del kit: cuerpo de canto rodado azul cobalto, cara crema, ojos negros brillantes, manos y pies flotantes naranjas, antena que late con la voz.",
+  "licencia": "Creado por código para este kit, libre de derechos de terceros",
+  "paleta": { "cuerpo": "#2747E0", "cara": "#FFF4E2", "ojo": "#0B0D18", "boca": "#3A1230", "lengua": "#FF7A7A", "mano": "#FF9A2E", "mejilla": "#FFB4A6", "antena": "#FFD45E" },
+  "proporciones": { "alto": 2.1, "ancho": 1.9, "ojos": 0.17, "cara": 0.68 },
+  "gestos": ["reposo", "hablar", "saludar", "senalar", "asentir", "reaccionar", "contar", "saltar"],
+  "reglas_continuidad": ["Misma paleta y proporciones en todos los planos", "Las manos nunca atraviesan la cara", "Los ojos miran a cámara al hablar"]
+}

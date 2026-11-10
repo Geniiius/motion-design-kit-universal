@@ -1,0 +1,54 @@
+[
+  {
+    "name": "menu visible au chargement",
+    "status": "PASS"
+  },
+  {
+    "name": "vrai clic: ouvre un service et met à jour l'adresse",
+    "status": "PASS"
+  },
+  {
+    "name": "démo par étapes: chaque clic révèle l'étape suivante",
+    "status": "PASS"
+  },
+  {
+    "name": "clavier: flèche droite passe au service suivant",
+    "status": "PASS"
+  },
+  {
+    "name": "point interactif: le clic affiche sa note",
+    "status": "PASS"
+  },
+  {
+    "name": "Échap: retour au menu et focus rendu au bon bouton",
+    "status": "PASS"
+  },
+  {
+    "name": "chapitres: le bouton courant est signalé",
+    "status": "PASS"
+  },
+  {
+    "name": "avant/après: le curseur répond au clavier",
+    "status": "PASS"
+  },
+  {
+    "name": "lien direct: #service-4 ouvre le bon service",
+    "status": "PASS"
+  },
+  {
+    "name": "Tab atteint les commandes, focus visible",
+    "status": "PASS"
+  },
+  {
+    "name": "toucher + téléphone: pas de défilement horizontal, cibles de 44 px",
+    "status": "PASS"
+  },
+  {
+    "name": "mouvement réduit: animations coupées",
+    "status": "PASS"
+  },
+  {
+    "name": "aucune requête réseau, aucune erreur JavaScript",
+    "status": "PASS"
+  }
+]

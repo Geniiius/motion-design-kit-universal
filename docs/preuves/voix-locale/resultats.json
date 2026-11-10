@@ -1,0 +1,54 @@
+{
+ "pass": true,
+ "voix": [
+  {
+   "langue": "fr",
+   "voix": "ff_siwis",
+   "duree_s": 7.941,
+   "calcul_s": 15.4,
+   "minutage": "real",
+   "mots": 24,
+   "visemes": 106,
+   "texte_retrouve": 0.92,
+   "ecart_pauses_s": 0.179,
+   "pauses": 2,
+   "srt_problemes": [],
+   "entendu": "Bonjour, du pain chaud chaque matin à deux pas de chez vous. Goutter la différence, c 'est préparer ici même avant le lever du soleil.",
+   "texte_ecrit_conserve": true,
+   "pass": true
+  },
+  {
+   "langue": "es",
+   "voix": "ef_dora",
+   "duree_s": 7.612,
+   "calcul_s": 14.6,
+   "minutage": "real",
+   "mots": 24,
+   "visemes": 102,
+   "texte_retrouve": 1.0,
+   "ecart_pauses_s": 0.223,
+   "pauses": 2,
+   "srt_problemes": [],
+   "entendu": "Hola, pan caliente, cada mañana a dos pasos de tu casa. Prueba la diferencia, se prepara aquí mismo antes de que salga el sol.",
+   "texte_ecrit_conserve": true,
+   "pass": true
+  },
+  {
+   "langue": "en",
+   "voix": "af_bella",
+   "duree_s": 8.318,
+   "calcul_s": 14.7,
+   "minutage": "real",
+   "mots": 22,
+   "visemes": 102,
+   "texte_retrouve": 1.0,
+   "ecart_pauses_s": 0.15,
+   "pauses": 4,
+   "srt_problemes": [],
+   "entendu": "Hello, warm bread every morning just around the corner. Taste the difference. It is made right here before the sun comes up.",
+   "texte_ecrit_conserve": true,
+   "pass": true
+  }
+ ],
+ "limite": "Le texte entendu et le minutage sont mesurés. Le naturel de la voix ne se juge qu'à l'oreille."
+}

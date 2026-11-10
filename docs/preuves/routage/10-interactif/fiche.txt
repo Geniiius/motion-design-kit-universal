@@ -1,0 +1,9 @@
+Assets détectés: aucun
+Intention: INTERACTIVE_PRESENTATION
+Direction artistique: à définir · 2d · stylized
+Pipeline: html-deck
+Manque et repli: aucun
+Livrable: html responsive
+Coût: 0, tout est local
+À valider: aucun
+Tests: python -m universal.cli qc

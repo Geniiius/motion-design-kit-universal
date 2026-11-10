@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "name": "cinema",
+  "request": {
+    "brief": "Scène cinématographique réaliste façon Hollywood",
+    "language": "fr"
+  },
+  "intent": [
+    "CREATE_FROM_SCRATCH"
+  ],
+  "inputs": [],
+  "style": {
+    "preset": "photorealistic-commercial",
+    "dimension": "2d",
+    "realism_level": "realistic",
+    "narrative": "unspecified",
+    "art_direction": "photorealistic-commercial",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {}
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Escena3D-Landscape"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-3d",
+      "why": "Scène 3D procédurale locale.",
+      "available": true
+    }
+  ],
+  "missing": [
+    {
+      "need": "Blender et assets réalistes (ou génération vidéo externe)",
+      "fallback": "Scène 3D PBR éclairée en environnement : look cinématographique stylisé, pas photoréaliste.",
+      "blocking": false
+    }
+  ],
+  "questions": [],
+  "notes": [
+    "« Hollywood » se traduit ici en critères réalisables : cadrage, lumière motivée, caméra, étalonnage, son et montage. Ce n'est pas une promesse de qualité blockbuster."
+  ],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

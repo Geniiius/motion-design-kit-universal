@@ -1,0 +1,9 @@
+Assets détectés: aucun
+Intention: CREATE_FROM_SCRATCH
+Direction artistique: à définir · 2d · stylized
+Pipeline: remotion-2d
+Manque et repli: aucun
+Livrable: video 16:9
+Coût: 0, tout est local
+À valider: aucun
+Tests: python -m universal.cli qc

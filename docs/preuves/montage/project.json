@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0",
+  "name": "montage",
+  "request": {
+    "brief": "Monte ces clips avec le logo et la voix",
+    "language": "fr"
+  },
+  "intent": [
+    "EDIT_FOOTAGE",
+    "HYBRID_COMPOSITE"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\examples\\medios\\clip-a.mp4",
+      "type": "video",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "duration_s": 5.0,
+        "width": 1920,
+        "height": 1080,
+        "rotation": 0,
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "alpha": false,
+        "color_space": null,
+        "color_transfer": null,
+        "color_range": null,
+        "fps": 30.0,
+        "variable_frame_rate": false,
+        "audio": {
+          "codec": "aac",
+          "channels": 1,
+          "sample_rate": "44100",
+          "language": "und"
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "0b98c8e63c47a30e92f1187ee7246f6fd0e4818ae26a5f467977e37b3467ed48",
+        "bytes": 318562
+      },
+      "treatment": [
+        "repérer",
+        "sélectionner",
+        "monter",
+        "étalonner"
+      ],
+      "warnings": []
+    },
+    {
+      "path": "<kit>\\examples\\medios\\clip-b.mp4",
+      "type": "video",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "duration_s": 5.0,
+        "width": 1280,
+        "height": 720,
+        "rotation": 0,
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "alpha": false,
+        "color_space": null,
+        "color_transfer": null,
+        "color_range": null,
+        "fps": 25.0,
+        "variable_frame_rate": false,
+        "audio": {
+          "codec": "aac",
+          "channels": 1,
+          "sample_rate": "44100",
+          "language": "und"
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "28b58639804468c566b2065b66d33aa63d6e157253d0e4fd9eae78a564484b2a",
+        "bytes": 1990655
+      },
+      "treatment": [
+        "repérer",
+        "sélectionner",
+        "monter",
+        "étalonner"
+      ],
+      "warnings": []
+    },
+    {
+      "path": "<kit>\\examples\\medios\\clip-c.mp4",
+      "type": "video",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "duration_s": 5.0,
+        "width": 720,
+        "height": 1280,
+        "rotation": 0,
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "alpha": false,
+        "color_space": null,
+        "color_transfer": null,
+        "color_range": null,
+        "fps": 30.0,
+        "variable_frame_rate": false,
+        "audio": {
+          "codec": "aac",
+          "channels": 1,
+          "sample_rate": "44100",
+          "language": "und"
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "41ac6e003b4dfe6956684a1698a613c66cf141f2e0e12efe32c55eab80e2102d",
+        "bytes": 1688530
+      },
+      "treatment": [
+        "repérer",
+        "sélectionner",
+        "monter",
+        "étalonner"
+      ],
+      "warnings": []
+    },
+    {
+      "path": "<kit>\\examples\\medios\\foto-1.jpg",
+      "type": "image",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "image2",
+        "duration_s": 0.04,
+        "width": 960,
+        "height": 540,
+        "rotation": 0,
+        "codec": "mjpeg",
+        "pix_fmt": "yuvj420p",
+        "alpha": false,
+        "color_space": "bt470bg",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "ad25446adee2b0e86ceb45769e88b16c03c26b5f69c3077324302f07de72f6a4",
+        "bytes": 15132
+      },
+      "treatment": [
+        "recadrer",
+        "séparer en plans si faisable",
+        "mettre en mouvement"
+      ],
+      "warnings": [
+        "Photo plate : pas d'information 3D réelle, la parallaxe est une simulation 2.5D."
+      ]
+    },
+    {
+      "path": "<kit>\\examples\\medios\\foto-2.jpg",
+      "type": "image",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "image2",
+        "duration_s": 0.04,
+        "width": 960,
+        "height": 540,
+        "rotation": 0,
+        "codec": "mjpeg",
+        "pix_fmt": "yuvj420p",
+        "alpha": false,
+        "color_space": "bt470bg",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "7176e2b9c6f5cedf9dd5e89da6d5c77a1a4f4ba9221ea1456f7149d8d05a6302",
+        "bytes": 13298
+      },
+      "treatment": [
+        "recadrer",
+        "séparer en plans si faisable",
+        "mettre en mouvement"
+      ],
+      "warnings": [
+        "Photo plate : pas d'information 3D réelle, la parallaxe est une simulation 2.5D."
+      ]
+    },
+    {
+      "path": "<kit>\\examples\\medios\\logo-demo.png",
+      "type": "image",
+      "role": "logo",
+      "exists": true,
+      "metadata": {
+        "container": "png_pipe",
+        "width": 768,
+        "height": 768,
+        "rotation": 0,
+        "codec": "png",
+        "pix_fmt": "rgba",
+        "alpha": true,
+        "color_space": "gbr",
+        "color_transfer": null,
+        "color_range": "pc",
+        "vector": false
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "dcc416640829b13bbc66b6d808c72e2abaa5e814ac72c17b0aa438c69f6ad6c3",
+        "bytes": 25972
+      },
+      "treatment": [
+        "réutiliser",
+        "animer sans déformer",
+        "respecter proportions et couleurs"
+      ],
+      "warnings": []
+    },
+    {
+      "path": "<kit>\\examples\\medios\\musica-demo.m4a",
+      "type": "audio",
+      "role": "music",
+      "exists": true,
+      "metadata": {
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "duration_s": 20.0,
+        "audio": {
+          "codec": "aac",
+          "channels": 2,
+          "sample_rate": "48000",
+          "language": "und"
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "0f30383e020895c245c00ed8a8ba820cb9efff16138919acebef767e1462c710",
+        "bytes": 302468
+      },
+      "treatment": [
+        "réutiliser",
+        "baisser sous la voix"
+      ],
+      "warnings": []
+    },
+    {
+      "path": "<kit>\\out\\demos\\montage\\voz.wav",
+      "type": "audio",
+      "role": "voice",
+      "exists": true,
+      "metadata": {
+        "container": "wav",
+        "duration_s": 8.004,
+        "audio": {
+          "codec": "pcm_s16le",
+          "channels": 1,
+          "sample_rate": "44100",
+          "language": null
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "4e25e72871e324b0c64fc8f5c98cc4ae2da328ee53446781970ce2f5877bad63",
+        "bytes": 706004
+      },
+      "treatment": [
+        "réutiliser",
+        "normaliser",
+        "transcrire"
+      ],
+      "warnings": []
+    }
+  ],
+  "style": {
+    "preset": null,
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "à définir",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "ffmpeg-edit",
+        "mode": "edl"
+      }
+    }
+  ],
+  "understanding": {
+    "source": "mots",
+    "certain": true,
+    "indices": [
+      "EDIT_FOOTAGE"
+    ]
+  },
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": [
+      {
+        "src": "<kit>\\examples\\medios\\clip-a.mp4",
+        "in": 0.5,
+        "seconds": 2.4
+      },
+      {
+        "src": "<kit>\\examples\\medios\\foto-1.jpg",
+        "seconds": 2,
+        "transition": "fade"
+      },
+      {
+        "src": "<kit>\\examples\\medios\\clip-b.mp4",
+        "in": 1,
+        "seconds": 2.2,
+        "transition": "cut"
+      },
+      {
+        "src": "<kit>\\examples\\medios\\clip-c.mp4",
+        "in": 0.4,
+        "seconds": 2,
+        "transition": "fade"
+      },
+      {
+        "src": "<kit>\\examples\\medios\\foto-2.jpg",
+        "seconds": 2.2,
+        "transition": "fade"
+      }
+    ]
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "ffmpeg-edit",
+      "why": "Montage et transformation de médias existants : pas besoin de moteur de génération.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [
+    {
+      "what": "Droits et consentement sur la voix fournie",
+      "why": "Réutilisation de la voix dans un film."
+    }
+  ],
+  "status": "planned"
+}

@@ -1,0 +1,165 @@
+{
+ "personnage": {
+  "demo": "personnage",
+  "video": "<kit>\\out\\demos\\personnage\\personnage.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\personnage",
+  "seconds": 39,
+  "profile": "review"
+ },
+ "explainer": {
+  "demo": "explainer",
+  "video": "<kit>\\out\\demos\\explainer\\explainer.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\explainer",
+  "seconds": 72,
+  "profile": "review"
+ },
+ "montage": {
+  "demo": "montage",
+  "video": "<kit>\\out\\demos\\montage\\montage.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\montage",
+  "seconds": 12,
+  "profile": "review"
+ },
+ "glb": {
+  "demo": "modele-glb",
+  "video": "<kit>\\out\\demos\\modele-glb\\modele-glb.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\modele-glb",
+  "seconds": 38,
+  "profile": "review"
+ },
+ "cinema": {
+  "demo": "cinema",
+  "video": "<kit>\\out\\demos\\cinema\\cinema.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\cinema",
+  "seconds": 54,
+  "profile": "review"
+ },
+ "hybride": {
+  "demo": "hybride",
+  "video": "<kit>\\out\\demos\\hybride\\hybride.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\hybride",
+  "seconds": 39,
+  "profile": "review"
+ },
+ "presentation": {
+  "demo": "presentation",
+  "video": "<kit>\\out\\demos\\presentation\\services-film.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\presentation",
+  "deck": "<kit>\\out\\demos\\presentation\\services.html",
+  "interaction_tests_exit": 0,
+  "interaction_tests": "PASS  menu visible au chargement\nPASS  vrai clic: ouvre un service et met à jour l'adresse\nPASS  démo par étapes: chaque clic révèle l'étape suivante\nPASS  clavier: flèche droite passe au service suivant\nPASS  point interactif: le clic affiche sa note\nPASS  Échap: retour au menu et focus rendu au bon bouton\nPASS  chapitres: le bouton courant est signalé\nPASS  avant/après: le curseur répond au clavier\nPASS  lien direct: #service-4 ouvre le bon service\nPASS  Tab atteint les commandes, focus visible\nPASS  toucher + téléphone: pas de défilement horizontal, cibles de 44 px\nPASS  mouvement réduit: animations coupées\nPASS  aucune requête réseau, aucune erreur JavaScript\n",
+  "seconds": 37,
+  "profile": "review"
+ },
+ "personnage-fr": {
+  "demo": "personnage-fr",
+  "video": "<kit>\\out\\demos\\personnage-fr\\personnage-fr.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\personnage-fr",
+  "seconds": 30,
+  "profile": "review"
+ },
+ "personnage-es": {
+  "demo": "personnage-es",
+  "video": "<kit>\\out\\demos\\personnage-es\\personnage-es.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\personnage-es",
+  "seconds": 31,
+  "profile": "review"
+ },
+ "explainer-fr": {
+  "demo": "explainer-fr",
+  "video": "<kit>\\out\\demos\\explainer-fr\\explainer-fr.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\explainer-fr",
+  "seconds": 63,
+  "profile": "review"
+ },
+ "explainer-es": {
+  "demo": "explainer-es",
+  "video": "<kit>\\out\\demos\\explainer-es\\explainer-es.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\explainer-es",
+  "seconds": 55,
+  "profile": "review"
+ },
+ "film-style": {
+  "demo": "film-style",
+  "video": "<kit>\\out\\demos\\riso\\du-pain-chaud.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\film-style",
+  "size": "1920x1080",
+  "style": "risograph",
+  "seconds": 95,
+  "profile": "final"
+ },
+ "effets": {
+  "demo": "effects-demo",
+  "video": "<kit>\\out\\demos\\effets-demo\\effets.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [
+   "Vidéo en paysage : ces effets sont pensés pour le vertical, certains titres et cartes sortent du cadre. Regarder chaque effet avant de livrer.",
+   "Visage trouvé sur 0 images sur 150 : les éléments peuvent se placer devant la personne. Regarder les images avant de livrer."
+  ],
+  "proofs": "<kit>\\docs\\preuves\\effects-demo",
+  "tracking": {
+   "frames": 150,
+   "faces": 0,
+   "silhouettes": 0
+  },
+  "seconds": 152,
+  "profile": "final"
+ },
+ "personnage-kokoro-fr": {
+  "demo": "personnage-kokoro-fr",
+  "video": "<kit>\\out\\demos\\personnage-kokoro-fr\\personnage-kokoro-fr.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\personnage-kokoro-fr",
+  "seconds": 75,
+  "profile": "review"
+ },
+ "personnage-kokoro-es": {
+  "demo": "personnage-kokoro-es",
+  "video": "<kit>\\out\\demos\\personnage-kokoro-es\\personnage-kokoro-es.mp4",
+  "pass": true,
+  "blocking": [],
+  "warnings": [],
+  "proofs": "<kit>\\docs\\preuves\\personnage-kokoro-es",
+  "seconds": 66,
+  "profile": "review"
+ }
+}

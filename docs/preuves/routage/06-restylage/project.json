@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "name": "06-restylage",
+  "request": {
+    "brief": "Transforme cette vidéo en caricature",
+    "language": "fr"
+  },
+  "intent": [
+    "RESTYLE_FOOTAGE"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\examples\\medios\\clip-c.mp4",
+      "type": "video",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "duration_s": 5.0,
+        "width": 720,
+        "height": 1280,
+        "rotation": 0,
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "alpha": false,
+        "color_space": null,
+        "color_transfer": null,
+        "color_range": null,
+        "fps": 30.0,
+        "variable_frame_rate": false,
+        "audio": {
+          "codec": "aac",
+          "channels": 1,
+          "sample_rate": "44100",
+          "language": "und"
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "41ac6e003b4dfe6956684a1698a613c66cf141f2e0e12efe32c55eab80e2102d",
+        "bytes": 1688530
+      },
+      "treatment": [
+        "repérer",
+        "sélectionner",
+        "monter",
+        "étalonner"
+      ],
+      "warnings": []
+    }
+  ],
+  "style": {
+    "preset": "cartoon-caricature",
+    "dimension": "2d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "cartoon-caricature",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "ffmpeg-edit",
+        "mode": "restyle-preview"
+      }
+    }
+  ],
+  "understanding": {
+    "source": "mots",
+    "certain": true,
+    "indices": [
+      "RESTYLE_FOOTAGE"
+    ]
+  },
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "ffmpeg-edit",
+      "why": "Aperçu local par filtres seulement : ce n'est pas un vrai restylage.",
+      "available": true
+    }
+  ],
+  "missing": [
+    {
+      "need": "Service de restylage image/vidéo",
+      "fallback": "Aperçu par filtres FFmpeg : look posterisé, sans suivi d'identité.",
+      "blocking": true
+    }
+  ],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [
+    {
+      "what": "Consentement des personnes filmées et droits sur la vidéo",
+      "why": "Transformation de visages ou de personnes réelles."
+    },
+    {
+      "what": "Fournisseur externe et budget",
+      "why": "Aucun fournisseur de restylage n'est configuré, tout appel serait payant."
+    }
+  ],
+  "status": "blocked"
+}

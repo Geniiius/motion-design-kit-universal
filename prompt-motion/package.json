@@ -1,0 +1,15 @@
+{
+  "name": "prompt-motion-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motor HTML seek(t) + render Playwright/ffmpeg, estilo prompt-motion.com",
+  "type": "module",
+  "scripts": {
+    "render": "node render.mjs",
+    "render:paper": "node render.mjs compositions/paper-ui.html",
+    "render:hud": "node render.mjs compositions/studio-hud.html"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}

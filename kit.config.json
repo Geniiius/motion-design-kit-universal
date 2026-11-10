@@ -1,0 +1,50 @@
+{
+  "kit": {
+    "name": "Motion Design Kit Universal Studio",
+    "version": "3.1.0"
+  },
+  "requirements": {
+    "python_min": "3.10",
+    "modules_python": ["3.12", "3.13"],
+    "node_min": 22,
+    "ffmpeg_min": 6,
+    "disk_free_gb_warn": 10,
+    "disk_free_gb_fail": 3,
+    "ram_gb_warn": 8
+  },
+  "consent": {
+    "free_modules": "ask"
+  },
+  "render": {
+    "loudness_lufs": -14,
+    "hardware_encoder": "long",
+    "long_video_s": 300
+  },
+  "workflows": {
+    "silence": {
+      "min_silence_s": 0.6,
+      "padding_s": 0.12,
+      "db_below_loudness": 22,
+      "min_keep_s": 0.15
+    },
+    "captions": {
+      "max_chars_wide": 40,
+      "max_chars_tall": 20
+    },
+    "reframe": {
+      "mode": "auto",
+      "face_coverage_min": 0.6,
+      "samples_per_s": 2
+    },
+    "clips": {
+      "min_s": 3,
+      "advise_max_s": 180
+    }
+  },
+  "updates": {
+    "source": null
+  },
+  "logs": {
+    "keep_days": 30
+  }
+}

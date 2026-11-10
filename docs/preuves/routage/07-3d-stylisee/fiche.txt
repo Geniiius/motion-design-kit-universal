@@ -1,0 +1,9 @@
+Assets détectés: aucun
+Intention: CREATE_FROM_SCRATCH
+Direction artistique: stylized-3d · 3d · stylized
+Pipeline: remotion-3d
+Manque et repli: aucun
+Livrable: video 16:9
+Coût: 0, tout est local
+À valider: aucun
+Tests: python -m universal.cli qc

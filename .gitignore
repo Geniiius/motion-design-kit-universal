@@ -1,0 +1,39 @@
+node_modules/
+out/
+frames/
+renders/
+workspaces/
+
+# Universal Studio
+integrations/vendors/
+__pycache__/
+*.pyc
+node_modules/
+modules/three-studio/dist/
+.env
+
+# Medios generados (reproducibles con: python -m universal.cli fixtures)
+examples/medios/*
+!examples/medios/logo-demo.png
+template/public/universal/
+.remotion/
+.hyperframes/
+perfil/
+.env.*
+docs/preuves/**/*.mp4
+
+# Modules : environnement, modeles et paquets se telechargent, rien de tout cela ne se partage
+modules/.venv/
+modules/models/
+modules/opuscar/.source/
+modules/opuscar/.release/
+modules/opuscar/core/tts/*.onnx
+modules/opuscar/core/tts/*.bin
+modules/opuscar/core/audio/instruments/
+modules/opuscar/core/assets/polyhaven/*
+!modules/opuscar/core/assets/polyhaven/SOURCES.md
+
+# Assistant : etat de cette machine, reglages de la personne, journaux. Rien de tout cela ne se partage
+kit-state.json
+kit.config.local.json
+logs/

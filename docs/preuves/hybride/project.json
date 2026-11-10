@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "name": "hybride",
+  "request": {
+    "brief": "Film hybride : rushes et personnage 3D",
+    "language": "fr"
+  },
+  "intent": [
+    "EDIT_FOOTAGE",
+    "HYBRID_COMPOSITE",
+    "CHARACTER_ANIMATION"
+  ],
+  "inputs": [
+    {
+      "path": "<kit>\\examples\\medios\\clip-a.mp4",
+      "type": "video",
+      "role": "source",
+      "exists": true,
+      "metadata": {
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "duration_s": 5.0,
+        "width": 1920,
+        "height": 1080,
+        "rotation": 0,
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "alpha": false,
+        "color_space": null,
+        "color_transfer": null,
+        "color_range": null,
+        "fps": 30.0,
+        "variable_frame_rate": false,
+        "audio": {
+          "codec": "aac",
+          "channels": 1,
+          "sample_rate": "44100",
+          "language": "und"
+        }
+      },
+      "rights": {
+        "status": "generated-locally"
+      },
+      "provenance": {
+        "source": "user",
+        "sha256": "0b98c8e63c47a30e92f1187ee7246f6fd0e4818ae26a5f467977e37b3467ed48",
+        "bytes": 318562
+      },
+      "treatment": [
+        "repérer",
+        "sélectionner",
+        "monter",
+        "étalonner"
+      ],
+      "warnings": []
+    }
+  ],
+  "style": {
+    "preset": "hybrid-live-action-cgi",
+    "dimension": "3d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "hybrid-live-action-cgi",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {}
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "ffmpeg-edit",
+        "mode": "edl"
+      }
+    }
+  ],
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "ffmpeg-edit",
+      "why": "Montage et transformation de médias existants : pas besoin de moteur de génération.",
+      "available": true
+    },
+    {
+      "id": "remotion-3d",
+      "why": "Vrais objets et caméra en volume, personnage et gestes pilotés par image.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [],
+  "quality": {
+    "profile": "draft",
+    "exceptions": []
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

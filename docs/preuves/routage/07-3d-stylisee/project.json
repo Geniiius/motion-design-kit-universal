@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "name": "07-3d-stylisee",
+  "request": {
+    "brief": "Une création 3D stylisée : un objet qui tourne dans la lumière",
+    "language": "fr"
+  },
+  "intent": [
+    "CREATE_FROM_SCRATCH"
+  ],
+  "inputs": [],
+  "style": {
+    "preset": "stylized-3d",
+    "dimension": "3d",
+    "realism_level": "stylized",
+    "narrative": "unspecified",
+    "art_direction": "stylized-3d",
+    "references": [],
+    "negative_constraints": [],
+    "continuity": {},
+    "film_style": null
+  },
+  "deliverables": [
+    {
+      "kind": "video",
+      "container": "mp4",
+      "format": "16:9",
+      "width": 1920,
+      "height": 1080,
+      "duration_s": null,
+      "language": "fr",
+      "interactive": false,
+      "adapter": {
+        "engine": "remotion",
+        "composition": "Escena3D-Landscape"
+      }
+    }
+  ],
+  "understanding": {
+    "source": "defaut",
+    "certain": false,
+    "consigne": "Rien dans la demande ne désigne un travail précis : ce choix est un défaut, et il ne sera pas exécuté tel quel. Comprends le besoin toi-même, puis relance avec --intent, --workflow, --style ou --effects, ou pose une question."
+  },
+  "timeline": {
+    "fps": 30,
+    "scenes": [],
+    "edl": []
+  },
+  "characters": [],
+  "scene_assets": [],
+  "engines": [
+    {
+      "id": "remotion-3d",
+      "why": "Scène 3D procédurale locale.",
+      "available": true
+    }
+  ],
+  "missing": [],
+  "questions": [],
+  "notes": [
+    "Rien dans la demande ne désigne un travail précis : ce choix est un défaut, et il ne sera pas exécuté tel quel. Comprends le besoin toi-même, puis relance avec --intent, --workflow, --style ou --effects, ou pose une question."
+  ],
+  "quality": {
+    "profile": "draft",
+    "exceptions": [
+      {
+        "type": "black",
+        "from": 0,
+        "to": 1000000000.0,
+        "reason": "Scène sombre voulue"
+      },
+      {
+        "type": "no-audio",
+        "reason": "Démonstrateur image"
+      }
+    ]
+  },
+  "cost_ceiling": {
+    "amount": 0,
+    "currency": "EUR"
+  },
+  "approval_required": [],
+  "status": "planned"
+}

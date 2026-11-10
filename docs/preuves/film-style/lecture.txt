@@ -1,0 +1,2 @@
+OK  a                  at 11.52s   11 chars  need 2.23s  got 2.48s  "Du pain chaud"
+OK  b                  at 11.52s   12 chars  need 2.30s  got 2.48s  "chaque matin."

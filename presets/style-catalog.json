@@ -1,0 +1,3480 @@
+{
+ "version": 2,
+ "statuts": {
+  "demontre": "rendu dans ce kit, preuve dans docs/preuves",
+  "recette": "moteur et méthode présents, pas d'échantillon dédié",
+  "bloc-hf": "bloc HyperFrames 0.8.164 existant, non rendu ici",
+  "externe": "exige des assets ou un logiciel absents"
+ },
+ "provenance": [
+  "Motion-Design-Kit",
+  "cblain100-prog/motion-design-claude-code@a89fc54 (MIT)",
+  "heygen-com/hyperframes@v0.8.164 (Apache-2.0)"
+ ],
+ "styles": [
+  {
+   "id": "kinetic-type",
+   "nom": "Typographie cinétique",
+   "categorie": "typographie",
+   "tags": [
+    "texte",
+    "reel",
+    "rythme",
+    "mots"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "forte",
+   "duree": "8-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Texte ≥ 5 % de la hauteur sur mobile",
+   "statut": "demontre",
+   "echantillon": "composition Kinetic-*",
+   "blocs_hyperframes": [
+    "hw-title",
+    "yt-prism-title",
+    "glass-shard-title"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "editorial-corporate",
+   "nom": "Éditorial corporate",
+   "categorie": "typographie",
+   "tags": [
+    "corporate",
+    "sobre",
+    "institutionnel"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "faible",
+   "duree": "20-90 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Pas de rebonds, rythme posé",
+   "statut": "recette",
+   "echantillon": "composition Promo-*",
+   "blocs_hyperframes": [
+    "canopy-part-title",
+    "lt-clean-bar"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "minimal-premium",
+   "nom": "Minimal premium",
+   "categorie": "typographie",
+   "tags": [
+    "luxe",
+    "minimal",
+    "blanc",
+    "espace"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "prompt-motion"
+   ],
+   "intensite": "faible",
+   "duree": "10-40 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Une seule couleur d'accent",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "flash-through-white",
+    "rack-focus"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "bold-type",
+   "nom": "Typographie massive",
+   "categorie": "typographie",
+   "tags": [
+    "bold",
+    "impact",
+    "affiche"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "forte",
+   "duree": "6-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Lisible sans le son",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "hw-write-title",
+    "editorial-flash-overlay"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "retro",
+   "nom": "Rétro VHS",
+   "categorie": "typographie",
+   "tags": [
+    "vintage",
+    "vhs",
+    "crt",
+    "annees80"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "6-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Grain et aberration avec parcimonie",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "camcorder-hud",
+    "glitch"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "paper-ui",
+   "nom": "Paper UI",
+   "categorie": "typographie",
+   "tags": [
+    "papier",
+    "interface",
+    "curseur",
+    "dribbble"
+   ],
+   "moteurs": [
+    "prompt-motion"
+   ],
+   "intensite": "moyenne",
+   "duree": "5-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Fond papier gris chaud",
+   "statut": "demontre",
+   "echantillon": "ejemplos/paper-ui.mp4",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "flat-2d",
+   "nom": "Flat 2D",
+   "categorie": "illustration",
+   "tags": [
+    "plat",
+    "vectoriel",
+    "simple"
+   ],
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "intensite": "moyenne",
+   "duree": "10-60 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Palette réduite",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "blob",
+    "stripes"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "collage",
+   "nom": "Collage",
+   "categorie": "illustration",
+   "tags": [
+    "papier",
+    "decoupe",
+    "mixed",
+    "media"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "10-40 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Droits de chaque image à vérifier",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "gallery-tunnel"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "whiteboard",
+   "nom": "Tableau blanc pédagogique",
+   "categorie": "pedagogie",
+   "tags": [
+    "dessin",
+    "main",
+    "tableau"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "faible",
+   "duree": "30-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Calme, une idée par étape",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "hw-scribble-transition",
+    "hw-frame",
+    "hw-path-text"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "educational-infographic",
+   "nom": "Infographie pédagogique",
+   "categorie": "pedagogie",
+   "tags": [
+    "explainer",
+    "donnees",
+    "sources"
+   ],
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "intensite": "faible",
+   "duree": "20-90 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Source, unité et date visibles, aucun chiffre inventé",
+   "statut": "demontre",
+   "echantillon": "composition Explainer-*",
+   "blocs_hyperframes": [
+    "data-chart"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "math-science",
+   "nom": "Maths et sciences",
+   "categorie": "pedagogie",
+   "tags": [
+    "scientifique",
+    "formule",
+    "courbe"
+   ],
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "intensite": "faible",
+   "duree": "30-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Manim non installé : courbes pilotées par données",
+   "statut": "recette",
+   "echantillon": "composition Explainer-*",
+   "blocs_hyperframes": [
+    "mk-line-graph"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "flow-diagram",
+   "nom": "Diagramme de flux",
+   "categorie": "pedagogie",
+   "tags": [
+    "schema",
+    "processus",
+    "etapes"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "faible",
+   "duree": "10-40 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Sens de lecture unique",
+   "statut": "demontre",
+   "echantillon": "pièce FlowDiagram",
+   "blocs_hyperframes": [
+    "flowchart",
+    "flowchart-vertical",
+    "hw-pipeline"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "before-after",
+   "nom": "Avant / après",
+   "categorie": "pedagogie",
+   "tags": [
+    "comparaison",
+    "transformation"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "html-deck",
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "5-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Mêmes cadrage et unité des deux côtés",
+   "statut": "demontre",
+   "echantillon": "pièce Comparison, présentation HTML",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "charts-dashboard",
+   "nom": "Graphiques et tableaux de bord",
+   "categorie": "donnees",
+   "tags": [
+    "chart",
+    "dashboard",
+    "kpi",
+    "barres"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "faible",
+   "duree": "10-60 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Axes et unités visibles",
+   "statut": "demontre",
+   "echantillon": "pièce DataChart",
+   "blocs_hyperframes": [
+    "data-chart",
+    "bar-chart-race",
+    "heatmap",
+    "mk-progress-stat"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "maps",
+   "nom": "Cartes",
+   "categorie": "donnees",
+   "tags": [
+    "carte",
+    "geographie",
+    "territoire"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "8-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Frontières à vérifier selon le sujet",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "world-map",
+    "us-map",
+    "spain-map",
+    "nyc-paris-flight"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "timelines",
+   "nom": "Frises chronologiques",
+   "categorie": "donnees",
+   "tags": [
+    "dates",
+    "histoire",
+    "chronologie"
+   ],
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "intensite": "faible",
+   "duree": "10-40 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Dates sourcées",
+   "statut": "demontre",
+   "echantillon": "pièce Timeline",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "parallax-25d",
+   "nom": "2.5D parallaxe",
+   "categorie": "profondeur",
+   "tags": [
+    "parallax",
+    "plans",
+    "photo",
+    "vivante"
+   ],
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "intensite": "moyenne",
+   "duree": "4-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Profondeur simulée : ce n'est pas de la 3D",
+   "statut": "demontre",
+   "echantillon": "composition Parallaxe-*",
+   "blocs_hyperframes": [
+    "camera-dolly-zoom"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "isometric",
+   "nom": "Isométrique",
+   "categorie": "profondeur",
+   "tags": [
+    "iso",
+    "plan",
+    "axonometrique"
+   ],
+   "moteurs": [
+    "hyperframes",
+    "remotion-3d"
+   ],
+   "intensite": "moyenne",
+   "duree": "8-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Caméra orthographique à régler",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "cuboid-carousel"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "futuristic-hud",
+   "nom": "HUD futuriste",
+   "categorie": "interface",
+   "tags": [
+    "hud",
+    "science",
+    "fiction",
+    "tech"
+   ],
+   "moteurs": [
+    "prompt-motion",
+    "hyperframes"
+   ],
+   "intensite": "forte",
+   "duree": "5-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Densité d'information maîtrisée",
+   "statut": "demontre",
+   "echantillon": "ejemplos/studio-hud.mp4",
+   "blocs_hyperframes": [
+    "hologram"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "neon",
+   "nom": "Néon",
+   "categorie": "interface",
+   "tags": [
+    "neon",
+    "cyberpunk",
+    "nuit"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "forte",
+   "duree": "5-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Contraste à contrôler",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "lt-neon-border",
+    "thin-film"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "glassmorphism",
+   "nom": "Glassmorphism",
+   "categorie": "interface",
+   "tags": [
+    "verre",
+    "flou",
+    "transparent"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "5-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Lisibilité du texte sur le flou",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "glass-hero",
+    "ios26-liquid-glass",
+    "vfx-liquid-glass"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "motion-ui",
+   "nom": "Motion UI",
+   "categorie": "interface",
+   "tags": [
+    "interface",
+    "microinteraction",
+    "bouton"
+   ],
+   "moteurs": [
+    "prompt-motion",
+    "remotion-2d"
+   ],
+   "intensite": "moyenne",
+   "duree": "5-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "150-350 ms par transition",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "liquid-glass-widgets"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "saas-demo",
+   "nom": "Démo produit SaaS",
+   "categorie": "interface",
+   "tags": [
+    "saas",
+    "produit",
+    "logiciel",
+    "demo"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "prompt-motion",
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "30-90 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Reconstruire l'interface, curseur sur l'élément nommé",
+   "statut": "recette",
+   "echantillon": "composition Promo-*",
+   "blocs_hyperframes": [
+    "app-showcase",
+    "code-typing"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "social-ads",
+   "nom": "Publicités sociales",
+   "categorie": "publicite",
+   "tags": [
+    "reel",
+    "tiktok",
+    "ad"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "forte",
+   "duree": "6-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Accroche en 2 s, zones sûres",
+   "statut": "demontre",
+   "echantillon": "compositions Promo-Reel, Kinetic-Reel",
+   "blocs_hyperframes": [
+    "instagram-follow",
+    "tiktok-follow"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "product-launch",
+   "nom": "Lancement de produit",
+   "categorie": "publicite",
+   "tags": [
+    "lancement",
+    "launch",
+    "teaser"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "forte",
+   "duree": "30-80 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Un seul bouton en fin de film si CTA",
+   "statut": "recette",
+   "echantillon": "composition Promo-*",
+   "blocs_hyperframes": [
+    "app-showcase",
+    "logo-outro"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "logo-reveal",
+   "nom": "Logo reveal",
+   "categorie": "marque",
+   "tags": [
+    "logo",
+    "intro",
+    "outro"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "3-8 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Logo exact, proportions et couleurs conservées",
+   "statut": "demontre",
+   "echantillon": "composition Logo-*",
+   "blocs_hyperframes": [
+    "logo-outro",
+    "extruded-logo",
+    "yt-logo-intro"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "lower-thirds",
+   "nom": "Lower thirds",
+   "categorie": "marque",
+   "tags": [
+    "titre",
+    "nom",
+    "bandeau",
+    "interview"
+   ],
+   "moteurs": [
+    "hyperframes",
+    "remotion-2d"
+   ],
+   "intensite": "faible",
+   "duree": "3-6 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Hors zone couverte par la plateforme",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "lt-clean-bar",
+    "lt-kicker-name",
+    "yt-lower-third",
+    "lower-third-bild"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "kinetic-captions",
+   "nom": "Sous-titres cinétiques",
+   "categorie": "marque",
+   "tags": [
+    "captions",
+    "sous-titres",
+    "mots"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "toute durée",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Calés sur les marques réelles de la voix",
+   "statut": "demontre",
+   "echantillon": "couche Subtitulo",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "stylized-3d-cartoon",
+   "nom": "3D stylisée cartoon",
+   "categorie": "3d",
+   "tags": [
+    "cartoon",
+    "mascotte",
+    "clay",
+    "low",
+    "poly"
+   ],
+   "moteurs": [
+    "remotion-3d"
+   ],
+   "intensite": "moyenne",
+   "duree": "5-60 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Lumière d'environnement obligatoire",
+   "statut": "demontre",
+   "echantillon": "composition Personaje-Nodo-*",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "character-mascot",
+   "nom": "Personnages et mascottes",
+   "categorie": "3d",
+   "tags": [
+    "personnage",
+    "presentateur",
+    "parle"
+   ],
+   "moteurs": [
+    "remotion-3d"
+   ],
+   "intensite": "moyenne",
+   "duree": "5-90 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Fiche de personnage, continuité entre plans",
+   "statut": "demontre",
+   "echantillon": "composition Personaje-Nodo-*, Personaje-GLB-*",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "product-cgi",
+   "nom": "Produit CGI",
+   "categorie": "3d",
+   "tags": [
+    "produit",
+    "packaging",
+    "objet",
+    "turntable"
+   ],
+   "moteurs": [
+    "remotion-3d",
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "4-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Un modèle fourni donne un meilleur résultat",
+   "statut": "demontre",
+   "echantillon": "composition Escena3D-*",
+   "blocs_hyperframes": [
+    "product-turntable"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "controlled-photoreal",
+   "nom": "Photoréalisme contrôlé",
+   "categorie": "3d",
+   "tags": [
+    "photoreal",
+    "realiste",
+    "cgi"
+   ],
+   "moteurs": [
+    "blender"
+   ],
+   "intensite": "faible",
+   "duree": "4-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Blender et assets nécessaires, non atteint par le moteur local",
+   "statut": "externe",
+   "echantillon": null,
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "architecture",
+   "nom": "Architecture et espaces",
+   "categorie": "3d",
+   "tags": [
+    "espace",
+    "batiment",
+    "interieur"
+   ],
+   "moteurs": [
+    "remotion-3d",
+    "blender"
+   ],
+   "intensite": "faible",
+   "duree": "8-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Modèle à fournir",
+   "statut": "externe",
+   "echantillon": null,
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "camera-3d",
+   "nom": "Caméra 3D",
+   "categorie": "3d",
+   "tags": [
+    "dolly",
+    "orbite",
+    "travelling"
+   ],
+   "moteurs": [
+    "remotion-3d",
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "4-20 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Piste caméra séparée du décor",
+   "statut": "demontre",
+   "echantillon": "pièce Camara",
+   "blocs_hyperframes": [
+    "camera-dolly-zoom",
+    "frost-sequence-camera-orbit"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "exploded-view",
+   "nom": "Vue éclatée",
+   "categorie": "3d",
+   "tags": [
+    "assemblage",
+    "eclate",
+    "pieces"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "4-15 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Non construit en Remotion, bloc HyperFrames",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "exploded-stack"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "light-simulation",
+   "nom": "Simulations légères",
+   "categorie": "3d",
+   "tags": [
+    "particules",
+    "fluide",
+    "procedural"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "moyenne",
+   "duree": "4-15 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Graine fixe, tiré du temps",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "water",
+    "ripples",
+    "nebula"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "cinematic-depth",
+   "nom": "Profondeur cinématographique",
+   "categorie": "cinema",
+   "tags": [
+    "cinema",
+    "lumiere",
+    "etalonnage",
+    "hollywood"
+   ],
+   "moteurs": [
+    "remotion-3d"
+   ],
+   "intensite": "moyenne",
+   "duree": "4-30 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Look stylisé : pas de photoréalisme local",
+   "statut": "demontre",
+   "echantillon": "composition Escena3D-*",
+   "blocs_hyperframes": [
+    "rack-focus",
+    "lens-flare",
+    "vfx-anamorphic-flare"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "live-action-vfx",
+   "nom": "Rushes + 3D / VFX",
+   "categorie": "cinema",
+   "tags": [
+    "hybride",
+    "compositing",
+    "vfx"
+   ],
+   "moteurs": [
+    "remotion-3d",
+    "ffmpeg-edit"
+   ],
+   "intensite": "moyenne",
+   "duree": "5-60 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Pas de suivi de caméra automatique",
+   "statut": "demontre",
+   "echantillon": "composition Hibrido-*",
+   "blocs_hyperframes": [
+    "light-leak",
+    "godrays"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "tutorial",
+   "nom": "Tutoriel",
+   "categorie": "genre",
+   "tags": [
+    "tutoriel",
+    "formation",
+    "pas",
+    "a",
+    "pas"
+   ],
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "intensite": "faible",
+   "duree": "30-180 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Curseur exact sur l'élément cité",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "code-typing",
+    "notes-reveal"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "podcast-interview",
+   "nom": "Podcast, interview",
+   "categorie": "genre",
+   "tags": [
+    "interview",
+    "parole",
+    "coupe"
+   ],
+   "moteurs": [
+    "ffmpeg-edit",
+    "herk-edit-kit"
+   ],
+   "intensite": "faible",
+   "duree": "toute durée",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Ne pas couper une phrase, Herk Edit Kit en option",
+   "statut": "recette",
+   "echantillon": "démonstrateur montage",
+   "blocs_hyperframes": [
+    "lt-clean-bar"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "event-film",
+   "nom": "Film d'événement",
+   "categorie": "genre",
+   "tags": [
+    "evenement",
+    "mariage",
+    "best",
+    "of"
+   ],
+   "moteurs": [
+    "ffmpeg-edit"
+   ],
+   "intensite": "moyenne",
+   "duree": "30-180 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Consentement des personnes, chronologie si demandée",
+   "statut": "demontre",
+   "echantillon": "démonstrateur montage",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "documentary",
+   "nom": "Documentaire",
+   "categorie": "genre",
+   "tags": [
+    "documentaire",
+    "reportage",
+    "archive"
+   ],
+   "moteurs": [
+    "ffmpeg-edit",
+    "remotion-2d"
+   ],
+   "intensite": "faible",
+   "duree": "60 s et plus",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Rythme lent assumé, pas de CTA imposé",
+   "statut": "recette",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "freeze-frame-dressing"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "multilingual-narration",
+   "nom": "Narration multilingue",
+   "categorie": "genre",
+   "tags": [
+    "traduction",
+    "langues",
+    "voix"
+   ],
+   "moteurs": [
+    "remotion-2d",
+    "elevenlabs"
+   ],
+   "intensite": "faible",
+   "duree": "toute durée",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Voix locale en-US seulement sur ce PC, autre langue : voix fournie ou accord payant",
+   "statut": "recette",
+   "echantillon": "écrans FR/ES de l'explainer",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "motion-comics",
+   "nom": "Motion comics",
+   "categorie": "genre",
+   "tags": [
+    "bande",
+    "dessinee",
+    "recit"
+   ],
+   "moteurs": [
+    "remotion-2d"
+   ],
+   "intensite": "moyenne",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Planches par calques",
+   "statut": "recette",
+   "echantillon": "composition Parallaxe-*",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "beat-music-video",
+   "nom": "Vidéo musicale au beat",
+   "categorie": "genre",
+   "tags": [
+    "musique",
+    "beat",
+    "rythme"
+   ],
+   "moteurs": [
+    "hyperframes"
+   ],
+   "intensite": "forte",
+   "duree": "15-60 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Grille vérifiée sur les vrais temps",
+   "statut": "bloc-hf",
+   "echantillon": null,
+   "blocs_hyperframes": [
+    "beat-freeze-cut",
+    "waveform"
+   ],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT), blocs HeyGen HyperFrames 0.8.164 (Apache-2.0)",
+   "licence": "MIT / Apache-2.0"
+  },
+  {
+   "id": "service-presentation",
+   "nom": "Présentation de services",
+   "categorie": "genre",
+   "tags": [
+    "services",
+    "catalogue",
+    "interactif"
+   ],
+   "moteurs": [
+    "html-deck",
+    "remotion-2d"
+   ],
+   "intensite": "faible",
+   "duree": "libre",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Tarifs et bénéfices vérifiés, jamais inventés",
+   "statut": "demontre",
+   "echantillon": "présentation HTML",
+   "blocs_hyperframes": [],
+   "source": "Motion Design Kit, patterns adaptés de cblain100-prog/motion-design-claude-code (MIT)",
+   "licence": "MIT"
+  },
+  {
+   "id": "rubber-hose",
+   "nom": "1930s Rubber Hose Cartoon",
+   "categorie": "cartoon et anime",
+   "tags": [
+    "food & drink",
+    "retro ads",
+    "kids"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "rubber-hose",
+   "alias": [
+    "rubber.?hose",
+    "cartoon des annees 30",
+    "dibujos de los 30",
+    "dessin anime a l.ancienne",
+    "(vieux|ancien) dessin anime",
+    "dibujos animados antiguos",
+    "old cartoon",
+    "old.school cartoon"
+   ]
+  },
+  {
+   "id": "cel-anime-80s",
+   "nom": "80s Cel Anime",
+   "categorie": "cartoon et anime",
+   "tags": [
+    "music videos",
+    "game trailers",
+    "nostalgia"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "cel-anime-80s",
+   "alias": [
+    "anime (des )?(annees )?80",
+    "anime de los 80",
+    "80s anime",
+    "cel anime"
+   ]
+  },
+  {
+   "id": "midcentury-toon",
+   "nom": "Mid-century Cartoon",
+   "categorie": "cartoon et anime",
+   "tags": [
+    "set-up guides",
+    "help centres",
+    "how-to"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "midcentury-toon",
+   "alias": [
+    "cartoon des annees 50",
+    "dibujos de los 50",
+    "mid.?century"
+   ]
+  },
+  {
+   "id": "scifi-toon",
+   "nom": "Sci-Fi Sitcom Toon",
+   "categorie": "cartoon et anime",
+   "tags": [
+    "comedy",
+    "tech brands",
+    "social shorts"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "scifi-toon",
+   "alias": [
+    "sitcom de science.?fiction",
+    "comedia de ciencia ficcion",
+    "sci.?fi sitcom"
+   ]
+  },
+  {
+   "id": "silent-film",
+   "nom": "1920s Silent Film",
+   "categorie": "cinéma et époques",
+   "tags": [
+    "comedy",
+    "retro brands",
+    "silent storytelling"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "silent-film",
+   "alias": [
+    "film muet",
+    "cine mudo",
+    "silent film"
+   ]
+  },
+  {
+   "id": "backrooms",
+   "nom": "Liminal Found Footage",
+   "categorie": "cinéma et époques",
+   "tags": [
+    "horror",
+    "mystery & arg",
+    "game teasers"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "backrooms",
+   "alias": [
+    "backrooms",
+    "found footage",
+    "liminal"
+   ]
+  },
+  {
+   "id": "paper-lantern",
+   "nom": "Paper-cut Lightbox",
+   "categorie": "traditions est-asiatiques",
+   "tags": [
+    "journeys and travel",
+    "farewells and anniversaries",
+    "places and their stories"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "paper-lantern",
+   "alias": [
+    "boite lumineuse",
+    "caja de luz",
+    "paper lantern",
+    "lightbox"
+   ]
+  },
+  {
+   "id": "papercut-red",
+   "nom": "Red Paper-cut",
+   "categorie": "traditions est-asiatiques",
+   "tags": [
+    "lunar new year",
+    "festive greetings",
+    "folk tales"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "papercut-red",
+   "alias": [
+    "papier decoupe rouge",
+    "papel cortado rojo",
+    "red paper.?cut"
+   ]
+  },
+  {
+   "id": "shadow-puppet",
+   "nom": "Shadow Puppetry",
+   "categorie": "traditions est-asiatiques",
+   "tags": [
+    "myths & folklore",
+    "heritage",
+    "festivals"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "shadow-puppet",
+   "alias": [
+    "ombres chinoises",
+    "sombras chinescas",
+    "shadow pupp",
+    "theatre d.ombres",
+    "teatro de sombras"
+   ]
+  },
+  {
+   "id": "ukiyoe",
+   "nom": "Ukiyo-e",
+   "categorie": "traditions est-asiatiques",
+   "tags": [
+    "travel",
+    "japanese culture",
+    "poetry"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "ukiyoe",
+   "alias": [
+    "ukiyo.?e",
+    "estampe japonaise",
+    "estampa japonesa"
+   ]
+  },
+  {
+   "id": "newsreel",
+   "nom": "1920s Newsreel",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "history stories",
+    "fads & eras",
+    "anniversaries"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "newsreel",
+   "alias": [
+    "actualites d.epoque",
+    "noticiario",
+    "newsreel",
+    "actualites des annees 20"
+   ]
+  },
+  {
+   "id": "news-package",
+   "nom": "Broadcast News Package",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "news round-ups",
+    "bulletins",
+    "market updates"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "news-package",
+   "alias": [
+    "journal televise",
+    "telediario",
+    "news package",
+    "broadcast news"
+   ]
+  },
+  {
+   "id": "caption-news",
+   "nom": "Caption News",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "social news",
+    "report explainers",
+    "data shorts"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "caption-news",
+   "alias": [
+    "info sous-titree",
+    "noticias con subtitulos",
+    "caption news"
+   ]
+  },
+  {
+   "id": "kino-montage",
+   "nom": "Constructivist Montage",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "industry histories",
+    "milestones",
+    "collective effort"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "kino-montage",
+   "alias": [
+    "constructiviste",
+    "constructivista",
+    "constructivist",
+    "kino"
+   ]
+  },
+  {
+   "id": "countdown",
+   "nom": "Live Countdown Split-screen",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "launches",
+    "countdowns",
+    "live events"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "countdown",
+   "alias": [
+    "compte a rebours en ecran",
+    "cuenta atras en pantalla",
+    "countdown split"
+   ]
+  },
+  {
+   "id": "telestrator",
+   "nom": "Sports Telestrator",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "sports analysis",
+    "match recaps",
+    "coaching"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "telestrator",
+   "alias": [
+    "analyse sportive dessinee",
+    "telestrator"
+   ]
+  },
+  {
+   "id": "city-symphony",
+   "nom": "Time-lapse Symphony",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "city films",
+    "music montages",
+    "openers"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "city-symphony",
+   "alias": [
+    "symphonie urbaine",
+    "sinfonia urbana",
+    "city symphony",
+    "time-?lapse symphony"
+   ]
+  },
+  {
+   "id": "visual-investigation",
+   "nom": "Visual Investigation",
+   "categorie": "montage et documentaire",
+   "tags": [
+    "reconstructions",
+    "fact-checks",
+    "incident reports"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "visual-investigation",
+   "alias": [
+    "enquete visuelle",
+    "investigacion visual",
+    "visual investigation"
+   ]
+  },
+  {
+   "id": "archive-lighttable",
+   "nom": "Archive Light Table",
+   "categorie": "films de preuves",
+   "tags": [
+    "brand history",
+    "archive stories",
+    "museums"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "archive-lighttable",
+   "alias": [
+    "table lumineuse",
+    "mesa de luz",
+    "archive light table"
+   ]
+  },
+  {
+   "id": "data-physical",
+   "nom": "Data Physicalization",
+   "categorie": "films de preuves",
+   "tags": [
+    "annual reports",
+    "investor decks",
+    "energy data"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "data-physical",
+   "alias": [
+    "donnees physiques",
+    "datos fisicos",
+    "data physicali"
+   ]
+  },
+  {
+   "id": "briefing-board",
+   "nom": "Engineering Briefing Board",
+   "categorie": "films de preuves",
+   "tags": [
+    "engineering",
+    "option comparisons",
+    "briefings"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "briefing-board",
+   "alias": [
+    "tableau de briefing",
+    "briefing board"
+   ]
+  },
+  {
+   "id": "teardown",
+   "nom": "Exploded Teardown",
+   "categorie": "films de preuves",
+   "tags": [
+    "hardware launches",
+    "product pages",
+    "spec explainers"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "teardown",
+   "alias": [
+    "vue eclatee demontee",
+    "despiece",
+    "teardown"
+   ]
+  },
+  {
+   "id": "lidar-survey",
+   "nom": "LiDAR Survey",
+   "categorie": "films de preuves",
+   "tags": [
+    "heritage",
+    "environment",
+    "site surveys"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "lidar-survey",
+   "alias": [
+    "lidar"
+   ]
+  },
+  {
+   "id": "microscope",
+   "nom": "Microscope Story",
+   "categorie": "films de preuves",
+   "tags": [
+    "biomedicine",
+    "materials science",
+    "skincare science"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "microscope",
+   "alias": [
+    "au microscope",
+    "microscopio",
+    "microscope story"
+   ]
+  },
+  {
+   "id": "white-model",
+   "nom": "Projection on White Model",
+   "categorie": "films de preuves",
+   "tags": [
+    "urban planning",
+    "exhibitions",
+    "city data"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "white-model",
+   "alias": [
+    "maquette blanche",
+    "maqueta blanca",
+    "white model"
+   ]
+  },
+  {
+   "id": "satellite-briefing",
+   "nom": "Satellite Briefing",
+   "categorie": "films de preuves",
+   "tags": [
+    "climate",
+    "news explainers",
+    "geography"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "satellite-briefing",
+   "alias": [
+    "briefing satellite",
+    "informe satelital",
+    "satellite briefing",
+    "vue satellite"
+   ]
+  },
+  {
+   "id": "pixel-rpg",
+   "nom": "16-bit Pixel RPG",
+   "categorie": "jeux vidéo",
+   "tags": [
+    "game trailers",
+    "recaps",
+    "nostalgia"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "pixel-rpg",
+   "alias": [
+    "pixel art",
+    "pixel rpg",
+    "16.?bit",
+    "(vieux|ancien) jeu video",
+    "jeu video (retro|ancien)",
+    "videojuego (antiguo|retro)",
+    "(viejo|antiguo) videojuego",
+    "old video ?game",
+    "retro (video ?)?game"
+   ]
+  },
+  {
+   "id": "game-show",
+   "nom": "Game Show Flat",
+   "categorie": "jeux vidéo",
+   "tags": [
+    "tech timelines",
+    "year in review",
+    "variety shows"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "game-show",
+   "alias": [
+    "jeu televise",
+    "concurso de television",
+    "game show"
+   ]
+  },
+  {
+   "id": "hd-2d",
+   "nom": "HD-2D",
+   "categorie": "jeux vidéo",
+   "tags": [
+    "game trailers",
+    "fantasy",
+    "story films"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "hd-2d",
+   "alias": [
+    "hd-?2d"
+   ]
+  },
+  {
+   "id": "microgame",
+   "nom": "Microgame Frenzy",
+   "categorie": "jeux vidéo",
+   "tags": [
+    "game trailers",
+    "onboarding",
+    "social shorts"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "microgame",
+   "alias": [
+    "micro.?jeux",
+    "micro.?juegos",
+    "microgame"
+   ]
+  },
+  {
+   "id": "spy-titles",
+   "nom": "60s Spy Title Sequence",
+   "categorie": "graphisme et typographie",
+   "tags": [
+    "title sequences",
+    "event openers",
+    "trailers"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "spy-titles",
+   "alias": [
+    "generique d.espionnage",
+    "titulos de espias",
+    "spy title"
+   ]
+  },
+  {
+   "id": "ascii-crt",
+   "nom": "ASCII / CRT Terminal",
+   "categorie": "graphisme et typographie",
+   "tags": [
+    "developer tools",
+    "sci-fi",
+    "tech brands"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "ascii-crt",
+   "alias": [
+    "ascii",
+    "terminal crt",
+    "crt terminal"
+   ]
+  },
+  {
+   "id": "art-deco",
+   "nom": "Art Deco",
+   "categorie": "graphisme et typographie",
+   "tags": [
+    "luxury & hospitality",
+    "galas",
+    "invitations"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "art-deco",
+   "alias": [
+    "art deco"
+   ]
+  },
+  {
+   "id": "blueprint",
+   "nom": "Blueprint",
+   "categorie": "graphisme et typographie",
+   "tags": [
+    "engineering",
+    "hardware launches",
+    "tech explainers"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "blueprint",
+   "alias": [
+    "blueprint",
+    "plan technique",
+    "plano tecnico"
+   ]
+  },
+  {
+   "id": "pictogram-motion",
+   "nom": "Pictogram Motion",
+   "categorie": "graphisme et typographie",
+   "tags": [
+    "public services and city stories",
+    "brand and event identity films",
+    "explainers told through signs and objects"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "pictogram-motion",
+   "alias": [
+    "pictogrammes?",
+    "pictogramas?",
+    "pictogram"
+   ]
+  },
+  {
+   "id": "stained-glass",
+   "nom": "Stained Glass",
+   "categorie": "graphisme et typographie",
+   "tags": [
+    "legends",
+    "heritage",
+    "holiday stories"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "stained-glass",
+   "alias": [
+    "vitrail",
+    "vitraux",
+    "vidriera",
+    "stained glass"
+   ]
+  },
+  {
+   "id": "swiss-motion",
+   "nom": "Swiss Motion Graphics",
+   "categorie": "graphisme et typographie",
+   "tags": [
+    "brand identity",
+    "events",
+    "design education"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "swiss-motion",
+   "alias": [
+    "style suisse",
+    "graphisme suisse",
+    "estilo suizo",
+    "swiss motion",
+    "swiss style"
+   ]
+  },
+  {
+   "id": "chalkboard",
+   "nom": "Chalkboard",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "word origins",
+    "myth-busting",
+    "lessons"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "chalkboard",
+   "alias": [
+    "tableau noir",
+    "pizarra",
+    "chalkboard",
+    "a la craie",
+    "con tiza"
+   ]
+  },
+  {
+   "id": "ink-wash",
+   "nom": "Chinese Ink Wash",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "wuxia",
+    "cultural brands",
+    "poetry"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "ink-wash",
+   "alias": [
+    "lavis",
+    "encre de chine",
+    "tinta china",
+    "ink wash",
+    "aguada"
+   ]
+  },
+  {
+   "id": "crayon-book",
+   "nom": "Crayon Picture Book",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "picture books",
+    "bedtime stories",
+    "kids' learning"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "crayon-book",
+   "alias": [
+    "aux? crayons? de cire",
+    "album au crayon",
+    "libro de ceras",
+    "crayon book",
+    "crayon picture"
+   ]
+  },
+  {
+   "id": "impasto",
+   "nom": "Impasto Oil Painting",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "music videos",
+    "art & culture",
+    "emotional ads"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "impasto",
+   "alias": [
+    "peinture a l.huile",
+    "huile empatee",
+    "pintura al oleo",
+    "impasto",
+    "oil painting",
+    "(comme|façon|facon) une? (vieille )?peinture",
+    "ressembl\\w* a une? (vieille )?peinture",
+    "(como|parezca) una pintura",
+    "like an? (old )?painting"
+   ]
+  },
+  {
+   "id": "one-line",
+   "nom": "One-line Drawing",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "brand stories",
+    "life milestones",
+    "minimal ads"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "one-line",
+   "alias": [
+    "dessin en une ligne",
+    "une seule ligne",
+    "dibujo de una linea",
+    "one.?line"
+   ]
+  },
+  {
+   "id": "urban-sketch",
+   "nom": "Urban Sketch · Pen & Wash",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "city & travel",
+    "architecture",
+    "lifestyle brands"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "urban-sketch",
+   "alias": [
+    "urban sketch",
+    "croquis urbain",
+    "dibujo urbano"
+   ]
+  },
+  {
+   "id": "watercolor",
+   "nom": "Watercolor Brush",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "nature documentary",
+    "travel",
+    "science explainers"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "watercolor",
+   "alias": [
+    "aquarelle",
+    "acuarela",
+    "watercolou?r"
+   ]
+  },
+  {
+   "id": "whiteboard-opuscar",
+   "nom": "Whiteboard Explainer",
+   "categorie": "dessin et peinture",
+   "tags": [
+    "explainers",
+    "online courses",
+    "science"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "whiteboard",
+   "alias": [
+    "opuscar whiteboard",
+    "whiteboard explainer"
+   ]
+  },
+  {
+   "id": "circuit-board",
+   "nom": "Circuit Board",
+   "categorie": "information et keynote",
+   "tags": [
+    "energy",
+    "supply chains",
+    "devices"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "circuit-board",
+   "alias": [
+    "circuit imprime",
+    "circuito impreso",
+    "circuit board"
+   ]
+  },
+  {
+   "id": "dark-keynote",
+   "nom": "Dark Tech Keynote",
+   "categorie": "information et keynote",
+   "tags": [
+    "product launches",
+    "saas",
+    "keynotes"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "dark-keynote",
+   "alias": [
+    "keynote sombre",
+    "keynote oscura",
+    "dark keynote"
+   ]
+  },
+  {
+   "id": "dataviz",
+   "nom": "Data Storytelling",
+   "categorie": "information et keynote",
+   "tags": [
+    "data journalism",
+    "reports",
+    "climate & science"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "dataviz",
+   "alias": [
+    "recit de donnees",
+    "narracion de datos",
+    "data storytelling"
+   ]
+  },
+  {
+   "id": "iso-infographic",
+   "nom": "Isometric Infographic",
+   "categorie": "information et keynote",
+   "tags": [
+    "process explainers",
+    "supply chains",
+    "annual reports"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "iso-infographic",
+   "alias": [
+    "infographie isometrique",
+    "infografia isometrica",
+    "isometric infographic"
+   ]
+  },
+  {
+   "id": "isometric-picture-book",
+   "nom": "Isometric Picture Book",
+   "categorie": "information et keynote",
+   "tags": [
+    "everyday rules",
+    "queues",
+    "comparisons"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "isometric-picture-book",
+   "alias": [
+    "album isometrique",
+    "libro isometrico",
+    "isometric picture"
+   ]
+  },
+  {
+   "id": "living-screencast",
+   "nom": "Living Screencast",
+   "categorie": "information et keynote",
+   "tags": [
+    "product tutorials",
+    "feature launches",
+    "onboarding"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "living-screencast",
+   "alias": [
+    "screencast vivant",
+    "living screencast"
+   ]
+  },
+  {
+   "id": "hologram-hud",
+   "nom": "Sci-fi Hologram HUD",
+   "categorie": "information et keynote",
+   "tags": [
+    "spec walkthroughs",
+    "launch videos",
+    "trade shows"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "hologram-hud",
+   "alias": [
+    "hologramme",
+    "hologram",
+    "holograma"
+   ]
+  },
+  {
+   "id": "transit-map",
+   "nom": "Transit Map",
+   "categorie": "information et keynote",
+   "tags": [
+    "transport",
+    "growth over time",
+    "networks"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "transit-map",
+   "alias": [
+    "plan de metro",
+    "mapa de metro",
+    "transit map",
+    "metro map"
+   ]
+  },
+  {
+   "id": "brick-toy",
+   "nom": "Brick Toy",
+   "categorie": "matières et volume",
+   "tags": [
+    "toys & kids",
+    "product builds",
+    "space"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "brick-toy",
+   "alias": [
+    "briques? de construction",
+    "ladrillos de juguete",
+    "brick toy",
+    "toy bricks"
+   ]
+  },
+  {
+   "id": "desktop-flythrough",
+   "nom": "Desktop Flythrough",
+   "categorie": "matières et volume",
+   "tags": [
+    "app explainers",
+    "workflows",
+    "products"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "desktop-flythrough",
+   "alias": [
+    "survol de bureau",
+    "desktop flythrough"
+   ]
+  },
+  {
+   "id": "glass-product",
+   "nom": "Glass Product Render",
+   "categorie": "matières et volume",
+   "tags": [
+    "product launches",
+    "consumer tech",
+    "beauty"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "glass-product",
+   "alias": [
+    "produit en verre",
+    "producto de vidrio",
+    "glass product"
+   ]
+  },
+  {
+   "id": "lowpoly-island",
+   "nom": "Low-poly Isometric Island",
+   "categorie": "matières et volume",
+   "tags": [
+    "game trailers",
+    "world building",
+    "calm content"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "lowpoly-island",
+   "alias": [
+    "ile low.?poly",
+    "isla low.?poly",
+    "low.?poly island"
+   ]
+  },
+  {
+   "id": "memphis-diorama",
+   "nom": "Memphis Diorama",
+   "categorie": "matières et volume",
+   "tags": [
+    "web heroes",
+    "ambient loops",
+    "seasons"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "memphis-diorama",
+   "alias": [
+    "memphis"
+   ]
+  },
+  {
+   "id": "paper-popup",
+   "nom": "Paper Pop-up Book",
+   "categorie": "matières et volume",
+   "tags": [
+    "children's books",
+    "game trailers",
+    "story films"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "paper-popup",
+   "alias": [
+    "livre pop.?up",
+    "libro pop.?up",
+    "pop.?up book"
+   ]
+  },
+  {
+   "id": "tilt-shift",
+   "nom": "Tilt-Shift Miniature",
+   "categorie": "matières et volume",
+   "tags": [
+    "city promos",
+    "real estate",
+    "transport"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "tilt-shift",
+   "alias": [
+    "tilt.?shift",
+    "effet miniature"
+   ]
+  },
+  {
+   "id": "engraving",
+   "nom": "Copperplate Engraving",
+   "categorie": "impression et gravure",
+   "tags": [
+    "museum labels",
+    "science explainers",
+    "brand heritage"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "engraving",
+   "alias": [
+    "gravure sur cuivre",
+    "taille.?douce",
+    "grabado en cobre",
+    "copperplate",
+    "engraving",
+    "(vieille|ancienne) gravure",
+    "grabado antiguo",
+    "old engraving"
+   ]
+  },
+  {
+   "id": "halftone-dossier",
+   "nom": "Halftone Dossier",
+   "categorie": "impression et gravure",
+   "tags": [
+    "humour",
+    "pet content",
+    "social shorts"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "halftone-dossier",
+   "alias": [
+    "dossier en trame",
+    "halftone"
+   ]
+  },
+  {
+   "id": "printed-long-take",
+   "nom": "Printed Long Take",
+   "categorie": "impression et gravure",
+   "tags": [
+    "journeys",
+    "wildlife",
+    "landscapes"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "printed-long-take",
+   "alias": [
+    "plan.?sequence imprime",
+    "printed long take"
+   ]
+  },
+  {
+   "id": "risograph",
+   "nom": "Risograph Print",
+   "categorie": "impression et gravure",
+   "tags": [
+    "indie brands",
+    "zines",
+    "lifestyle"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "risograph",
+   "alias": [
+    "risograph",
+    "risographie",
+    "risografia"
+   ]
+  },
+  {
+   "id": "silkscreen-poster",
+   "nom": "Silkscreen Travel Poster",
+   "categorie": "impression et gravure",
+   "tags": [
+    "destination guides",
+    "tourism",
+    "event posters"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "silkscreen-poster",
+   "alias": [
+    "serigraphie",
+    "serigrafia",
+    "silkscreen"
+   ]
+  },
+  {
+   "id": "woodcut",
+   "nom": "Woodcut Print",
+   "categorie": "impression et gravure",
+   "tags": [
+    "folk tales",
+    "craft brands",
+    "book trailers"
+   ],
+   "moteurs": [
+    "film-style"
+   ],
+   "intensite": "selon le récit",
+   "duree": "20-120 s",
+   "formats": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:5"
+   ],
+   "contraintes": "Film écrit en code par scène, 30 à 60 min et beaucoup de tokens selon la source.",
+   "statut": "recette",
+   "blocs_hyperframes": [],
+   "source": "opuscar",
+   "opuscar": "woodcut",
+   "alias": [
+    "gravure sur bois",
+    "xylographie",
+    "grabado en madera",
+    "xilografia",
+    "woodcut"
+   ]
+  }
+ ]
+}

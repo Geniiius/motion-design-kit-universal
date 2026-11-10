@@ -1,0 +1,35 @@
+{
+ "modele": "eleven_multilingual_v2",
+ "voix": [
+  {
+   "demo": "Explainer",
+   "langue": "es",
+   "voix": "Matilda",
+   "duree": 25.867,
+   "caracteres": 318
+  },
+  {
+   "demo": "Explainer",
+   "langue": "fr",
+   "voix": "Matilda",
+   "duree": 27.771,
+   "caracteres": 364
+  },
+  {
+   "demo": "Personnage",
+   "langue": "es",
+   "voix": "Sarah",
+   "duree": 14.443,
+   "caracteres": 207
+  },
+  {
+   "demo": "Personnage",
+   "langue": "fr",
+   "voix": "Sarah",
+   "duree": 13.282,
+   "caracteres": 220
+  }
+ ],
+ "total": 1109,
+ "compteur": "le compteur du compte a augmenté de 1111 caractères pendant ces appels"
+}
