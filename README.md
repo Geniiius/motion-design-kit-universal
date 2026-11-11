@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/media/social-preview.png" alt="Motion Design Kit Universal Studio: describe the video, Claude Code makes it" width="100%">
+  <img src="docs/media/cover.png" alt="Motion Design Kit Universal Studio: describe the video, Claude Code makes it" width="100%">
 </p>
 
 # Motion Design Kit · Universal Studio
