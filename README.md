@@ -21,6 +21,7 @@ It works on videos you already have and creates new ones from an idea, for YouTu
 | "Remove the silences" | The same video without dead air, each cut keeping a breath |
 | "Add subtitles" | Burned-in captions, after Claude has read and corrected the transcript |
 | "Subtitle it in English and Spanish" | One video per language |
+| "Write out the lyrics of my song" | The sung words, read offline, with the doubtful ones flagged: a draft you confirm before anything goes on screen |
 | "Make it vertical for TikTok" | A 9:16 frame that follows the face, or the whole picture over a blurred background |
 | "Cut three short clips for Instagram" | One file per clip, cut on word boundaries |
 | "Write the YouTube chapters" | The chapter list, ready to paste |

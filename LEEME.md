@@ -154,6 +154,7 @@ Cierra la app de Claude por completo y vuelve a abrirla. Las skills del kit se c
 | Montar vídeos grabados | «Monta estos tres clips con mi logo y esta voz: C:\…\a.mp4, b.mp4, c.mp4, logo.png, voz.mp3» |
 | Limpiar un vídeo tuyo | «Quita los silencios de este vídeo» |
 | Subtítulos y traducciones | «Ponle subtítulos», «subtitúlalo en inglés y en francés» |
+| La letra de tu canción | «Escribe la letra de mi canción»: la voz cantada se lee sin conexión y las palabras dudosas quedan marcadas; es un borrador que confirmas antes de ponerla en pantalla |
 | Adaptarlo a otra red | «Ponlo en vertical para TikTok»: el encuadre sigue la cara o conserva la imagen entera |
 | Extractos de un vídeo largo | «Saca tres extractos cortos de este pódcast para Instagram» |
 | Capítulos de YouTube | «Escribe los capítulos de este tutorial» |

@@ -104,6 +104,7 @@ Claude regarde vos fichiers pour de vrai, résume ce qu'il va faire, pose seulem
 | « Enlève les silences de ma vidéo » | La même vidéo, sans les blancs, chaque coupe gardant un souffle |
 | « Ajoute des sous-titres » | Les sous-titres incrustés. Claude relit le texte avant : la transcription se trompe sur les noms propres |
 | « Sous-titre-la en anglais et en espagnol » | Une vidéo par langue |
+| « Écris les paroles de ma chanson » | Les paroles chantées, lues sans connexion, les mots douteux signalés : un brouillon que vous confirmez avant qu'elles passent à l'écran |
 | « Mets-la au format TikTok » | Une vidéo verticale : le cadre suit le visage, ou l'image entière est gardée sur un fond flou |
 | « Fais trois extraits courts pour Instagram » | Trois fichiers, coupés sur des fins de mots. Claude lit la transcription pour choisir des moments qui tiennent debout seuls |
 | « Écris les chapitres pour YouTube » | Le texte des chapitres, prêt à coller dans la description |
