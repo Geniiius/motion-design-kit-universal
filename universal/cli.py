@@ -141,6 +141,7 @@ def main(argv=None):
     tr.add_argument('media', type=Path)
     tr.add_argument('--output', '-o', required=True, type=Path)
     tr.add_argument('--language')
+    tr.add_argument('--song', '--chanson', action='store_true', help='voix chantée sur de la musique : plusieurs lectures sans filtre de parole, mots douteux signalés')
     for cmd in ('plan', 'render', 'present', 'infographic', 'character3d'):
         p = sub.add_parser(cmd)
         p.add_argument('--config', '-c', required=True, type=Path)
@@ -307,8 +308,17 @@ def main(argv=None):
         from .design_check import check
         return show(check(args.page))
     if args.command == 'transcribe':
-        from .voice_kokoro import transcribe
-        return show({'mots': len(transcribe(args.media, args.output, args.language)), 'fichier': str(args.output)})
+        from .render import duration
+        from .song import sparse
+        from .voice_kokoro import transcribe_full
+        heard = transcribe_full(args.media, args.output, args.language, args.song)
+        result = {'mots': len(heard['words']), 'fichier': str(args.output)}
+        if args.song:
+            result.update({'douteux': heard['doubtful'], 'paroles': heard['text'],
+                           'a_faire': 'Brouillon : faire confirmer les paroles, surtout les mots entre crochets, avant de les écrire à l’écran.'})
+        elif note := sparse(heard['words'], duration(args.media)):
+            result['note'] = note
+        return show(result)
     if args.command == 'workflows':
         from .workflows import catalog
         return show(catalog(args.language))

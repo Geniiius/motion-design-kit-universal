@@ -98,9 +98,9 @@ Everything runs locally by default, so a video costs no API fee. Paid calls (Ele
 
 ## What was tested, and what was not
 
-Tested on Windows 11 (Intel i5-1240P, Intel Iris Xe and NVIDIA T550):
+Tested on a Windows 11 laptop (Intel Core processor, entry-level NVIDIA graphics card):
 
-- 195 unit tests, also run under Linux in WSL (without FFmpeg, 28 skipped), and in a raw download with no engine installed (3 skipped).
+- 218 unit tests in version 3.2.0; the 195 tests of version 3.1.0 also ran under Linux in WSL (without FFmpeg, 28 skipped) and in a raw download with no engine installed (3 skipped).
 - 13 engine regression checks and 12 real cases on a provided video, including a 20-minute video with 343 cuts.
 - The setup assistant end to end, and the kit unzipped into an empty folder: first launch, refusal to install without approval, approved installation, two test videos, ready. 26 checks.
 

@@ -23,6 +23,7 @@ No impongas un flujo. Primero mira lo que hay. **El usuario no escribe comandos:
 | «que se note que crecemos», con un archivo de datos | Datos explicados | `--intent DATA_EXPLAINER`, solo cifras reales |
 | «conviértelo en dibujo animado», con su vídeo | Transformar el vídeo | `--intent RESTYLE_FOOTAGE`: hoy bloqueado, explica por qué y ofrece alternativas |
 | «no queda profesional», «mejóralo» | Aún no se sabe | Mira primero: fotogramas, sonido, ritmo. Propón lo que ves antes de tocar nada |
+| «un vídeo con la letra de mi canción», «lyric video» | Vídeo de letra sobre su canción | `--intent CREATE_FROM_SCRATCH`. La letra: pídela escrita o sácala con `transcribe --song` (skill `media-ingestion-and-edit`) y confírmala antes de escribirla |
 | «como la última vez», «lo de siempre» | Lo que ya sabe el perfil | Aplica el perfil, sin preguntas |
 
 Si **dudas de verdad**, una sola pregunta con la opción recomendada. Si dice «hazlo directamente», decide y dilo en una línea.

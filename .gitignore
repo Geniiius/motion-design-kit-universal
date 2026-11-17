@@ -37,3 +37,7 @@ modules/opuscar/core/assets/polyhaven/*
 kit-state.json
 kit.config.local.json
 logs/
+
+# Copies faites pour d'autres assistants : le kit est fait pour Claude Code, rien de cela ne se partage
+.agents/
+.codex/

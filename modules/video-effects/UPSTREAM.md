@@ -13,6 +13,10 @@ Source : [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Rampra
 - **`--check`** vérifie les options sans vidéo.
 - **Polices** : texte complet de l'OFL ajouté pour Anton et Montserrat, avec le copyright lu dans les fichiers de police.
 
+## Ajouté pour ce kit
+
+- **`scripts/song_words.py`** n'existe pas dans le dépôt d'origine. Il lit une voix chantée sur de la musique avec le même modèle que `words.py`, plusieurs fois et sans détection de parole, par fenêtres courtes. Il n'installe rien, n'ouvre aucune connexion et ne décide rien : `universal/song.py` compare les lectures et signale les mots douteux.
+
 ## Retiré
 
 `SKILL.md`, `README.md`, `assets/preview.jpg`, `scripts/setup.sh`. Le kit a son propre skill : `.claude/skills/video-effects/`.

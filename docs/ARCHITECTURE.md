@@ -40,6 +40,7 @@ qc.py          défauts bloquants / alertes / déclarés / signaux esthétiques,
 | `universal/voice_elevenlabs.py` | Voix payante avec minutage, accord obligatoire, cache, plafond | `synthesize()`, `balance()` |
 | `universal/datos.py` | Données sourcées vers explainer | `facts()`, `build_props()` |
 | `universal/voice_kokoro.py` | Voix locale FR, ES, EN et transcription, après téléchargement accordé | `synthesize()`, `transcribe()` |
+| `universal/song.py` | Paroles d'une chanson : la voix chantée, que le filtre de parole prend pour de la musique, est lue plusieurs fois sans ce filtre ; les passages restés vides sont relus, les mots douteux signalés | `read()`, `merge()`, `sparse()` |
 | `universal/modules.py` | Modules optionnels : un environnement local, versions et empreintes fixées, téléchargements sur accord | `install()`, `status()` |
 | `universal/effects.py` | Effets autour d'une personne filmée, accord pour les interfaces de marque | `render()`, `check()`, `catalog()` |
 | `universal/film_style.py` | Films écrits en code d'après une recette, sans gabarit | `new()`, `stills()`, `render()`, `master()` |

@@ -25,7 +25,7 @@ def link(path):
 
 
 def report():
-    out = ['# Rapport de tests', '', 'Généré par `tests/rapport.py` à partir des exécutions réelles. Machine : Windows 11, i5-1240P, NVIDIA T550.', '',
+    out = ['# Rapport de tests', '', 'Généré par `tests/rapport.py` à partir des exécutions réelles. Machine : PC portable Windows 11 avec petite carte NVIDIA.', '',
            'PASS : exécuté et vérifié. PARTIAL : la route est juste et quelque chose a tourné, mais pas toute la demande. BLOCKED : il manque un service, un asset ou un consentement. NOT TESTED : non exécuté.', '',
            '> Le contrôle automatique ne juge ni le goût ni l\'écoute : les planches ont été regardées, et seules les voix FR et ES ont été validées à l\'oreille.', '']
     extra = j('extras.json') or {}
@@ -178,8 +178,18 @@ def catalog():
     (ROOT / 'docs' / 'STYLE-CATALOG.md').write_text('\n'.join(out), encoding='utf-8', newline='\n')
 
 
+HARDWARE = [
+    (r'Windows (\d+) \(10\.0\.\d+\)', r'Windows \1'),
+    (r'(?:\d+th Gen )?Intel\(R\) Core\(TM\) i\d-\d{4,5}[A-Z]{0,2}', 'processeur Intel Core de PC portable'),
+    (r'Intel\(R\) Iris\(R\) Xe Graphics \([\d,]+ Go\)', 'graphique Intel intégré'),
+    (r'NVIDIA [A-Z]+\d+[A-Za-z ]*? GPU \(([\d,]+) Go\)', r"petite carte NVIDIA (\1 Go)"),
+    (r'(fils\)"?(?:,\n\s*"memoire": "|\s·\s))[\d,]+ Go', r'\1plus de 32 Go'),
+    (r'[\d,]+ Go libres sur [\d,]+(?: Go)?', 'espace disque suffisant'),
+]
+
+
 def sanitize():
-    """Proofs travel with the kit: they must not carry this machine's paths or user name."""
+    """Proofs travel with the kit: they must not carry this machine's paths, user name or exact hardware."""
     root = str(ROOT)
     home = str(Path.home())
     pairs = [(root.replace('\\', '\\\\'), '<kit>'), (root.replace('\\', '/'), '<kit>'), (root, '<kit>'),
@@ -193,6 +203,9 @@ def sanitize():
                 clean = clean.replace(a, b)
             # Whatever the edition of Windows, it says something about where the kit was built and proves nothing
             clean = re.sub(r'Windows (\d+) [A-Z][A-Za-zé]+(?= ?[(,·|]|$)', r'Windows \1', clean, flags=re.M)
+            # The exact computer either: build, processor, graphics, memory and disk become the kind of machine it is
+            for a, b in HARDWARE:
+                clean = re.sub(a, b, clean)
             if clean != text:
                 f.write_text(clean, encoding='utf-8', newline='\n')
                 count += 1

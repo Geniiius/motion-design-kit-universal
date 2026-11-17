@@ -7,6 +7,8 @@ description: "Montar medios existentes en local con FFmpeg: inventario real, pla
 
 **Los originales no se tocan.** No uses un motor de generación para un corte. Para efectos alrededor de una persona (texto detrás de la cabeza, seguimiento de la cara): skill `video-effects`. Para tratar **un** vídeo entregado (silencios, extractos, vertical, subtítulos, traducciones, capítulos): skill `video-workflows`. Para obtener el minuto exacto de cada palabra sin conexión: `python -m universal.cli transcribe clip.mp4 -o palabras.json`.
 
+**Si es una canción** (voz cantada con música), añade `--song`. Sin él, el filtro de silencios toma lo cantado por música y se salta estrofas enteras sin avisar; si la respuesta trae una `note` de «pocas palabras», es eso. Con `--song` tarda unas tres veces la duración de la canción (lánzalo con margen) y escribe además `palabras.paroles.txt`: un **borrador**, con las palabras dudosas entre corchetes y lo que otras lecturas oyeron. El modelo local se equivoca, sobre todo con nombres y palabras de otro idioma: pide la letra escrita si la persona la tiene y, si no, enséñale el borrador y que lo confirme antes de escribir nada en pantalla.
+
 ```bash
 python -m universal.cli inventory clip.mp4 foto.jpg
 python -m universal.cli contact-sheet clip1.mp4 clip2.mp4 -o out/reperage.jpg

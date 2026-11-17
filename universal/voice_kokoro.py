@@ -25,15 +25,20 @@ VOICES = {'fr': ('ff_siwis', 'fr-fr'), 'es': ('ef_dora', 'es'), 'en': ('af_bella
 MIN_MATCH = .6  # under this, what was heard is too far from the text to trust its times
 
 
-def transcribe(media: Path, out: Path, language: str | None = None) -> list[dict]:
+def transcribe(media: Path, out: Path, language: str | None = None, song: bool = False) -> list[dict]:
     """Word timings of any audio or video, offline: [{text, start, end}]."""
-    return transcribe_full(media, out, language)['words']
+    return transcribe_full(media, out, language, song)['words']
 
 
-def transcribe_full(media: Path, out: Path, language: str | None = None) -> dict:
-    """{'words': [{text, start, end}], 'language'}: the spoken language is the one given, or the one the model heard."""
+def transcribe_full(media: Path, out: Path, language: str | None = None, song: bool = False) -> dict:
+    """{'words': [{text, start, end}], 'language'}: the spoken language is the one given, or the one the model heard.
+    `song`: a sung voice over music. The speech filter used for talk drops it, so the song is read another way
+    (universal/song.py) and each word also says how sure it is; the result adds 'doubtful' and 'text'."""
     if not (modules.WHISPER_DIR / 'model.bin').exists():
         raise RuntimeError('Option « sous-titres automatiques » absente (gratuite, 345 Mo) : demander l\'accord, puis python -m universal.cli setup apply --approve captions')
+    if song:
+        from .song import read
+        return read(media, out, language)
     out = Path(out).resolve()
     out.parent.mkdir(parents=True, exist_ok=True)
     args = [WORDS, Path(media).resolve(), out] + ([language] if language else [])

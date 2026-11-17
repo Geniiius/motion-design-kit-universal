@@ -1,17 +1,17 @@
 {
  "date": "2026-11-10",
  "machine": {
-  "systeme": "Windows 11 (10.0.22631), AMD64",
-  "processeur": "12th Gen Intel(R) Core(TM) i5-1240P (12 cœurs, 16 fils)",
-  "memoire": "39,7 Go",
-  "graphique": "Intel(R) Iris(R) Xe Graphics (2,0 Go) ; NVIDIA T550 Laptop GPU (4,0 Go)",
-  "disque": "71,1 Go libres sur 474,7"
+  "systeme": "Windows 11, AMD64",
+  "processeur": "processeur Intel Core de PC portable (12 cœurs, 16 fils)",
+  "memoire": "plus de 32 Go",
+  "graphique": "graphique Intel intégré ; petite carte NVIDIA (4,0 Go)",
+  "disque": "espace disque suffisant"
  },
  "tests": [
   {
    "test": "Machine mesurée",
    "status": "PASS",
-   "detail": "Windows 11 (10.0.22631), AMD64 · 12th Gen Intel(R) Core(TM) i5-1240P (12 cœurs, 16 fils) · 39,7 Go · Intel(R) Iris(R) Xe Graphics (2,0 Go) ; NVIDIA T550 Laptop GPU (4,0 Go) · 71,1 Go libres sur 474,7 · 16.3 s"
+   "detail": "Windows 11, AMD64 · processeur Intel Core de PC portable (12 cœurs, 16 fils) · plus de 32 Go · graphique Intel intégré ; petite carte NVIDIA (4,0 Go) · espace disque suffisant · 16.3 s"
   },
   {
    "test": "Logiciels et versions lus",

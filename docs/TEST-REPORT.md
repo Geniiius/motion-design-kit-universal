@@ -1,6 +1,6 @@
 # Rapport de tests
 
-Généré par `tests/rapport.py` à partir des exécutions réelles. Machine : Windows 11, i5-1240P, NVIDIA T550.
+Généré par `tests/rapport.py` à partir des exécutions réelles. Machine : PC portable Windows 11 avec petite carte NVIDIA.
 
 PASS : exécuté et vérifié. PARTIAL : la route est juste et quelque chose a tourné, mais pas toute la demande. BLOCKED : il manque un service, un asset ou un consentement. NOT TESTED : non exécuté.
 
@@ -8,7 +8,7 @@ PASS : exécuté et vérifié. PARTIAL : la route est juste et quelque chose a t
 
 ## Tests unitaires
 
-**PASS** : Ran 195 tests in 75.783s, via `python -m unittest discover -s tests -p "test_*.py"`.
+**PASS** : Ran 218 tests in 155.647s, via `python -m unittest discover -s tests -p "test_*.py"` (2026-11-17).
 
 ## Non-régression des moteurs
 
@@ -135,11 +135,11 @@ Avant ce travail, ces demandes sortaient toutes une vidéo de 3,5 s déclarée l
 
 ## Assistant : détection, premier lancement, vérification, réparation, désinstallation
 
-Exécuté le 2026-11-10 sur : Windows 11 (10.0.22631), AMD64 · 12th Gen Intel(R) Core(TM) i5-1240P (12 cœurs, 16 fils) · 39,7 Go · Intel(R) Iris(R) Xe Graphics (2,0 Go) ; NVIDIA T550 Laptop GPU (4,0 Go) · 71,1 Go libres sur 474,7.
+Exécuté le 2026-11-10 sur : Windows 11, AMD64 · processeur Intel Core de PC portable (12 cœurs, 16 fils) · plus de 32 Go · graphique Intel intégré ; petite carte NVIDIA (4,0 Go) · espace disque suffisant.
 
 | Essai | Statut | Détail |
 |---|---|---|
-| Machine mesurée | **PASS** | Windows 11 (10.0.22631), AMD64 · 12th Gen Intel(R) Core(TM) i5-1240P (12 cœurs, 16 fils) · 39,7 Go · Intel(R) Iris(R) Xe Graphics (2,0 Go) ; NVIDIA T550 Laptop GPU (4,0 Go) · 71,1 Go libres sur 474,7 · 16.3 s |
+| Machine mesurée | **PASS** | Windows 11, AMD64 · processeur Intel Core de PC portable (12 cœurs, 16 fils) · plus de 32 Go · graphique Intel intégré ; petite carte NVIDIA (4,0 Go) · espace disque suffisant · 16.3 s |
 | Logiciels et versions lus | **PASS** | python 3.14.4, node 24.14.1, npm 11.11.0, ffmpeg 9.0.2, git 2.55.0, uv 0.12.10, blender 5.2.3 · gestionnaire : winget |
 | Conflits signalés | **PASS** | aucun sur cette machine |
 | Encodeurs matériels essayés pour de vrai | **PASS** | h264_nvenc : échoue, h264_qsv : fonctionne, h264_amf : échoue |

@@ -116,7 +116,7 @@ class EffectsSafety(unittest.TestCase):
             self.assertNotIn(word, FX.split('"""', 2)[2], word)
 
     def test_no_code_or_package_is_fetched_or_loaded_at_run_time(self):
-        for name in ('fx.py', 'words.py'):
+        for name in ('fx.py', 'words.py', 'song_words.py'):
             src = (ROOT / 'modules/video-effects/scripts' / name).read_text(encoding='utf-8')
             calls = {n.func.id for n in ast.walk(ast.parse(src)) if isinstance(n, ast.Call) and isinstance(n.func, ast.Name)}
             self.assertFalse(calls & {'exec', 'eval'}, name)
